@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Introducción — Una sola historia</title>
+<style>
+:root{--paper:#fbf7ef;--ink:#2b2622;--muted:#7a6f63;--accent:#8a5a2b;--rule:#e3d8c6;
+--hist:#f3ece0;--hist-b:#b08a5a;--lugar:#eaf1ee;--lugar-b:#4f7f72;--sombra:#f7efdc;--sombra-b:#b8892d;
+--escr:#f1ede6;--escr-b:#6d5c4a;--nota:#fffdf8;--nota-b:#8a5a2b}
+@media (prefers-color-scheme:dark){:root{--paper:#1d1a17;--ink:#e9e1d4;--muted:#a89c8c;--accent:#d7a76b;--rule:#3a332c;
+--hist:#2a241d;--lugar:#1f2a27;--sombra:#2d2618;--escr:#27231f;--nota:#221e1a}}
+*{box-sizing:border-box}
+html{font-size:18px;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--paper);color:var(--ink);
+font-family:"Iowan Old Style","Palatino Linotype",Palatino,"Book Antiqua",Georgia,"Times New Roman",serif;
+line-height:1.65;text-rendering:optimizeLegibility;hyphens:auto}
+main{max-width:36rem;margin:0 auto;padding:2.5rem 1.2rem 4rem}
+header.cap{text-align:center;margin:1rem 0 2.5rem;padding-bottom:1.5rem;border-bottom:1px solid var(--rule)}
+.kicker{font-variant:small-caps;letter-spacing:.18em;color:var(--accent);margin:0}
+h1{font-weight:normal;font-size:2rem;line-height:1.2;margin:.4rem 0 .6rem}
+.sub{font-style:italic;color:var(--muted);font-size:.9rem;margin:0}
+h2{font-weight:normal;font-size:1.45rem;color:var(--accent);margin:2.6rem 0 1rem;text-align:center;font-variant:small-caps;letter-spacing:.05em}
+h3{font-size:1.1rem;font-style:italic;font-weight:normal;margin:2rem 0 .8rem}
+p{margin:0 0 1em}
+.texto>p:first-of-type em:only-child{color:var(--muted);font-size:.92rem}
+p.lucha{border-left:3px solid var(--accent);padding-left:.9rem}
+blockquote.verso{margin:1rem 0 1.4rem;padding:.2rem 0 .2rem 1rem;border-left:2px solid var(--rule);font-style:italic}
+blockquote.verso p{margin:0}
+table{width:100%;border-collapse:collapse;font-size:.85rem;margin:1rem 0 1.5rem;line-height:1.45}
+th,td{border-bottom:1px solid var(--rule);padding:.5rem .4rem;vertical-align:top;text-align:left}
+th{font-variant:small-caps;letter-spacing:.04em;color:var(--accent);font-weight:normal}
+.box{border-radius:6px;padding:1.1rem 1.2rem .4rem;margin:2rem 0;font-size:.93rem;border-left:4px solid}
+.box h3,.box h2{margin-top:0;font-style:normal;font-variant:small-caps;letter-spacing:.06em;font-size:1.05rem;text-align:left}
+.historia{background:var(--hist);border-color:var(--hist-b)} .historia h3{color:var(--hist-b)}
+.lugar{background:var(--lugar);border-color:var(--lugar-b)} .lugar h3{color:var(--lugar-b)}
+.escrito{background:var(--escr);border-color:var(--escr-b)} .escrito h3{color:var(--escr-b)}
+.sombra{background:var(--sombra);border-color:var(--sombra-b)} .sombra h2{color:var(--sombra-b);font-size:1.25rem}
+.nota{background:var(--nota);border:1px solid var(--rule);border-left:4px solid var(--nota-b);font-style:italic;font-size:1rem}
+.nota h2{color:var(--nota-b);font-size:1.25rem}
+figure.ph{margin:2rem auto}
+figure.ilus{max-width:24rem} figure.video{max-width:17rem}
+.ph-box{width:100%;border:2px dashed var(--accent);border-radius:8px;display:flex;flex-direction:column;align-items:center;justify-content:center;
+text-align:center;padding:1rem;background:repeating-linear-gradient(45deg,transparent,transparent 10px,rgba(138,90,43,.05) 10px,rgba(138,90,43,.05) 20px)}
+.ph-tag{font-family:system-ui,sans-serif;font-weight:700;color:var(--accent);font-size:1rem;margin-bottom:.6rem}
+.ph-desc{font-size:.8rem;color:var(--muted);font-style:italic}
+footer.derechos{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--rule);font-size:.75rem;color:var(--muted);text-align:center}
+ul{padding-left:1.2rem} li{margin-bottom:.4rem}
+@media (max-width:480px){html{font-size:17px} main{padding:1.5rem 1rem 3rem} h1{font-size:1.6rem} table{font-size:.8rem} .box{padding:.9rem .9rem .3rem}}
+@media print{body{background:#fff} .ph-box{background:none}}
+
+figure.media{margin:2rem auto}
+figure.media img,figure.media video{width:100%;height:auto;display:block;border-radius:8px;background:#1a1612}
+figure.media figcaption{font-size:.8rem;color:var(--muted);font-style:italic;text-align:center;margin-top:.6rem;line-height:1.4}
+@media print{figure.media video{display:none} figure.media img{-webkit-print-color-adjust:exact;print-color-adjust:exact}}
+.pregunta{background:var(--escr);border-color:var(--accent)} .pregunta h3{color:var(--accent)}
+</style>
+<style>nav.libro{max-width:36rem;margin:0 auto;padding:.8rem 1.2rem;display:flex;justify-content:space-between;font-size:.85rem;font-variant:small-caps;letter-spacing:.08em;border-bottom:1px solid var(--rule,#e3d8c6)}nav.libro a{color:var(--accent,#8a5a2b);text-decoration:none}nav.libro span{color:transparent}</style></head>
+<body><nav class="libro"><span>.</span><a href="index.html">Índice</a><a href="cap01.html">Capítulo 1 ›</a></nav>
+<main>
+<header class="cap"><p class="kicker">Introducción</p><h1>Una sola historia</h1><p class="sub">De Emaús a Emaús: el Cordero y el perdón, de principio a fin</p></header>
+<section class="texto"><h2>Dos hombres en un camino</h2>
+<p><em>Recreación: así pudo haber sido. Los hechos están en Lucas 24.</em></p>
+<p>Es domingo por la tarde. El sol ya empieza a bajar sobre los cerros de Judea.</p>
+<p>Por un camino de tierra que sale de Jerusalén hacia el oeste caminan dos hombres. Van despacio. No tienen prisa por llegar, y tampoco tienen ganas de quedarse. Uno se llama Cleofas. Del otro, la Biblia ni siquiera nos dice el nombre.</p>
+<p>«Y he aquí, dos de ellos iban el mismo día a una aldea llamada Emaús, que estaba a sesenta estadios de Jerusalén» (Lc 24:13).</p>
+<p>Sesenta estadios. Unos once kilómetros. Dos o tres horas a pie.</p>
+<p>Van hablando de lo mismo una y otra vez. De lo que pasó el viernes. Del maestro de Nazaret al que siguieron, al que vieron sanar enfermos y perdonar pecados, al que vieron calmar una tormenta con una palabra. Y al que vieron morir clavado en una cruz, entre dos ladrones, mientras la gente se burlaba.</p>
+<p>Todo terminó. Eso creen.</p>
+<p>Y en el camino se les acerca un desconocido. Se pone a caminar con ellos. Y les pregunta:</p>
+<p>«¿Qué pláticas son estas que tenéis entre vosotros mientras camináis, y por qué estáis tristes?» (Lc 24:17).</p>
+<p>Se detienen. Lo miran como si viniera de otro planeta. ¿Eres el único en Jerusalén que no sabe lo que pasó? Y le cuentan. Y en medio de lo que cuentan, se les escapa una frase que dice todo lo que llevan por dentro:</p>
+<p>«Pero nosotros esperábamos que él era el que había de redimir a Israel» (Lc 24:21).</p>
+<p>Esperábamos. En pasado. Ya no.</p>
+<p>¿Alguna vez dijiste esa palabra? Esperaba que mi matrimonio funcionara. Esperaba que mi hijo cambiara. Esperaba sanarme. Esperaba que Dios hiciera algo. Esos dos hombres caminando hacia Emaús somos nosotros, muchas veces.</p>
+<p>Y entonces el desconocido hace algo inesperado. No les da un consejo. No les dice «ánimo». Les abre la Biblia. La que ellos ya conocían, la que habían escuchado en la sinagoga desde niños. Y se la explica de una manera en que nunca la habían escuchado:</p>
+<p>«Y comenzando desde Moisés, y siguiendo por todos los profetas, les declaraba en todas las Escrituras lo que de él decían» (Lc 24:27).</p>
+<p>Desde Moisés. Por todos los profetas. En todas las Escrituras. Todo hablaba de Él.</p>
+<p>Quién era ese desconocido, y qué pasó cuando llegaron a Emaús, lo vas a descubrir en el capítulo 11. Pero lo que les explicó en ese camino, esa conversación de dos o tres horas que nadie grabó, es lo que este libro intenta reconstruir.</p>
+<figure class="ph ilus" id="intro_emaus"><div class="ph-box" style="aspect-ratio:3/4"><span class="ph-tag">[ilustración en preparación]</span><span class="ph-desc">Dos hombres tristes caminan por un camino de tierra entre colinas de Judea al atardecer; un tercer caminante, de espaldas, va con ellos hablando y gesticulando; sus sombras largas sobre el camino.</span></div></figure></section>
+<section class="texto"><h2>Una sola historia</h2>
+<p>La Biblia no es un libro. Es una biblioteca. Sesenta y seis libros escritos a lo largo de unos mil quinientos años, por unos cuarenta autores distintos: reyes y pastores, un médico, pescadores, un cobrador de impuestos, un fariseo convertido. Escritos en tres idiomas, hebreo, arameo y griego, en tres continentes, en palacios, en cárceles, en el desierto, en el destierro.</p>
+<p>Y sin embargo cuenta una sola historia.</p>
+<p>Empieza en un jardín, con un hombre y una mujer que se esconden de Dios. Y termina en una ciudad, con Dios viviendo con los hombres y secando sus lágrimas. Y en el medio, todo lo que pasa en el medio, es el camino de vuelta. El camino que Dios mismo abrió para que pudiéramos volver a casa.</p>
+<p>Este libro sigue ese camino en trece capítulos. No cuenta todo; eso es imposible en cien páginas. Elige las escenas que mejor muestran la historia completa, y las cuenta despacio, para que puedas verlas, entenderlas y sentirlas.</p></section>
+<section class="texto"><h2>Dos hilos y una pregunta</h2>
+<p>A lo largo de todo el libro vas a ir encontrando dos hilos que atraviesan la Biblia de punta a punta.</p>
+<p><strong>El hilo del Cordero.</strong> En el capítulo 2, un padre sube a un monte con su hijo, y el hijo pregunta dónde está el cordero. En el capítulo 4, la sangre de un cordero en las puertas salva a un pueblo esclavo en Egipto. En el capítulo 8, un profeta en el río Jordán señala a un hombre y dice: ese es el Cordero de Dios. Y en el capítulo 13, en medio del trono del universo, hay un Cordero. Es así como Dios nos salva.</p>
+<p><strong>El hilo del perdón.</strong> En el Antiguo Testamento, solo Dios podía perdonar, y el perdón pasaba por el templo y por los sacrificios, una y otra vez, año tras año. Y un día aparece un hombre que perdona Él mismo, sin templo y sin sacrificio. Y la gente, escandalizada, hace la pregunta que recorre la segunda mitad de este libro:</p>
+<p><strong>¿Quién es este?</strong></p>
+<p>La hacen unos pescadores aterrados en una barca. La hacen los invitados de un fariseo cuando una mujer llora a los pies de Jesús. La hace toda Jerusalén cuando lo ve entrar montado en un burrito. Este libro no te va a dar la respuesta masticada. Te va a llevar, escena por escena, para que llegues a ella.</p></section>
+
+<section class="texto"><h2>Cómo leer este libro</h2>
+<p>Cada capítulo tiene las mismas partes, para que te ubiques fácil.</p>
+<p><strong>La escena.</strong> Empieza siempre con una historia contada como si estuvieras ahí. Es una recreación: los hechos son los de la Biblia, pero los detalles de lo que los personajes pensaban, sentían o veían se imaginan a partir del texto y de lo que se sabe de la época. Siempre está marcado así. Dentro de la escena vas a encontrar un párrafo llamado <strong>«Su lucha»</strong>: la lucha interna de uno de los personajes. Porque Dios no eligió a gente perfecta. Mintieron, tuvieron miedo, se equivocaron, dudaron. Solo Jesús no falló.</p>
+<p><strong>La historia según la Biblia.</strong> Los versículos clave del capítulo, tal como están escritos. Todas las citas son de la versión Reina-Valera 1960, la más leída en español.</p>
+<p><strong>Los recuadros.</strong> «Lo que dice la historia» trae lo que cuentan los historiadores antiguos, como Flavio Josefo o Tácito, y lo que ha encontrado la arqueología. «El lugar hoy» te dice dónde pasó y qué sigue en pie. En la segunda parte, «Lo que estaba escrito» muestra lo que los profetas anunciaron siglos antes y cómo se cumplió. Y a veces aparece «La pregunta difícil», porque la Biblia no esconde las preguntas difíciles, y este libro tampoco.</p>
+<p><strong>La sombra de Jesús.</strong> Cómo esa historia, aunque haya pasado siglos antes, ya apuntaba a Él.</p>
+<p><strong>Para seguir leyendo.</strong> Qué capítulos de la Biblia leer después, si quieres ir a la fuente. Ese es, al final, el objetivo de este libro: que puedas abrir la Biblia tú solo, y entenderla.</p>
+<p>No hace falta saber nada antes de empezar. No hace falta ir a ninguna iglesia, ni pertenecer a ninguna religión. Solo hace falta ganas de caminar un rato, como esos dos hombres en el camino a Emaús.</p>
+<p>Vamos.</p></section>
+<footer class="derechos"><p><em>Las citas bíblicas son de la Reina-Valera © 1960 Sociedades Bíblicas en América Latina; © renovado 1988 Sociedades Bíblicas Unidas. Utilizado con permiso.</em></p></footer>
+</main>
+<nav class="libro"><span>.</span><a href="index.html">Índice</a><a href="cap01.html">Capítulo 1 ›</a></nav></body>
+</html>

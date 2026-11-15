@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Capítulo 13 — El Cordero en el trono</title>
+<style>
+:root{--paper:#fbf7ef;--ink:#2b2622;--muted:#7a6f63;--accent:#8a5a2b;--rule:#e3d8c6;
+--hist:#f3ece0;--hist-b:#b08a5a;--lugar:#eaf1ee;--lugar-b:#4f7f72;--sombra:#f7efdc;--sombra-b:#b8892d;
+--escr:#f1ede6;--escr-b:#6d5c4a;--nota:#fffdf8;--nota-b:#8a5a2b}
+@media (prefers-color-scheme:dark){:root{--paper:#1d1a17;--ink:#e9e1d4;--muted:#a89c8c;--accent:#d7a76b;--rule:#3a332c;
+--hist:#2a241d;--lugar:#1f2a27;--sombra:#2d2618;--escr:#27231f;--nota:#221e1a}}
+*{box-sizing:border-box}
+html{font-size:18px;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--paper);color:var(--ink);
+font-family:"Iowan Old Style","Palatino Linotype",Palatino,"Book Antiqua",Georgia,"Times New Roman",serif;
+line-height:1.65;text-rendering:optimizeLegibility;hyphens:auto}
+main{max-width:36rem;margin:0 auto;padding:2.5rem 1.2rem 4rem}
+header.cap{text-align:center;margin:1rem 0 2.5rem;padding-bottom:1.5rem;border-bottom:1px solid var(--rule)}
+.kicker{font-variant:small-caps;letter-spacing:.18em;color:var(--accent);margin:0}
+h1{font-weight:normal;font-size:2rem;line-height:1.2;margin:.4rem 0 .6rem}
+.sub{font-style:italic;color:var(--muted);font-size:.9rem;margin:0}
+h2{font-weight:normal;font-size:1.45rem;color:var(--accent);margin:2.6rem 0 1rem;text-align:center;font-variant:small-caps;letter-spacing:.05em}
+h3{font-size:1.1rem;font-style:italic;font-weight:normal;margin:2rem 0 .8rem}
+p{margin:0 0 1em}
+.texto>p:first-of-type em:only-child{color:var(--muted);font-size:.92rem}
+p.lucha{border-left:3px solid var(--accent);padding-left:.9rem}
+blockquote.verso{margin:1rem 0 1.4rem;padding:.2rem 0 .2rem 1rem;border-left:2px solid var(--rule);font-style:italic}
+blockquote.verso p{margin:0}
+table{width:100%;border-collapse:collapse;font-size:.85rem;margin:1rem 0 1.5rem;line-height:1.45}
+th,td{border-bottom:1px solid var(--rule);padding:.5rem .4rem;vertical-align:top;text-align:left}
+th{font-variant:small-caps;letter-spacing:.04em;color:var(--accent);font-weight:normal}
+.box{border-radius:6px;padding:1.1rem 1.2rem .4rem;margin:2rem 0;font-size:.93rem;border-left:4px solid}
+.box h3,.box h2{margin-top:0;font-style:normal;font-variant:small-caps;letter-spacing:.06em;font-size:1.05rem;text-align:left}
+.historia{background:var(--hist);border-color:var(--hist-b)} .historia h3{color:var(--hist-b)}
+.lugar{background:var(--lugar);border-color:var(--lugar-b)} .lugar h3{color:var(--lugar-b)}
+.escrito{background:var(--escr);border-color:var(--escr-b)} .escrito h3{color:var(--escr-b)}
+.sombra{background:var(--sombra);border-color:var(--sombra-b)} .sombra h2{color:var(--sombra-b);font-size:1.25rem}
+.nota{background:var(--nota);border:1px solid var(--rule);border-left:4px solid var(--nota-b);font-style:italic;font-size:1rem}
+.nota h2{color:var(--nota-b);font-size:1.25rem}
+figure.ph{margin:2rem auto}
+figure.ilus{max-width:24rem} figure.video{max-width:17rem}
+.ph-box{width:100%;border:2px dashed var(--accent);border-radius:8px;display:flex;flex-direction:column;align-items:center;justify-content:center;
+text-align:center;padding:1rem;background:repeating-linear-gradient(45deg,transparent,transparent 10px,rgba(138,90,43,.05) 10px,rgba(138,90,43,.05) 20px)}
+.ph-tag{font-family:system-ui,sans-serif;font-weight:700;color:var(--accent);font-size:1rem;margin-bottom:.6rem}
+.ph-desc{font-size:.8rem;color:var(--muted);font-style:italic}
+footer.derechos{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--rule);font-size:.75rem;color:var(--muted);text-align:center}
+ul{padding-left:1.2rem} li{margin-bottom:.4rem}
+@media (max-width:480px){html{font-size:17px} main{padding:1.5rem 1rem 3rem} h1{font-size:1.6rem} table{font-size:.8rem} .box{padding:.9rem .9rem .3rem}}
+@media print{body{background:#fff} .ph-box{background:none}}
+
+figure.media{margin:2rem auto}
+figure.media img,figure.media video{width:100%;height:auto;display:block;border-radius:8px;background:#1a1612}
+figure.media figcaption{font-size:.8rem;color:var(--muted);font-style:italic;text-align:center;margin-top:.6rem;line-height:1.4}
+@media print{figure.media video{display:none} figure.media img{-webkit-print-color-adjust:exact;print-color-adjust:exact}}
+.pregunta{background:var(--escr);border-color:var(--accent)} .pregunta h3{color:var(--accent)}
+</style>
+<style>nav.libro{max-width:36rem;margin:0 auto;padding:.8rem 1.2rem;display:flex;justify-content:space-between;font-size:.85rem;font-variant:small-caps;letter-spacing:.08em;border-bottom:1px solid var(--rule,#e3d8c6)}nav.libro a{color:var(--accent,#8a5a2b);text-decoration:none}nav.libro span{color:transparent}</style></head>
+<body><nav class="libro"><a href="cap12.html">‹ Capítulo 12</a><a href="index.html">Índice</a><a href="epilogo.html">Epílogo ›</a></nav>
+<main>
+<header class="cap"><p class="kicker">Capítulo 13</p><h1>El Cordero en el trono</h1><p class="sub">Parte II: el cumplimiento · 2 Corintios 5; Juan 14; Apocalipsis 1, 5, 21–22</p></header>
+<section class="texto"><h2>La escena</h2>
+<p><em>Recreación: así pudo haber sido. Los hechos están en el libro del Apocalipsis y en las cartas. Lo que pensaban y sentían se imagina a partir del texto y de lo que se sabe de la época.</em></p>
+<h3>Una isla en el mar</h3>
+<p>Han pasado unos sesenta años desde aquella mañana de la tumba vacía.</p>
+<p>En una isla pequeña y seca del mar Egeo, frente a la costa de lo que hoy es Turquía, un anciano mira el mar. La isla se llama Patmos. Tiene cerros pelados, piedras, unos pocos pescadores, y el viento que no para. Los romanos mandaban ahí a algunos desterrados, a los que querían tener lejos.</p>
+<p>El anciano se llama Juan.</p>
+<p>Es el mismo Juan que de muchacho remendaba redes con su hermano Jacobo en el mar de Galilea. El que estuvo en la barca durante la tormenta. El que se recostó junto a Jesús en la última cena. El único de los doce que estuvo al pie de la cruz. El que corrió con Pedro hasta la tumba vacía. El que estaba en la barca la mañana en que Pedro se tiró al agua.</p>
+<p>Y ahora está solo.</p>
+<p>Todos los demás han muerto. Su hermano Jacobo fue el primero de los doce en morir, a espada, en Jerusalén. Pedro murió en Roma, crucificado, según la tradición. Pablo, decapitado. Jerusalén fue destruida por los romanos, y del templo de Moriah no quedó piedra sobre piedra. Y ahora el emperador Domiciano exige que lo adoren como a un dios, y a los cristianos que no lo hacen los persiguen, les quitan sus bienes, los matan.</p>
+<p>Juan mismo lo dice así:</p>
+<p>«Yo Juan, vuestro hermano, y copartícipe vuestro en la tribulación, en el reino y en la paciencia de Jesucristo, estaba en la isla llamada Patmos, por causa de la palabra de Dios y el testimonio de Jesucristo» (Ap 1:9).</p>
+<p>Tribulación y paciencia. Son tiempos difíciles. Y es fácil imaginarse lo que se preguntaban las iglesias pequeñas que Juan había cuidado, en Éfeso, en Esmirna, en Pérgamo: ¿dónde está Dios? ¿No dijo Jesús que iba a volver? ¿Ganó Roma? ¿Ganó la muerte?</p>
+<p>Es la pregunta de Habacuc. La del capítulo 7. ¿Hasta cuándo, Señor?</p>
+<h3>La voz</h3>
+<p>Un domingo, el día del Señor, Juan está orando. Y oye detrás de él una voz fuerte, como una trompeta. Se da vuelta. Y ve a Jesús. Pero no como lo conocía en Galilea, cansado y polvoriento junto a un pozo. Lo ve con toda su gloria, con el rostro brillando como el sol.</p>
+<p>Y Juan, el que se recostaba junto a Él en la cena, cae al suelo como muerto.</p>
+<p>Y entonces siente una mano sobre él.</p>
+<p>«Y él puso su diestra sobre mí, diciéndome: No temas; yo soy el primero y el último; y el que vivo, y estuve muerto; mas he aquí que vivo por los siglos de los siglos, amén. Y tengo las llaves de la muerte y del Hades» (Ap 1:17-18).</p>
+<p>No temas. Lo mismo que les dijo en la barca, en la tormenta. Yo soy. Estuve muerto. Y vivo. Y tengo las llaves de la muerte.</p>
+<p>Roma tenía las llaves de las cárceles. Jesús tiene las llaves de la muerte.</p>
+<figure class="ph ilus" id="cap13_patmos"><div class="ph-box" style="aspect-ratio:3/4"><span class="ph-tag">[ilustración en preparación]</span><span class="ph-desc">Juan, muy anciano, sentado sobre las rocas de la isla de Patmos al atardecer, con un rollo y una pluma de caña en las manos, mirando al mar; solo, con el viento en la ropa; al fondo, el mar Egeo y otras islas.</span></div></figure>
+<h3>Un libro que nadie puede abrir</h3>
+<p>Y Juan ve una puerta abierta en el cielo. Y ve un trono, y Uno sentado en el trono, y alrededor del trono una luz como de arcoíris. Y en la mano derecha del que está sentado en el trono hay un rollo, un libro escrito por dentro y por fuera, cerrado con siete sellos.</p>
+<p>Ese rollo es, de algún modo, la historia. El plan de Dios. Lo que va a pasar con el mundo, con el mal, con el dolor, con los que sufren.</p>
+<p>Y un ángel poderoso pregunta en voz alta:</p>
+<p>«¿Quién es digno de abrir el libro y desatar sus sellos?» (Ap 5:2).</p>
+<p>Silencio. Nadie. Ni en el cielo, ni en la tierra, ni debajo de la tierra. Nadie puede abrirlo, ni siquiera mirarlo.</p>
+<p>Y Juan, el anciano, el último de los doce, se pone a llorar.</p>
+<p>«Y lloraba yo mucho, porque no se había hallado a ninguno digno de abrir el libro, ni de leerlo, ni de mirarlo» (Ap 5:4).</p>
+<p class="lucha"><strong>Su lucha.</strong> Detente un momento en esas lágrimas. Juan ya era muy anciano. Había visto morir a todos sus amigos. Había visto destruida su ciudad. Estaba desterrado en una isla, lejos de las iglesias que amaba, mientras a sus hermanos los perseguían. Había esperado durante sesenta años que Jesús volviera. Y ahora, cuando por fin le muestran el cielo, parece que nadie puede hacer nada con la historia. Que el mal se va a quedar con la última palabra. Juan llora como lloramos nosotros cuando no entendemos lo que Dios está haciendo. Cuando sentimos que el mundo está roto y nadie lo puede arreglar. La Biblia no esconde esas lágrimas. Las pone en el último libro, justo antes de la respuesta.</p>
+<p>Y uno de los ancianos que están alrededor del trono se le acerca y le dice:</p>
+<p>«No llores. He aquí que el León de la tribu de Judá, la raíz de David, ha vencido para abrir el libro y desatar sus siete sellos» (Ap 5:5).</p>
+<p>El León de Judá. Juan levanta la mirada esperando ver un león. Fuerza. Garras. Un rey guerrero que aplaste a Roma.</p>
+<p>Y lo que ve es esto:</p>
+<p>«Y miré, y vi que en medio del trono y de los cuatro seres vivientes, y en medio de los ancianos, estaba en pie un Cordero como inmolado» (Ap 5:6).</p>
+<p>Un Cordero. De pie. Vivo. Pero como inmolado: con las marcas de haber sido sacrificado. Las heridas todavía están ahí.</p>
+<p>El que vence no es un león que mata. Es un Cordero que se dejó matar.</p>
+<figure class="ph ilus" id="cap13_cordero"><div class="ph-box" style="aspect-ratio:3/4"><span class="ph-tag">[ilustración en preparación]</span><span class="ph-desc">Una visión simbólica: un cordero blanco de pie en el centro de un trono de luz, con una marca de herida en el cuello; alrededor, ancianos postrados con coronas de oro y arpas, y un arcoíris en círculo; sin rostros de Dios.</span></div></figure>
+<p>Y el Cordero se acerca al trono y toma el libro. Y todo el cielo estalla. Los seres que están junto al trono y los veinticuatro ancianos se postran delante del Cordero, con arpas, y cantan una canción nueva:</p>
+<p>«Digno eres de tomar el libro y de abrir sus sellos; porque tú fuiste inmolado, y con tu sangre nos has redimido para Dios, de todo linaje y lengua y pueblo y nación» (Ap 5:9).</p>
+<p>De todo linaje y lengua y pueblo y nación. Lo que Babel dispersó, el Cordero lo vuelve a juntar. Judíos y griegos. Esclavos y libres. Hombres y mujeres. Una samaritana. Un ladrón crucificado. Un perseguidor llamado Saulo. Un pescador que negó a su maestro junto a unas brasas.</p>
+<p>Y después se suman millones de millones de ángeles, una voz tan grande que parece que tiembla todo:</p>
+<p>«El Cordero que fue inmolado es digno de tomar el poder, las riquezas, la sabiduría, la fortaleza, la honra, la gloria y la alabanza» (Ap 5:12).</p>
+<p>Y después, todo lo creado. Lo que está en el cielo, en la tierra, debajo de la tierra y en el mar. Todo canta.</p>
+<p>Juan ya no llora.</p>
+<h3>Todo nuevo</h3>
+<p>En los capítulos siguientes del Apocalipsis, Juan ve muchas cosas difíciles de entender: sellos, trompetas, bestias, batallas. Este libro no va a entrar en eso; el recuadro de más abajo explica por qué. Pero al final, en los dos últimos capítulos de la Biblia, lo que ve Juan es tan claro que cualquiera lo puede entender.</p>
+<p>«Vi un cielo nuevo y una tierra nueva; porque el primer cielo y la primera tierra pasaron, y el mar ya no existía más» (Ap 21:1).</p>
+<p>Ya no hay mar. Para Juan, el mar era lo que lo separaba de los suyos. Lo que veía cada día desde su destierro. En el mundo nuevo, ya no hay nada que separe.</p>
+<p>Y una voz desde el trono dice:</p>
+<p>«He aquí el tabernáculo de Dios con los hombres, y él morará con ellos; y ellos serán su pueblo, y Dios mismo estará con ellos como su Dios» (Ap 21:3).</p>
+<p>Dios vive con los hombres. Como en el principio, en el jardín, cuando se paseaba con ellos al aire del día. Lo que se perdió en el Edén, se recupera.</p>
+<p>Y después viene el versículo que muchos han leído en los funerales, al lado de un cajón, con la voz quebrada:</p>
+<p>«Enjugará Dios toda lágrima de los ojos de ellos; y ya no habrá muerte, ni habrá más llanto, ni clamor, ni dolor; porque las primeras cosas pasaron» (Ap 21:4).</p>
+<p>Toda lágrima. Las de Agar en el desierto. Las de Jacob por José. Las de Noemí en Moab. Las de David en el suelo. Las de Pedro en el patio. Las de la mujer a los pies de Jesús. Las de Juan en el cielo. Las tuyas.</p>
+<p>Dios mismo, con su mano, las va a secar.</p>
+<p>«Y el que estaba sentado en el trono dijo: He aquí, yo hago nuevas todas las cosas» (Ap 21:5).</p>
+<p>Todas las cosas. Lo que está roto en el mundo, y lo que está roto en ti.</p>
+<h3>El árbol que volvió</h3>
+<p>Y Juan ve un río de agua de vida, limpio como el cristal, que sale del trono de Dios y del Cordero. Y a los dos lados del río, un árbol.</p>
+<p>«estaba el árbol de la vida, que produce doce frutos, dando cada mes su fruto; y las hojas del árbol eran para la sanidad de las naciones» (Ap 22:2).</p>
+<p>El árbol de la vida. ¿Te acuerdas? Es el árbol del capítulo 1, el del jardín. Cuando Adán y Eva desobedecieron, Dios los sacó del Edén y puso querubines con una espada de fuego «para guardar el camino del árbol de la vida» (Gn 3:24). Desde entonces, el camino estaba cerrado.</p>
+<p>Toda la Biblia, desde el Génesis hasta aquí, es la historia de cómo Dios volvió a abrir ese camino. Y lo abrió con la sangre de un Cordero.</p>
+<p>«Y no habrá más maldición; y el trono de Dios y del Cordero estará en ella, y sus siervos le servirán, y verán su rostro» (Ap 22:3-4).</p>
+<p>No habrá más maldición. Las espinas del Edén, las que llevó Jesús en la cabeza, se terminan. Y verán su rostro. Lo que ni Moisés pudo ver. Lo que Adán dejó de ver cuando se escondió entre los árboles. Cara a cara.</p>
+<figure class="ph ilus" id="cap13_arbol"><div class="ph-box" style="aspect-ratio:3/4"><span class="ph-tag">[ilustración en preparación]</span><span class="ph-desc">El árbol de la vida junto al río de agua de vida, en una ciudad de luz; gente de todos los pueblos, niños y ancianos, se acercan a la orilla; hojas y frutos; sin sol ni lámparas, todo iluminado.</span></div></figure>
+<p>Y casi al final de la Biblia, Jesús dice una última promesa, y Juan le contesta con una oración de tres palabras:</p>
+<p>«El que da testimonio de estas cosas dice: Ciertamente vengo en breve. Amén; sí, ven, Señor Jesús» (Ap 22:20).</p>
+<h3>La casa eterna</h3>
+<p>Años antes, Pablo, que sabía muy bien lo que era sufrir, había escrito a los corintios algo parecido. Que nuestro cuerpo es como una carpa, una tienda de campaña que algún día se desarma. Y que eso no es el final:</p>
+<p>«Porque sabemos que si nuestra morada terrestre, este tabernáculo, se deshiciere, tenemos de Dios un edificio, una casa no hecha de manos, eterna, en los cielos» (2 Co 5:1).</p>
+<p>Una casa eterna. Pablo, que hacía carpas para ganarse la vida, sabía de lo que hablaba. Una carpa se rompe, se gasta, se la lleva el viento. Una casa hecha por Dios, no.</p>
+<p>Y Jesús mismo, la noche antes de morir, en la última cena, viendo las caras asustadas de sus discípulos, les había dicho:</p>
+<p>«No se turbe vuestro corazón; creéis en Dios, creed también en mí. En la casa de mi Padre muchas moradas hay; si así no fuera, yo os lo hubiera dicho; voy, pues, a preparar lugar para vosotros» (Jn 14:1-2).</p>
+<p>Voy a preparar lugar. Como quien arregla un cuarto para que llegue alguien a quien ama.</p>
+<p>Pablo lo dice con una certeza que solo tiene alguien que ha pasado por todo: «Pues tengo por cierto que las aflicciones del tiempo presente no son comparables con la gloria venidera que en nosotros ha de manifestarse» (Ro 8:18). Lo escribió un hombre que había sido azotado, apedreado y náufrago. No lo escribió desde la comodidad. Lo escribió desde las cicatrices.</p>
+<h3>Mientras tanto</h3>
+<p>Pero todavía no estamos ahí. Todavía hay lágrimas. Todavía hay hospitales, guerras, despedidas, noticias que nos quitan el sueño. Todavía hay días en que parece que Dios está lejos, como le pareció a Habacuc, como le pareció a Juan en su isla.</p>
+<p>¿Qué hacemos mientras tanto?</p>
+<p>Lo mismo que hizo Habacuc. Él no recibió todas las respuestas. Vio venir la invasión, y aun así terminó su libro con una canción: «Aunque la higuera no florezca, Ni en las vides haya frutos, Aunque falte el producto del olivo, Y los labrados no den mantenimiento, Y las ovejas sean quitadas de la majada, Y no haya vacas en los corrales; Con todo, yo me alegraré en Jehová, Y me gozaré en el Dios de mi salvación» (Hab 3:17-18). Con todo. Aunque falte todo.</p>
+<p>Y lo mismo que hizo Juan. Escribir lo que vio para que otros, en sus propias islas, lo supieran. Porque el Apocalipsis no se escribió para los que estaban tranquilos. Se escribió para los que estaban sufriendo. Y lo que les dice es que el Cordero, el que fue herido, es también el pastor: «porque el Cordero que está en medio del trono los pastoreará, y los guiará a fuentes de aguas de vida; y Dios enjugará toda lágrima de los ojos de ellos» (Ap 7:17).</p>
+<p>Fuentes de aguas de vida. Lo que Jesús le ofreció a una samaritana al mediodía junto a un pozo. Y en la última página de la Biblia, la misma invitación, abierta para todos:</p>
+<p>«Y el que tiene sed, venga; y el que quiera, tome del agua de la vida gratuitamente» (Ap 22:17).</p>
+<p>Gratuitamente. Como la gracia de Pablo. Como el perdón del ladrón en la cruz. No hay que pagar. No hay que merecerlo. Solo hay que tener sed, y venir.</p>
+<p>Y Pablo, que conocía bien la muerte de cerca, se reía de ella. Porque sabía que la tumba de Jerusalén estaba vacía. Y escribió, casi gritando: «¿Dónde está, oh muerte, tu aguijón? ¿Dónde, oh sepulcro, tu victoria?» (1 Co 15:55).</p>
+<p>La muerte todavía duele. Pero ya no tiene la última palabra. La última palabra la tiene el Cordero.</p>
+<h3>De vuelta a Emaús</h3>
+<p>Este libro empezó en un camino. Dos hombres tristes caminando hacia una aldea llamada Emaús, la tarde del domingo de la resurrección. Habían perdido la esperanza. Y un desconocido se puso a caminar con ellos y, «comenzando desde Moisés, y siguiendo por todos los profetas, les declaraba en todas las Escrituras lo que de él decían» (Lc 24:27).</p>
+<p>Eso es lo que intentamos hacer en estas páginas. Desde el jardín hasta el trono. Desde el cordero que Abraham no tuvo que sacrificar hasta el Cordero en medio del trono. Desde la primera pregunta de Dios, «¿Dónde estás tú?», hasta la última oración de Juan: ven, Señor Jesús.</p>
+<p>Cuando aquel desconocido partió el pan, ellos lo reconocieron. Y se dijeron uno al otro:</p>
+<p>«¿No ardía nuestro corazón en nosotros, mientras nos hablaba en el camino, y cuando nos abría las Escrituras?» (Lc 24:32).</p>
+<p>Si en algún momento de este libro sentiste algo así, aunque sea un poco, no es casualidad. Es la misma voz. Y el mismo camino sigue abierto.</p></section>
+<section class="texto"><h2>La historia según la Biblia</h2>
+<p><em>Reina-Valera 1960</em></p>
+<p><strong>El que vive</strong></p>
+<blockquote class="verso">
+<p>«No temas; yo soy el primero y el último; y el que vivo, y estuve muerto; mas he aquí que vivo por los siglos de los siglos, amén.» — Apocalipsis 1:17-18</p>
+</blockquote>
+<p><strong>El Cordero</strong></p>
+<blockquote class="verso">
+<p>«El Cordero que fue inmolado es digno de tomar el poder, las riquezas, la sabiduría, la fortaleza, la honra, la gloria y la alabanza.» — Apocalipsis 5:12</p>
+</blockquote>
+<p><strong>Las lágrimas</strong></p>
+<blockquote class="verso">
+<p>«Enjugará Dios toda lágrima de los ojos de ellos; y ya no habrá muerte, ni habrá más llanto, ni clamor, ni dolor; porque las primeras cosas pasaron.» — Apocalipsis 21:4</p>
+</blockquote>
+<p><strong>La casa</strong></p>
+<blockquote class="verso">
+<p>«En la casa de mi Padre muchas moradas hay; si así no fuera, yo os lo hubiera dicho; voy, pues, a preparar lugar para vosotros.» — Juan 14:2</p>
+</blockquote>
+</section>
+<aside class="box escrito"><h3>Lo que estaba escrito</h3><table>
+<thead>
+<tr>
+<th>Lo que vio Juan</th>
+<th>Lo que estaba escrito</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>«Enjugará Dios toda lágrima» (Ap 21:4)</td>
+<td>«enjugará Jehová el Señor toda lágrima de todos los rostros» (Is 25:8)</td>
+</tr>
+<tr>
+<td>Un cielo nuevo y una tierra nueva (Ap 21:1)</td>
+<td>«yo crearé nuevos cielos y nueva tierra» (Is 65:17)</td>
+</tr>
+<tr>
+<td>El árbol de la vida, abierto otra vez (Ap 22:2)</td>
+<td>El camino al árbol de la vida, cerrado (Gn 3:24)</td>
+</tr>
+<tr>
+<td>«No habrá más maldición» (Ap 22:3)</td>
+<td>«Espinos y cardos te producirá» (Gn 3:18)</td>
+</tr>
+<tr>
+<td>El León de Judá, la raíz de David (Ap 5:5)</td>
+<td>El rey de la descendencia de David (2 S 7, capítulo 6)</td>
+</tr>
+<tr>
+<td>Dios vive con los hombres (Ap 21:3)</td>
+<td>Dios se paseaba en el huerto (Gn 3:8)</td>
+</tr>
+</tbody>
+</table></aside>
+<aside class="box escrito"><h3>El hilo del Cordero, de principio a fin</h3><table>
+<thead>
+<tr>
+<th>Dónde</th>
+<th>Qué pasa</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Monte Moriah (cap. 2)</td>
+<td>«Dios se proveerá de cordero» (Gn 22:8)</td>
+</tr>
+<tr>
+<td>Egipto (cap. 4)</td>
+<td>La sangre del cordero en las puertas; ningún hueso quebrado (Éx 12:46)</td>
+</tr>
+<tr>
+<td>Isaías (cap. 7)</td>
+<td>«como cordero fue llevado al matadero» (Is 53:7)</td>
+</tr>
+<tr>
+<td>El Jordán (cap. 8)</td>
+<td>«He aquí el Cordero de Dios, que quita el pecado del mundo» (Jn 1:29)</td>
+</tr>
+<tr>
+<td>La cruz (cap. 10)</td>
+<td>Muere en la Pascua y no le quiebran ningún hueso (Jn 19:36)</td>
+</tr>
+<tr>
+<td>Pablo (cap. 12)</td>
+<td>«nuestra pascua, que es Cristo» (1 Co 5:7)</td>
+</tr>
+<tr>
+<td>El trono (cap. 13)</td>
+<td>«un Cordero como inmolado», en medio del trono (Ap 5:6)</td>
+</tr>
+</tbody>
+</table></aside>
+<aside class="box escrito"><h3>La pregunta difícil: ¿cómo se lee el Apocalipsis?</h3><p>El Apocalipsis está lleno de imágenes: sellos, trompetas, bestias, números, una mujer, un dragón. Es un tipo de escritura que en tiempos de Juan se conocía bien, la literatura «apocalíptica», que habla con símbolos, como el libro de Daniel. Por eso, durante dos mil años, los creyentes lo han leído de maneras distintas: unos ven ahí sobre todo lo que pasaba en tiempos de Roma, otros un calendario del fin del mundo, otros un retrato simbólico de la lucha entre el bien y el mal en todas las épocas.</p>
+<p>Este libro no entra en esos debates ni en el orden de los tiempos finales. Se queda en lo que el texto dice con total claridad, y en lo que todos los cristianos están de acuerdo: que Jesús vive; que el Cordero que fue sacrificado es el que tiene la historia en sus manos; que el mal no tiene la última palabra; y que Dios va a enjugar toda lágrima. Para empezar, eso basta. Lo demás se puede estudiar después, con calma.</p></aside>
+<aside class="box historia"><h3>Lo que dice la historia</h3><p><strong>El destierro.</strong> Los romanos castigaban a algunas personas con la <em>relegatio in insulam</em>, el destierro a una isla. Ireneo de Lyon, un obispo que había conocido de joven a Policarpo, discípulo de Juan, escribió hacia el año 180 que la visión del Apocalipsis fue vista hacia el final del reinado de Domiciano, es decir, hacia el año 95. Eusebio de Cesarea, en el siglo IV, cuenta que Juan fue desterrado a Patmos bajo Domiciano y que volvió a Éfeso después de su muerte.</p>
+<p><strong>Domiciano</strong> (emperador del 81 al 96) se hacía llamar «señor y dios», y en las ciudades de Asia se levantaron templos para el culto al emperador. Para los cristianos, que solo llamaban Señor a Jesús, eso era una prueba constante.</p>
+<p><strong>Las siete iglesias</strong> a las que Juan escribe (Éfeso, Esmirna, Pérgamo, Tiatira, Sardis, Filadelfia y Laodicea) eran ciudades reales, unidas por un camino circular en la provincia romana de Asia, en el oeste de la actual Turquía. Un mensajero podía recorrerlas en orden, una tras otra, llevando la carta.</p></aside>
+<aside class="box lugar"><h3>El lugar hoy</h3><p><strong>Patmos</strong> es una isla griega del Dodecaneso, de unos 34 km². En la ladera de un cerro está la Cueva del Apocalipsis, donde según la tradición Juan recibió la visión, y en lo alto, el monasterio de San Juan el Teólogo, fundado en 1088. Los dos son patrimonio de la humanidad de la UNESCO desde 1999.</p>
+<p><strong>Éfeso</strong>, a unos 100 km por mar, conserva las ruinas de la basílica de San Juan, construida por el emperador Justiniano en el siglo VI sobre el lugar donde la tradición ubica su tumba.</p>
+<p><strong>Laodicea</strong>, otra de las siete ciudades, se sigue excavando hoy en Turquía: calles con columnas, teatros y una iglesia del siglo IV.</p></aside>
+<section class="box sombra"><h2>La sombra de Jesús</h2><p>En este último capítulo ya no hay sombras. Lo que en el Génesis era una promesa, en el trono es una realidad.</p>
+<p><strong>El Cordero.</strong> El que Abraham esperaba en el monte, el de la sangre en las puertas, el que Isaías vio llevado al matadero, el que Juan el Bautista señaló en el Jordán, el que murió en la Pascua: está en medio del trono. Con sus heridas. Para siempre.</p>
+<p><strong>El perdón.</strong> En el jardín, Dios cubrió a Adán y Eva con pieles. En el templo, el perdón costaba un sacrificio tras otro. En Capernaum, Jesús perdonó con una palabra. En la cruz, pagó el precio. Pablo lo resume así: «Al que no conoció pecado, por nosotros lo hizo pecado, para que nosotros fuésemos hechos justicia de Dios en él» (2 Co 5:21). Y en el trono, los perdonados de todo pueblo y lengua cantan.</p>
+<p><strong>Nuevo.</strong> «De modo que si alguno está en Cristo, nueva criatura es; las cosas viejas pasaron; he aquí todas son hechas nuevas» (2 Co 5:17). Lo que Dios va a hacer al final con el mundo entero, lo empieza a hacer ahora con cada persona que confía en Él.</p>
+<p><strong>La esperanza en tiempos difíciles.</strong> Juan escribió el Apocalipsis desde un destierro, para iglesias perseguidas. No es un libro para asustar. Es un libro para dar ánimo a los que sufren. Lo que dice es: aguanten. El Cordero ya venció.</p></section>
+<section class="texto"><h2>Para seguir leyendo</h2>
+<ul>
+<li><strong>Apocalipsis 1, 4–5 y 21–22:</strong> la visión de Jesús, el trono y el Cordero, y el mundo nuevo.</li>
+<li><strong>2 Corintios 4–5:</strong> la casa eterna y la esperanza en medio del sufrimiento.</li>
+<li><strong>Juan 14–17:</strong> lo que Jesús les dijo a sus discípulos la última noche.</li>
+<li><strong>Romanos 8:</strong> nada nos podrá separar del amor de Dios.</li>
+<li><strong>Isaías 25 y 65:</strong> las promesas que Juan vio cumplidas.</li>
+</ul></section>
+<footer class="derechos"><p><em>Las citas bíblicas son de la Reina-Valera © 1960 Sociedades Bíblicas en América Latina; © renovado 1988 Sociedades Bíblicas Unidas. Utilizado con permiso.</em></p></footer>
+</main>
+<nav class="libro"><a href="cap12.html">‹ Capítulo 12</a><a href="index.html">Índice</a><a href="epilogo.html">Epílogo ›</a></nav></body>
+</html>

@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Capítulo 10 — La última Pascua</title>
+<style>
+:root{--paper:#fbf7ef;--ink:#2b2622;--muted:#7a6f63;--accent:#8a5a2b;--rule:#e3d8c6;
+--hist:#f3ece0;--hist-b:#b08a5a;--lugar:#eaf1ee;--lugar-b:#4f7f72;--sombra:#f7efdc;--sombra-b:#b8892d;
+--escr:#f1ede6;--escr-b:#6d5c4a;--nota:#fffdf8;--nota-b:#8a5a2b}
+@media (prefers-color-scheme:dark){:root{--paper:#1d1a17;--ink:#e9e1d4;--muted:#a89c8c;--accent:#d7a76b;--rule:#3a332c;
+--hist:#2a241d;--lugar:#1f2a27;--sombra:#2d2618;--escr:#27231f;--nota:#221e1a}}
+*{box-sizing:border-box}
+html{font-size:18px;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--paper);color:var(--ink);
+font-family:"Iowan Old Style","Palatino Linotype",Palatino,"Book Antiqua",Georgia,"Times New Roman",serif;
+line-height:1.65;text-rendering:optimizeLegibility;hyphens:auto}
+main{max-width:36rem;margin:0 auto;padding:2.5rem 1.2rem 4rem}
+header.cap{text-align:center;margin:1rem 0 2.5rem;padding-bottom:1.5rem;border-bottom:1px solid var(--rule)}
+.kicker{font-variant:small-caps;letter-spacing:.18em;color:var(--accent);margin:0}
+h1{font-weight:normal;font-size:2rem;line-height:1.2;margin:.4rem 0 .6rem}
+.sub{font-style:italic;color:var(--muted);font-size:.9rem;margin:0}
+h2{font-weight:normal;font-size:1.45rem;color:var(--accent);margin:2.6rem 0 1rem;text-align:center;font-variant:small-caps;letter-spacing:.05em}
+h3{font-size:1.1rem;font-style:italic;font-weight:normal;margin:2rem 0 .8rem}
+p{margin:0 0 1em}
+.texto>p:first-of-type em:only-child{color:var(--muted);font-size:.92rem}
+p.lucha{border-left:3px solid var(--accent);padding-left:.9rem}
+blockquote.verso{margin:1rem 0 1.4rem;padding:.2rem 0 .2rem 1rem;border-left:2px solid var(--rule);font-style:italic}
+blockquote.verso p{margin:0}
+table{width:100%;border-collapse:collapse;font-size:.85rem;margin:1rem 0 1.5rem;line-height:1.45}
+th,td{border-bottom:1px solid var(--rule);padding:.5rem .4rem;vertical-align:top;text-align:left}
+th{font-variant:small-caps;letter-spacing:.04em;color:var(--accent);font-weight:normal}
+.box{border-radius:6px;padding:1.1rem 1.2rem .4rem;margin:2rem 0;font-size:.93rem;border-left:4px solid}
+.box h3,.box h2{margin-top:0;font-style:normal;font-variant:small-caps;letter-spacing:.06em;font-size:1.05rem;text-align:left}
+.historia{background:var(--hist);border-color:var(--hist-b)} .historia h3{color:var(--hist-b)}
+.lugar{background:var(--lugar);border-color:var(--lugar-b)} .lugar h3{color:var(--lugar-b)}
+.escrito{background:var(--escr);border-color:var(--escr-b)} .escrito h3{color:var(--escr-b)}
+.sombra{background:var(--sombra);border-color:var(--sombra-b)} .sombra h2{color:var(--sombra-b);font-size:1.25rem}
+.nota{background:var(--nota);border:1px solid var(--rule);border-left:4px solid var(--nota-b);font-style:italic;font-size:1rem}
+.nota h2{color:var(--nota-b);font-size:1.25rem}
+figure.ph{margin:2rem auto}
+figure.ilus{max-width:24rem} figure.video{max-width:17rem}
+.ph-box{width:100%;border:2px dashed var(--accent);border-radius:8px;display:flex;flex-direction:column;align-items:center;justify-content:center;
+text-align:center;padding:1rem;background:repeating-linear-gradient(45deg,transparent,transparent 10px,rgba(138,90,43,.05) 10px,rgba(138,90,43,.05) 20px)}
+.ph-tag{font-family:system-ui,sans-serif;font-weight:700;color:var(--accent);font-size:1rem;margin-bottom:.6rem}
+.ph-desc{font-size:.8rem;color:var(--muted);font-style:italic}
+footer.derechos{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--rule);font-size:.75rem;color:var(--muted);text-align:center}
+ul{padding-left:1.2rem} li{margin-bottom:.4rem}
+@media (max-width:480px){html{font-size:17px} main{padding:1.5rem 1rem 3rem} h1{font-size:1.6rem} table{font-size:.8rem} .box{padding:.9rem .9rem .3rem}}
+@media print{body{background:#fff} .ph-box{background:none}}
+
+figure.media{margin:2rem auto}
+figure.media img,figure.media video{width:100%;height:auto;display:block;border-radius:8px;background:#1a1612}
+figure.media figcaption{font-size:.8rem;color:var(--muted);font-style:italic;text-align:center;margin-top:.6rem;line-height:1.4}
+@media print{figure.media video{display:none} figure.media img{-webkit-print-color-adjust:exact;print-color-adjust:exact}}
+.pregunta{background:var(--escr);border-color:var(--accent)} .pregunta h3{color:var(--accent)}
+</style>
+<style>nav.libro{max-width:36rem;margin:0 auto;padding:.8rem 1.2rem;display:flex;justify-content:space-between;font-size:.85rem;font-variant:small-caps;letter-spacing:.08em;border-bottom:1px solid var(--rule,#e3d8c6)}nav.libro a{color:var(--accent,#8a5a2b);text-decoration:none}nav.libro span{color:transparent}</style></head>
+<body><nav class="libro"><a href="cap09.html">‹ Capítulo 9</a><a href="index.html">Índice</a><a href="cap11.html">Capítulo 11 ›</a></nav>
+<main>
+<header class="cap"><p class="kicker">Capítulo 10</p><h1>La última Pascua</h1><p class="sub">Parte II: el cumplimiento · Mateo 26–27; Marcos 14–15; Lucas 22–23; Juan 13–19</p></header>
+<section class="texto"><h2>La escena</h2>
+<p><em>Recreación: así pudo haber sido. Los hechos están en los cuatro evangelios. Lo que pensaban y sentían se imagina a partir del texto y de lo que se sabe de la época.</em></p>
+<h3>Una ciudad llena</h3>
+<p>Es primavera en Jerusalén. Y la ciudad, que en un día normal tiene unas decenas de miles de habitantes, está desbordada. Para la Pascua llegan peregrinos de todas partes: de Galilea, de Egipto, de Babilonia, de Roma. Duermen en las casas, en los patios, en carpas sobre los cerros de alrededor. Por todas partes se oye el balido de los corderos que la gente trae para el sacrificio.</p>
+<p>Y sobre la ciudad, en lo alto, el templo. Blanco y dorado, brillando al sol. Construido sobre el monte Moriah, el mismo monte al que, casi dos mil años antes, subió un anciano llamado Abraham con su hijo, la leña y un cuchillo. El monte donde Abraham dijo: «Dios se proveerá de cordero para el holocausto, hijo mío» (Gn 22:8).</p>
+<p>Unos días antes, Jesús entró a la ciudad montado en un burrito, y la gente tendió sus mantos en el camino y gritó «Hosanna». Y toda Jerusalén se hizo la misma pregunta que se venía haciendo desde Galilea:</p>
+<p>«¿Quién es este?» (Mt 21:10).</p>
+<p>Esta semana se va a contestar.</p>
+<h3>La cena</h3>
+<p>Es jueves en la noche. Jesús y los doce están en un cuarto en el piso de arriba de una casa, recostados alrededor de una mesa baja. Pan sin levadura. Hierbas amargas. Vino. El cordero de la Pascua. Todo lo que se comía desde la noche de Egipto, la noche de la sangre en las puertas.</p>
+<p>Y Jesús les dice algo que no entienden del todo:</p>
+<p>«¡Cuánto he deseado comer con vosotros esta pascua antes que padezca!» (Lc 22:15).</p>
+<p>Juan, que estaba ahí, lo resume así: Jesús amó a los suyos hasta el fin.</p>
+<p>Y entonces Jesús hace algo que deja a todos helados. Se levanta de la mesa. Se quita el manto. Se amarra una toalla a la cintura. Echa agua en un recipiente. Y se arrodilla delante de los pies de sus discípulos.</p>
+<p>Lavar los pies era el trabajo del último esclavo de la casa. Pies llenos del polvo de los caminos, del barro de las calles, de lo que pisaban los animales. Ningún maestro hacía eso. Ningún judío libre debía hacerlo.</p>
+<p>Jesús va de uno en uno. Lava los pies de Juan. Los de Tomás. Los de Judas, que ya había vendido a su maestro por treinta piezas de plata (Mt 26:15), y Jesús lo sabía. Le lava los pies igual.</p>
+<p>Cuando llega a Pedro, Pedro recoge las piernas: «No me lavarás los pies jamás». Y Jesús le contesta: «Si no te lavare, no tendrás parte conmigo» (Jn 13:8).</p>
+<p>Después se sienta otra vez y les dice: «Pues si yo, el Señor y el Maestro, he lavado vuestros pies, vosotros también debéis lavaros los pies los unos a los otros» (Jn 13:14).</p>
+<figure class="ph ilus" id="cap10_lavatorio"><div class="ph-box" style="aspect-ratio:3/4"><span class="ph-tag">[ilustración en preparación]</span><span class="ph-desc">En el aposento alto, a la luz de las lámparas, Jesús, de espaldas, arrodillado con una toalla en la cintura, lava los pies de Pedro, que lo mira desconcertado; los demás discípulos recostados alrededor de la mesa baja.</span></div></figure>
+<p>Y en medio de la cena, toma el pan. Da gracias. Lo parte. «Tomad, comed; esto es mi cuerpo» (Mt 26:26). Y después toma la copa de vino y dice las palabras que unen todo el libro, todo lo que venimos contando desde el jardín:</p>
+<p>«porque esto es mi sangre del nuevo pacto, que por muchos es derramada para remisión de los pecados» (Mt 26:28).</p>
+<p>El nuevo pacto. El que había anunciado Jeremías en Babilonia, el del capítulo 7: «perdonaré la maldad de ellos». Remisión de los pecados. Perdón. Lo que en Capernaum Jesús le regaló a un paralítico con una palabra, ahora dice cuánto va a costar.</p>
+<p>Judas se levanta y sale. Juan anota un detalle de tres palabras: «era de noche».</p>
+<h3>Getsemaní</h3>
+<p>Después de cantar los salmos de la Pascua, salen de la ciudad. Cruzan el torrente de Cedrón, en el valle, y suben un poco por el monte de los Olivos hasta un huerto que se llama Getsemaní. El nombre quiere decir «prensa de aceite»: ahí se exprimían las aceitunas.</p>
+<p>Es noche de luna llena. La Pascua siempre cae en luna llena. Desde el huerto se ven, al otro lado del valle, las murallas de la ciudad y el templo, iluminados.</p>
+<p>Jesús deja a la mayoría en la entrada y se lleva más adentro a Pedro, a Jacobo y a Juan. Y ahí les dice algo que nunca les había dicho:</p>
+<p>«Mi alma está muy triste, hasta la muerte; quedaos aquí, y velad conmigo» (Mt 26:38).</p>
+<p>Se aleja un poco, como a un tiro de piedra. Cae de rodillas. Después, con la cara contra la tierra. Y ora:</p>
+<p>«Abba, Padre, todas las cosas son posibles para ti; aparta de mí esta copa; mas no lo que yo quiero, sino lo que tú» (Mc 14:36).</p>
+<p>Abba. Así le decían los niños a su papá. Papá.</p>
+<p class="lucha"><strong>Su lucha.</strong> Aquí está la lucha más grande de todo este libro. No es la de Jacob con el ángel, ni la de David en el suelo, ni la de Daniel frente a los leones. Es la de Jesús en un huerto de olivos, de noche, solo. Él sabía lo que venía. Lo había anunciado. Sabía de los azotes, de los clavos, de la burla. Y sabía algo más pesado que todo eso: que iba a cargar el pecado de todos, y que por primera vez en la eternidad se iba a sentir lejos de su Padre. Y su cuerpo, su cuerpo humano, de carne como el nuestro, se resistía. Lucas, que era médico, es el único que lo cuenta así: «Y estando en agonía, oraba más intensamente; y era su sudor como grandes gotas de sangre que caían hasta la tierra» (Lc 22:44). Tres veces pidió que, si había otro camino, pasara de Él esa copa. Tres veces volvió donde estaban sus amigos y los encontró dormidos. Nadie lo acompañó. Y tres veces terminó igual: no lo que yo quiero, sino lo que tú. Jesús no fue a la cruz porque no le dolía. Fue a pesar de que le dolía. Fue por amor.</p>
+<figure class="ph ilus" id="cap10_getsemani"><div class="ph-box" style="aspect-ratio:3/4"><span class="ph-tag">[ilustración en preparación]</span><span class="ph-desc">De noche, con luna llena, Jesús postrado de rodillas junto a una roca entre olivos antiguos, de espaldas o de perfil en sombra; más atrás, tres discípulos dormidos; al fondo, al otro lado del valle, las murallas de Jerusalén y el templo iluminados.</span></div></figure>
+<p>Y entonces se ven antorchas entre los olivos. Ruido de armas. Viene una multitud con espadas y palos, enviados por los sacerdotes, y al frente viene Judas. Judas se acerca y lo saluda con un beso. Esa era la señal.</p>
+<p>Pedro saca una espada y le corta la oreja a un siervo del sumo sacerdote. Y Jesús lo detiene. Le sana la oreja al hombre. Y le dice a Pedro:</p>
+<p>«¿Acaso piensas que no puedo ahora orar a mi Padre, y que él no me daría más de doce legiones de ángeles?» (Mt 26:53).</p>
+<p>Más de doce legiones: decenas de miles de ángeles. Y no los llamó.</p>
+<p>Y entonces pasa lo que Él les había dicho que iba a pasar:</p>
+<p>«Entonces todos los discípulos, dejándole, huyeron» (Mc 14:50).</p>
+<h3>La noche de los golpes</h3>
+<p>Lo llevan atado a la casa de Anás, el ex sumo sacerdote, suegro de Caifás. Anás lo interroga sobre sus discípulos y su enseñanza. Jesús le contesta que siempre habló en público, en el templo y en las sinagogas, que pregunte a los que lo oyeron.</p>
+<p>Y uno de los guardias le da una bofetada:</p>
+<p>«¿Así respondes al sumo sacerdote?» (Jn 18:22).</p>
+<p>La primera. Con la mano abierta, en la cara. Y Jesús, sin gritar, le contesta que si dijo algo malo, que lo pruebe; y si no, por qué le pega.</p>
+<p>De ahí lo mandan, todavía atado, a la casa de Caifás, el sumo sacerdote. Es de madrugada. Traen testigos falsos que no se ponen de acuerdo entre ellos. Y Jesús calla. Todo el rato, calla. Hasta que Caifás se levanta y le exige, bajo juramento, que diga si es el Cristo, el Hijo de Dios. Y Jesús rompe el silencio con las palabras de Daniel:</p>
+<p>«Tú lo has dicho; y además os digo, que desde ahora veréis al Hijo del Hombre sentado a la diestra del poder de Dios, y viniendo en las nubes del cielo» (Mt 26:64).</p>
+<p>Caifás se rasga la ropa. Blasfemia, grita. Es reo de muerte, contestan todos.</p>
+<p>Y lo que viene después es la parte que más cuesta leer:</p>
+<p>«Y algunos comenzaron a escupirle, y a cubrirle el rostro y a darle de puñetazos, y a decirle: Profetiza. Y los alguaciles le daban de bofetadas» (Mc 14:65).</p>
+<p>Le tapan los ojos con un trapo. Le pegan. Y se ríen: a ver, profeta, adivina quién te pegó. Al que calmó la tormenta. Al que conocía el nombre de cada uno de los que le estaban pegando.</p>
+<p>Abajo, en el patio, junto a un fuego de brasas, Pedro, el que dijo que daría la vida por Él, niega tres veces que lo conoce. Canta el gallo. Y Pedro sale a llorar en la oscuridad. Esa historia la terminamos en el capítulo 11.</p>
+<h3>Pilato</h3>
+<p>Al amanecer lo llevan ante el gobernador romano, Poncio Pilato. Los sacerdotes no podían ejecutar a nadie; solo Roma podía. Y ante Roma no lo acusan de blasfemia, porque a Roma eso no le importaba. Lo acusan de hacerse rey. De rebelde contra el César.</p>
+<p>Pilato lo interroga a solas. ¿Eres tú el rey de los judíos? Y Jesús le habla de un reino que no es de este mundo, y de la verdad. Y Pilato, cínico, cansado, le pregunta: «¿Qué es la verdad?». Y sale a decir a la gente: «Yo no hallo en él ningún delito» (Jn 18:38).</p>
+<p>Pero la multitud que los sacerdotes han reunido grita. Pilato intenta una salida: cada Pascua soltaba a un preso. Les ofrece a Jesús o a Barrabás, un rebelde y asesino. Y la multitud elige a Barrabás.</p>
+<p>«Pilato les dijo: ¿Qué, pues, haré de Jesús, llamado el Cristo? Todos le dijeron: ¡Sea crucificado!» (Mt 27:22).</p>
+<p>Entonces Pilato manda azotarlo. «Así que, entonces tomó Pilato a Jesús, y le azotó» (Jn 19:1). Una frase. Juan no da detalles, porque sus lectores sabían de sobra lo que era un azote romano. Nosotros no, y por eso está el recuadro de más abajo.</p>
+<p>Después de los azotes, los soldados, que tenían su cuartel en la ciudad y estaban aburridos y llenos de desprecio por los judíos, deciden divertirse con el que dicen que es rey.</p>
+<p>«Y los soldados entretejieron una corona de espinas, y la pusieron sobre su cabeza, y le vistieron con un manto de púrpura; y le decían: ¡Salve, Rey de los judíos! y le daban de bofetadas» (Jn 19:2-3).</p>
+<p>Una corona de espinas, apretada sobre la cabeza. Un manto viejo de soldado, color rojo, como si fuera la púrpura de los reyes. Una caña en la mano, como cetro. Y después le quitan la caña y le pegan con ella en la cabeza, sobre las espinas. Se arrodillan delante de Él, burlándose. Le escupen (Mt 27:29-30).</p>
+<figure class="ph ilus" id="cap10_corona"><div class="ph-box" style="aspect-ratio:3/4"><span class="ph-tag">[ilustración en preparación]</span><span class="ph-desc">En el patio del cuartel romano, Jesús sentado, visto de espaldas y desde arriba, con la corona de espinas y un manto rojo viejo sobre los hombros, una caña en la mano; los soldados romanos se arrodillan burlándose; uno levanta la mano para golpear.</span></div></figure>
+<p>Pilato lo saca afuera así, ensangrentado, con la corona y el manto, delante de todos. Quizás esperaba que les diera lástima. Y dice:</p>
+<p>«¡He aquí el hombre!» (Jn 19:5).</p>
+<p>Y la gente grita más fuerte: crucifícale. Y los principales sacerdotes del templo de Dios dicen una frase terrible: que no tienen más rey que el César.</p>
+<p>Pilato se lava las manos. Y lo entrega.</p>
+<h3>La cruz</h3>
+<p>Le ponen sobre los hombros el madero, y sale de la ciudad, cargando su cruz, hacia un lugar que llaman la Calavera; en hebreo, Gólgota. A medio camino ya no puede más, y los soldados obligan a un hombre que venía del campo, Simón de Cirene, a cargarla detrás de Él.</p>
+<p>Es alrededor de las nueve de la mañana. Lo acuestan sobre el madero. Le clavan las manos. Lo levantan. Le clavan los pies. Y con Él, uno a cada lado, crucifican a dos ladrones.</p>
+<p>Y la primera frase que dice desde la cruz no es una queja. No es una maldición. Es esta:</p>
+<p>«Padre, perdónalos, porque no saben lo que hacen» (Lc 23:34).</p>
+<p>Mientras lo dice, a sus pies, los soldados se reparten su ropa y echan suertes sobre su túnica.</p>
+<p>Arriba de su cabeza, Pilato manda clavar un letrero en tres idiomas, hebreo, griego y latín: Jesús nazareno, rey de los judíos.</p>
+<p>Y abajo empiezan las burlas. Los que pasan por el camino menean la cabeza. Los sacerdotes y los escribas, satisfechos, dicen entre ellos que salvó a otros y a sí mismo no se puede salvar. Y uno de ellos, sin darse cuenta, recita casi palabra por palabra un salmo escrito mil años antes:</p>
+<p>«Confió en Dios; líbrele ahora si le quiere; porque ha dicho: Soy Hijo de Dios» (Mt 27:43).</p>
+<p>Uno de los ladrones también lo insulta. Pero el otro lo hace callar. Le dice que ellos dos están ahí con justicia, pero que este hombre no hizo nada malo. Y después, volteando la cabeza como puede, le dice a Jesús:</p>
+<p>«Acuérdate de mí cuando vengas en tu reino» (Lc 23:42).</p>
+<p>Un ladrón. Sin bautismo, sin templo, sin tiempo para arreglar nada de su vida. Solo con eso. Y Jesús le contesta:</p>
+<p>«De cierto te digo que hoy estarás conmigo en el paraíso» (Lc 23:43).</p>
+<p>Al pie de la cruz están algunas mujeres. Su madre, María. La hermana de su madre. María, la mujer de Cleofas. Y María Magdalena (Jn 19:25). Los hombres, menos Juan, han huido. Ellas se quedaron. Y Jesús, desde la cruz, ve a su madre y a Juan, y le encarga a Juan que la cuide como a su propia madre.</p>
+<p>Al mediodía, el cielo se oscurece. Tres horas de tinieblas sobre la tierra. Y a las tres de la tarde, Jesús grita con todas sus fuerzas, en arameo, el idioma de su casa:</p>
+<p>«Eloi, Eloi, ¿lama sabactani? que traducido es: Dios mío, Dios mío, ¿por qué me has desamparado?» (Mc 15:34).</p>
+<p>Es la primera línea del Salmo 22. El salmo del capítulo 6, el que escribió David. Jesús, muriendo, reza ese salmo. El que habla de manos y pies horadados, de ropa repartida, de burlas. Y que termina, si se lee hasta el final, en victoria.</p>
+<p>Dice: «Tengo sed» (Jn 19:28). Le acercan una esponja con vinagre. Y después dice una sola palabra, que en griego es una sola: <em>tetélestai</em>.</p>
+<p>«Consumado es» (Jn 19:30).</p>
+<p>Terminado. Pagado. Completo.</p>
+<p>Y con su último aliento: «Padre, en tus manos encomiendo mi espíritu» (Lc 23:46). Y muere.</p>
+<p>En ese mismo momento, en el templo, en lo alto del monte Moriah, la gruesa cortina que separaba el Lugar Santísimo, donde solo entraba el sumo sacerdote una vez al año, en el Día de la Expiación, se rompe de arriba abajo (Mc 15:38). De arriba abajo. Como si la rompieran desde el cielo.</p>
+<p>Y el centurión romano, un soldado curtido que había visto morir a muchos hombres en la cruz, que seguramente había ayudado a clavarlo, lo mira y dice lo que nadie más se atrevió a decir ese día:</p>
+<p>«Verdaderamente este hombre era Hijo de Dios» (Mc 15:39).</p>
+<p>Ahí está la respuesta a la pregunta de todo el libro. ¿Quién es este? La dice un pagano, al pie de una cruz.</p>
+<p>Como al día siguiente era un sábado especial, el de la Pascua, los sacerdotes piden que les quiebren las piernas a los crucificados para que mueran rápido y no queden colgados. Los soldados se las quiebran a los dos ladrones. Pero cuando llegan a Jesús, ya está muerto. No le quiebran las piernas. Uno le abre el costado con una lanza, y sale sangre y agua. Juan, que lo vio, escribe: «Porque estas cosas sucedieron para que se cumpliese la Escritura: No será quebrado hueso suyo» (Jn 19:36).</p>
+<p>Ningún hueso quebrado. Como el cordero de la Pascua en Egipto.</p>
+<p>Esa tarde, dos hombres importantes que lo seguían en secreto, José de Arimatea y Nicodemo, piden el cuerpo, lo envuelven en lienzos con especias y lo ponen en un sepulcro nuevo, cavado en la roca, en un huerto cerca del lugar. Ruedan una piedra en la entrada. Y las mujeres miran dónde lo ponen.</p>
+<p>Y cae la noche.</p></section>
+<section class="texto"><h2>La historia según la Biblia</h2>
+<p><em>Reina-Valera 1960</em></p>
+<p><strong>La copa</strong></p>
+<blockquote class="verso">
+<p>«porque esto es mi sangre del nuevo pacto, que por muchos es derramada para remisión de los pecados.» — Mateo 26:28</p>
+</blockquote>
+<p><strong>Getsemaní</strong></p>
+<blockquote class="verso">
+<p>«Y estando en agonía, oraba más intensamente; y era su sudor como grandes gotas de sangre que caían hasta la tierra.» — Lucas 22:44</p>
+</blockquote>
+<p><strong>La corona</strong></p>
+<blockquote class="verso">
+<p>«Y los soldados entretejieron una corona de espinas, y la pusieron sobre su cabeza, y le vistieron con un manto de púrpura.» — Juan 19:2</p>
+</blockquote>
+<p><strong>El perdón</strong></p>
+<blockquote class="verso">
+<p>«Padre, perdónalos, porque no saben lo que hacen.» — Lucas 23:34</p>
+</blockquote>
+<p><strong>El final</strong></p>
+<blockquote class="verso">
+<p>«Cuando Jesús hubo tomado el vinagre, dijo: Consumado es. Y habiendo inclinado la cabeza, entregó el espíritu.» — Juan 19:30</p>
+</blockquote>
+</section>
+<aside class="box escrito"><h3>Lo que estaba escrito</h3><p>Unos 700 años antes, Isaías escribió: «Di mi cuerpo a los heridores, y mis mejillas a los que me mesaban la barba; no escondí mi rostro de injurias y de esputos» (Is 50:6). Y también: «Angustiado él, y afligido, no abrió su boca; como cordero fue llevado al matadero» (Is 53:7).</p>
+<table>
+<thead>
+<tr>
+<th>Lo que pasó</th>
+<th>Lo que estaba escrito</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Lo escupen, lo abofetean (Mc 14:65)</td>
+<td>Is 50:6</td>
+</tr>
+<tr>
+<td>Calla ante Caifás y ante Pilato (Mt 26:63)</td>
+<td>Is 53:7</td>
+</tr>
+<tr>
+<td>Crucificado entre dos ladrones, ora por los que lo matan (Lc 23:33-34)</td>
+<td>«fue contado con los pecadores» (Is 53:12)</td>
+</tr>
+<tr>
+<td>«Confió en Dios; líbrele ahora» (Mt 27:43)</td>
+<td>«Se encomendó a Jehová; líbrele él» (Sal 22:8)</td>
+</tr>
+<tr>
+<td>Echan suertes sobre su túnica (Jn 19:24)</td>
+<td>Sal 22:18</td>
+</tr>
+<tr>
+<td>«Dios mío, Dios mío, ¿por qué me has desamparado?» (Mc 15:34)</td>
+<td>Sal 22:1</td>
+</tr>
+<tr>
+<td>No le quiebran ningún hueso (Jn 19:36)</td>
+<td>El cordero de la Pascua (Éx 12:46)</td>
+</tr>
+<tr>
+<td>Le abren el costado (Jn 19:34, 37)</td>
+<td>«mirarán a mí, a quien traspasaron» (Zac 12:10)</td>
+</tr>
+<tr>
+<td>La corona de espinas (Jn 19:2)</td>
+<td>Las espinas de la maldición del Edén (Gn 3:18)</td>
+</tr>
+</tbody>
+</table>
+<p>Y Jesús mismo lo dijo en el huerto: «Mas todo esto sucede, para que se cumplan las Escrituras de los profetas» (Mt 26:56).</p></aside>
+<aside class="box escrito"><h3>Las espinas</h3><p>Las espinas aparecen por primera vez en la Biblia en el capítulo 3 del Génesis, el día en que Adán y Eva desobedecen. Dios le dice a Adán que la tierra ahora le va a costar sudor: «Espinos y cardos te producirá» (Gn 3:18). Las espinas son la señal de la maldición, de un mundo roto.</p>
+<p>Y miles de años después, unos soldados que no sabían nada del Génesis tejen una corona con espinas y se la ponen en la cabeza a Jesús. Sin saberlo, le ponen encima la señal de la maldición. Pablo lo dirá así: «Cristo nos redimió de la maldición de la ley, hecho por nosotros maldición» (Gá 3:13). Y en Getsemaní, otro eco del Edén: el primer Adán desobedeció en un huerto; Jesús obedeció en otro, y su sudor cayó a la tierra.</p></aside>
+<aside class="box escrito"><h3>La túnica sin costura</h3><p>Los soldados que crucificaban tenían derecho a quedarse con la ropa del condenado. Eran cuatro, e hicieron cuatro partes. Pero la túnica de Jesús era especial: «la cual era sin costura, de un solo tejido de arriba abajo» (Jn 19:23). No quisieron romperla y la sortearon. Juan anota que así se cumplió el Salmo 22: «Repartieron entre sí mis vestidos, Y sobre mi ropa echaron suertes» (Sal 22:18).</p>
+<p>Esa túnica inspiró, siglos después, muchas historias. Una de las más conocidas es la novela <em>El vendedor más grande del mundo</em>, de Og Mandino (1968). Es ficción, no historia: un joven camellero regala una túnica para abrigar a un recién nacido en una cueva de Belén, y muchos años después el apóstol Pablo se la muestra como lo único que dejó Jesús al morir. La novela inventa a sus personajes. Pero la túnica sin costura, y los soldados echando suertes sobre ella al pie de la cruz, están en el Evangelio.</p></aside>
+<aside class="box historia"><h3>Lo que dice la historia</h3><p><strong>Los azotes romanos.</strong> Los romanos azotaban con el <em>flagrum</em> o <em>flagellum</em>: un mango corto con varias tiras de cuero, en las que muchas veces se amarraban bolitas de metal o pedazos de hueso. Al condenado lo desnudaban y lo ataban a un poste, y le pegaban en la espalda, las nalgas y las piernas. La ley judía limitaba los azotes a cuarenta (Dt 25:3); la romana no tenía límite. El historiador judío Flavio Josefo cuenta que unos treinta años después otro hombre de Jerusalén, también llamado Jesús, hijo de Ananías, fue llevado ante el gobernador romano Albino y «desollado hasta los huesos con azotes» (<em>Guerra de los judíos</em> 6.5.3). Muchos no sobrevivían. Por eso, probablemente, Jesús ya no pudo cargar el madero hasta el final.</p>
+<p><strong>La crucifixión.</strong> Roma la reservaba para esclavos, rebeldes y extranjeros; un ciudadano romano no podía ser crucificado. El orador Cicerón, en el siglo I a. C., la llamó «el más cruel y espantoso de los suplicios» (<em>Contra Verres</em> 2.5.165). El poste vertical solía quedar fijo en el lugar de las ejecuciones, a la vista de todos, junto a los caminos. El condenado cargaba solo el travesaño, el <em>patibulum</em>, que según un estudio médico publicado en 1986 (Edwards y otros, <em>JAMA</em>) pudo pesar entre 34 y 57 kilos. Un soldado llevaba delante el <em>titulus</em>, el letrero con el nombre y el delito. La muerte podía tardar horas o días, por agotamiento, pérdida de sangre y asfixia: colgado de los brazos, cada respiración costaba. Por eso, para acelerarla, quebraban las piernas: el crucificado ya no podía empujarse hacia arriba para respirar. Josefo cuenta que durante el sitio de Jerusalén, en el año 70, los soldados de Tito crucificaron hasta quinientos judíos por día, hasta que faltó espacio para las cruces y cruces para los cuerpos (<em>Guerra</em> 5.11.1).</p>
+<p><strong>Un clavo de verdad.</strong> En 1968, en Giv'at ha-Mivtar, al norte de Jerusalén, se encontró en una tumba del siglo I el osario de un hombre llamado Yehohanán, de unos 24 a 28 años. Su hueso del talón derecho seguía atravesado por un clavo de hierro de 11,5 cm, con restos de madera de olivo. El clavo se torció al chocar con un nudo de la madera y no lo pudieron sacar. Es la prueba arqueológica directa de que en tiempos de Jesús, en Jerusalén, se clavaba a los crucificados.</p>
+<p><strong>Pilato y Caifás existieron.</strong> En 1961, en Cesarea, junto al mar, apareció una piedra con una inscripción en latín que nombra a «Poncio Pilato, prefecto de Judea». Y en 1990, en Jerusalén, se encontró un osario decorado con el nombre «José hijo de Caifás», que muchos arqueólogos identifican con el sumo sacerdote.</p></aside>
+<aside class="box escrito"><h3>Fuera de la Biblia: Tácito y Josefo</h3><p><strong>Tácito</strong>, el gran historiador romano, que no tenía ninguna simpatía por los cristianos, escribió hacia el año 116 que su nombre venía de «Cristo, que en el reinado de Tiberio fue ejecutado por el procurador Poncio Pilato» (<em>Anales</em> 15.44).</p>
+<p><strong>Flavio Josefo</strong>, judío, hacia el año 93, menciona la muerte de «Santiago, hermano de Jesús, llamado el Cristo» (<em>Antigüedades</em> 20.9.1). En otro pasaje (<em>Antigüedades</em> 18.3.3) habla de Jesús y de que Pilato lo condenó a la cruz; los historiadores creen que ese párrafo fue retocado más tarde por copistas cristianos, pero que en su base es de Josefo.</p>
+<p>Dos historiadores que no eran cristianos confirman lo esencial: Jesús existió, y murió crucificado bajo Poncio Pilato.</p></aside>
+<aside class="box lugar"><h3>El lugar hoy</h3><p><strong>El Cenáculo</strong>, en el monte Sión, en Jerusalén, es una sala gótica construida en la Edad Media, sobre el lugar que la tradición señala como el de la última cena. No es el cuarto original, pero está en la zona donde la tradición la ubica desde los primeros siglos.</p>
+<p><strong>Getsemaní</strong> sigue ahí, al pie del monte de los Olivos, frente a la muralla de la ciudad vieja. Tiene olivos antiquísimos; un estudio de 2012 dató algunos en unos 900 años, y podrían ser retoños de raíces más antiguas. Al lado está la Basílica de la Agonía, construida sobre una roca donde, según la tradición, oró Jesús.</p>
+<p><strong>El Gólgota y el sepulcro.</strong> La Iglesia del Santo Sepulcro, levantada por el emperador Constantino en el siglo IV, guarda dentro la roca del Calvario y la tumba que la tradición más antigua señala como la de Jesús. En tiempos de Jesús ese lugar estaba fuera de la muralla, como exigía la ley para las ejecuciones. La Vía Dolorosa, el camino que recorren hoy los peregrinos por las calles de la ciudad vieja, sigue una ruta fijada por la tradición en la Edad Media.</p>
+<p><strong>El monte Moriah</strong> es hoy la explanada donde estuvo el templo. Desde el Gólgota hasta allí hay unos 700 metros.</p></aside>
+<section class="box sombra"><h2>La sombra de Jesús</h2><p><strong>El Cordero.</strong> En el monte Moriah, Abraham le dijo a su hijo: Dios se proveerá de cordero. En Egipto, la sangre de un cordero sin defecto en las puertas salvó a los hijos de Israel, y no se le podía quebrar ningún hueso. Isaías vio a un siervo llevado como cordero al matadero. Juan el Bautista señaló a Jesús en el Jordán: «He aquí el Cordero de Dios». Y en la Pascua, en Jerusalén, en el mismo monte, el Cordero murió sin un hueso quebrado. Juan, además, cuenta que Jesús fue condenado el día de la preparación de la Pascua, el día en que en el templo se sacrificaban los corderos. Pablo lo dirá en una frase: «porque nuestra pascua, que es Cristo, ya fue sacrificada por nosotros» (1 Co 5:7).</p>
+<p><strong>El perdón.</strong> Desde Moisés, el perdón pasaba por la sangre: «sin derramamiento de sangre no se hace remisión» (He 9:22). Cada año, en el Día de la Expiación, otro cordero, otro sacrificio, otra vez. Ahora Jesús dice «consumado es». Ya no hace falta otro. Y el velo del templo, la cortina que separaba a la gente del Lugar Santísimo, se rompe de arriba abajo. El camino a Dios queda abierto. Pedro, el que lo negó, lo escribirá años después: «quien llevó él mismo nuestros pecados en su cuerpo sobre el madero, para que nosotros, estando muertos a los pecados, vivamos a la justicia; y por cuya herida fuisteis sanados» (1 P 2:24).</p>
+<p><strong>El silencio.</strong> Pudo llamar a doce legiones de ángeles, y calló. Pedro lo vio: «quien cuando le maldecían, no respondía con maldición; cuando padecía, no amenazaba, sino encomendaba la causa al que juzga justamente» (1 P 2:23).</p>
+<p>Pero la historia no termina un viernes en la tarde.</p></section>
+<section class="box nota"><h2>Nota del autor</h2><p>Jesús aguanta burlas, golpes, ofensas de los alguaciles del sacerdote… la corona de espinos.</p></section>
+<section class="texto"><h2>Para seguir leyendo</h2>
+<ul>
+<li><strong>Juan 13–19:</strong> la última cena, Getsemaní, el juicio y la cruz, contados por el discípulo que estuvo ahí.</li>
+<li><strong>Lucas 22–23:</strong> con los detalles del médico: el sudor de sangre, el ladrón arrepentido, «Padre, perdónalos».</li>
+<li><strong>Isaías 52:13–53:12:</strong> el siervo que sufre, escrito unos 700 años antes.</li>
+<li><strong>Salmo 22:</strong> léelo completo, hasta el final.</li>
+<li><strong>Hebreos 9–10:</strong> por qué ya no hace falta otro sacrificio.</li>
+</ul></section>
+<footer class="derechos"><p><em>Las citas bíblicas son de la Reina-Valera © 1960 Sociedades Bíblicas en América Latina; © renovado 1988 Sociedades Bíblicas Unidas. Utilizado con permiso.</em></p></footer>
+</main>
+<nav class="libro"><a href="cap09.html">‹ Capítulo 9</a><a href="index.html">Índice</a><a href="cap11.html">Capítulo 11 ›</a></nav></body>
+</html>
