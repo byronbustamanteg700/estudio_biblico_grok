@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Capítulo 4 — Moisés y la noche de la Pascua</title>
+<style>
+:root{--paper:#fbf7ef;--ink:#2b2622;--muted:#7a6f63;--accent:#8a5a2b;--rule:#e3d8c6;
+--hist:#f3ece0;--hist-b:#b08a5a;--lugar:#eaf1ee;--lugar-b:#4f7f72;--sombra:#f7efdc;--sombra-b:#b8892d;
+--escr:#f1ede6;--escr-b:#6d5c4a;--nota:#fffdf8;--nota-b:#8a5a2b}
+@media (prefers-color-scheme:dark){:root{--paper:#1d1a17;--ink:#e9e1d4;--muted:#a89c8c;--accent:#d7a76b;--rule:#3a332c;
+--hist:#2a241d;--lugar:#1f2a27;--sombra:#2d2618;--escr:#27231f;--nota:#221e1a}}
+*{box-sizing:border-box}
+html{font-size:18px;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--paper);color:var(--ink);
+font-family:"Iowan Old Style","Palatino Linotype",Palatino,"Book Antiqua",Georgia,"Times New Roman",serif;
+line-height:1.65;text-rendering:optimizeLegibility;hyphens:auto}
+main{max-width:36rem;margin:0 auto;padding:2.5rem 1.2rem 4rem}
+header.cap{text-align:center;margin:1rem 0 2.5rem;padding-bottom:1.5rem;border-bottom:1px solid var(--rule)}
+.kicker{font-variant:small-caps;letter-spacing:.18em;color:var(--accent);margin:0}
+h1{font-weight:normal;font-size:2rem;line-height:1.2;margin:.4rem 0 .6rem}
+.sub{font-style:italic;color:var(--muted);font-size:.9rem;margin:0}
+h2{font-weight:normal;font-size:1.45rem;color:var(--accent);margin:2.6rem 0 1rem;text-align:center;font-variant:small-caps;letter-spacing:.05em}
+h3{font-size:1.1rem;font-style:italic;font-weight:normal;margin:2rem 0 .8rem}
+p{margin:0 0 1em}
+.texto>p:first-of-type em:only-child{color:var(--muted);font-size:.92rem}
+p.lucha{border-left:3px solid var(--accent);padding-left:.9rem}
+blockquote.verso{margin:1rem 0 1.4rem;padding:.2rem 0 .2rem 1rem;border-left:2px solid var(--rule);font-style:italic}
+blockquote.verso p{margin:0}
+table{width:100%;border-collapse:collapse;font-size:.85rem;margin:1rem 0 1.5rem;line-height:1.45}
+th,td{border-bottom:1px solid var(--rule);padding:.5rem .4rem;vertical-align:top;text-align:left}
+th{font-variant:small-caps;letter-spacing:.04em;color:var(--accent);font-weight:normal}
+.box{border-radius:6px;padding:1.1rem 1.2rem .4rem;margin:2rem 0;font-size:.93rem;border-left:4px solid}
+.box h3,.box h2{margin-top:0;font-style:normal;font-variant:small-caps;letter-spacing:.06em;font-size:1.05rem;text-align:left}
+.historia{background:var(--hist);border-color:var(--hist-b)} .historia h3{color:var(--hist-b)}
+.lugar{background:var(--lugar);border-color:var(--lugar-b)} .lugar h3{color:var(--lugar-b)}
+.escrito{background:var(--escr);border-color:var(--escr-b)} .escrito h3{color:var(--escr-b)}
+.sombra{background:var(--sombra);border-color:var(--sombra-b)} .sombra h2{color:var(--sombra-b);font-size:1.25rem}
+.nota{background:var(--nota);border:1px solid var(--rule);border-left:4px solid var(--nota-b);font-style:italic;font-size:1rem}
+.nota h2{color:var(--nota-b);font-size:1.25rem}
+figure.ph{margin:2rem auto}
+figure.ilus{max-width:24rem} figure.video{max-width:17rem}
+.ph-box{width:100%;border:2px dashed var(--accent);border-radius:8px;display:flex;flex-direction:column;align-items:center;justify-content:center;
+text-align:center;padding:1rem;background:repeating-linear-gradient(45deg,transparent,transparent 10px,rgba(138,90,43,.05) 10px,rgba(138,90,43,.05) 20px)}
+.ph-tag{font-family:system-ui,sans-serif;font-weight:700;color:var(--accent);font-size:1rem;margin-bottom:.6rem}
+.ph-desc{font-size:.8rem;color:var(--muted);font-style:italic}
+footer.derechos{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--rule);font-size:.75rem;color:var(--muted);text-align:center}
+ul{padding-left:1.2rem} li{margin-bottom:.4rem}
+@media (max-width:480px){html{font-size:17px} main{padding:1.5rem 1rem 3rem} h1{font-size:1.6rem} table{font-size:.8rem} .box{padding:.9rem .9rem .3rem}}
+@media print{body{background:#fff} .ph-box{background:none}}
+
+figure.media{margin:2rem auto}
+figure.media img,figure.media video{width:100%;height:auto;display:block;border-radius:8px;background:#1a1612}
+figure.media figcaption{font-size:.8rem;color:var(--muted);font-style:italic;text-align:center;margin-top:.6rem;line-height:1.4}
+@media print{figure.media video{display:none} figure.media img{-webkit-print-color-adjust:exact;print-color-adjust:exact}}
+.pregunta{background:var(--escr);border-color:var(--accent)} .pregunta h3{color:var(--accent)}
+</style>
+<style>nav.libro{max-width:36rem;margin:0 auto;padding:.8rem 1.2rem;display:flex;justify-content:space-between;font-size:.85rem;font-variant:small-caps;letter-spacing:.08em;border-bottom:1px solid var(--rule,#e3d8c6)}nav.libro a{color:var(--accent,#8a5a2b);text-decoration:none}nav.libro span{color:transparent}</style></head>
+<body><nav class="libro"><a href="cap03.html">‹ Capítulo 3</a><a href="index.html">Índice</a><a href="cap05.html">Capítulo 5 ›</a></nav>
+<main>
+<header class="cap"><p class="kicker">Capítulo 4</p><h1>Moisés y la noche de la Pascua</h1><p class="sub">Parte I: la promesa · Éxodo 1–14; Levítico 16; Números 20–21; Deuteronomio 34</p></header>
+<section class="texto"><h2>La escena</h2>
+<p><em>Recreación: así pudo haber sido. Los hechos están en Éxodo 1 a 14, Levítico 16, Números 20 y 21 y Deuteronomio 34. Lo que pensaban y sentían se imagina a partir del texto y de lo que se sabe de la época.</em></p>
+<h3>Un rey que no conocía a José</h3>
+<p>Pasan cuatro siglos. La familia de Jacob, que bajó a Egipto con hambre y fue recibida como invitada de honor, ya no es una familia. Es un pueblo. Se han multiplicado tanto que llenan la tierra de Gosén, en el delta del Nilo, donde el río se abre en brazos antes de llegar al mar.</p>
+<p>Y en Egipto ya nadie se acuerda de José.</p>
+<p>La Biblia lo dice en una sola línea, y en esa línea cabe toda la tragedia que viene: se levantó sobre Egipto un nuevo rey que no conocía a José (Éx 1:8). Para ese rey, los hebreos no son la familia del hombre que salvó a Egipto del hambre. Son extranjeros. Demasiados. Un peligro.</p>
+<p>Entonces hace lo que hacen los poderosos cuando tienen miedo: los aplasta. Les pone capataces. Los pone a fabricar ladrillos para sus ciudades de almacenaje, Pitón y Ramesés. Barro del Nilo, paja, agua, el molde de madera, el sol encima. Miles de ladrillos al día. Una espalda doblada desde que sale el sol hasta que se pone.</p>
+<p>«Y amargaron su vida con dura servidumbre, en hacer barro y ladrillo, y en toda labor del campo» (Éx 1:14).</p>
+<p>Y como el pueblo sigue creciendo, el faraón da la orden más cruel que puede dar un rey:</p>
+<p>«Echad al río a todo hijo que nazca, y a toda hija preservad la vida» (Éx 1:22).</p>
+<p>Piensa en eso un momento. En una madre hebrea que escucha llorar a su recién nacido y sabe que ese llanto lo puede delatar. En los soldados que pasan por la calle. En el río, que da vida a todo Egipto, convertido en tumba de bebés.</p>
+<h3>Una arquilla de juncos</h3>
+<p>En una de esas casas nace un niño. Es hermoso, dice la Biblia, y su madre lo esconde. Un mes. Dos. Tres. Cada vez que el niño llora, ella lo aprieta contra el pecho. Cada ruido afuera le para el corazón.</p>
+<p>Hasta que ya no puede más.</p>
+<p>«Pero no pudiendo ocultarle más tiempo, tomó una arquilla de juncos y la calafateó con asfalto y brea, y colocó en ella al niño y lo puso en un carrizal a la orilla del río» (Éx 2:3).</p>
+<p>Lo pone en el mismo río donde el faraón mandó tirar a los niños. Pero no lo tira. Lo entrega. Con sus propias manos le cierra la tapa de juncos, lo empuja despacio entre los carrizos, y lo deja en manos de Dios. Su hija mayor, una niña, se queda escondida entre las cañas, mirando de lejos qué va a pasar.</p>
+<p>Y pasa lo que nadie hubiera imaginado. Baja al río a bañarse la hija del faraón. Ve la arquilla. La manda traer. La abre. Y el niño llora. Ella siente compasión, y entiende enseguida que es uno de los niños de los hebreos.</p>
+<p>La hermanita sale de entre las cañas, valiente, y le ofrece buscarle una nodriza hebrea. Y trae a su propia madre. Así, la mujer que tuvo que soltar a su hijo en el río lo recibe otra vez en brazos, y ahora le pagan por criarlo.</p>
+<p>Cuando el niño crece, lo lleva al palacio. La princesa lo adopta, «y le puso por nombre Moisés, diciendo: Porque de las aguas lo saqué» (Éx 2:10).</p>
+<p>El niño que el faraón quería ahogado crece en la casa del faraón. Dios tiene un sentido del humor muy serio.</p>
+<h3>El príncipe que mató</h3>
+<p>Moisés crece como príncipe de Egipto. Esteban, siglos después, lo resume así: fue enseñado en toda la sabiduría de los egipcios, y era poderoso en palabras y en obras (Hch 7:22). Escritura, números, leyes, el arte de mandar. Ropa de lino, comida de palacio.</p>
+<p>Pero hay algo que el palacio no le pudo quitar. Sabe quién es. Sabe de dónde viene.</p>
+<p>A los cuarenta años sale a ver a sus hermanos. Los ve doblados en el barro, bajo el sol. Y ve a un egipcio que golpea a un hebreo. Algo se le revienta por dentro.</p>
+<p>«Entonces miró a todas partes, y viendo que no parecía nadie, mató al egipcio y lo escondió en la arena» (Éx 2:12).</p>
+<p>Miró a todas partes. Ese detalle lo dice todo. Sabía que lo que iba a hacer estaba mal, o por lo menos que no debía verlo nadie. Quiso hacer justicia con sus propias manos, a escondidas, a su manera.</p>
+<p>Al día siguiente sale otra vez y ve a dos hebreos peleándose. Quiere poner paz, y uno de ellos le responde con desprecio: quién lo puso a él de príncipe y juez, si piensa matarlo como mató al egipcio (Éx 2:14). Moisés se queda frío. Lo saben. El faraón se entera y lo manda a buscar para matarlo.</p>
+<p>Y el príncipe de Egipto huye. Cruza el desierto solo, hacia el oriente, hasta la tierra de Madián. Se sienta junto a un pozo. Ya no tiene palacio, ni nombre, ni pueblo. Los egipcios lo quieren muerto. Los hebreos no lo quieren de jefe.</p>
+<h3>Cuarenta años con ovejas</h3>
+<p>En Madián lo recibe un sacerdote llamado Jetro. Moisés se casa con una de sus hijas, tiene un hijo, y le pone un nombre que es casi un suspiro: Gersón, que suena a «forastero allí», porque, dice, «Forastero soy en tierra ajena» (Éx 2:22).</p>
+<p>Y se queda. Cuarenta años más (Hch 7:30). El hombre que fue educado para gobernar Egipto pasa la mitad de su vida cuidando ovejas ajenas en el desierto. Sol, piedras, silencio. Noches enteras mirando las estrellas, oyendo balar al rebaño. ¿Pensaría en su madre? ¿En el egipcio enterrado en la arena? ¿En el pueblo que dejó atrás?</p>
+<p>Mientras tanto, en Egipto, el pueblo sigue gimiendo. Y la Biblia dice que ese gemido llegó hasta Dios, y que Dios se acordó de su pacto con Abraham, con Isaac y con Jacob (Éx 2:23-24). No se había olvidado. Nunca se olvida.</p>
+<p>Un día, Moisés lleva las ovejas más allá del desierto, hasta Horeb, el monte de Dios. Y ve algo raro.</p>
+<p>«Y se le apareció el Ángel de Jehová en una llama de fuego en medio de una zarza; y él miró, y vio que la zarza ardía en fuego, y la zarza no se consumía» (Éx 3:2).</p>
+<figure class="ph ilus" id="cap04_zarza"><div class="ph-box" style="aspect-ratio:3/4"><span class="ph-tag">[ilustración en preparación]</span><span class="ph-desc">Moisés, pastor de ochenta años, descalzo frente a la zarza que arde sin consumirse en el monte Horeb; se cubre el rostro; sus ovejas detrás.</span></div></figure>
+<p>Un arbusto del desierto ardiendo, y no se quema. Moisés se acerca a mirar. Y desde el fuego, una voz lo llama por su nombre. Dos veces: «¡Moisés, Moisés!» (Éx 3:4).</p>
+<p>Hacía cuarenta años que nadie lo llamaba así, con esa fuerza.</p>
+<p>«No te acerques; quita tu calzado de tus pies, porque el lugar en que tú estás, tierra santa es» (Éx 3:5).</p>
+<p>Un viejo pastor de ochenta años, descalzo en la arena caliente, tapándose la cara porque tiene miedo de mirar a Dios. Y Dios le dice lo que nadie le había dicho en toda su vida:</p>
+<p>«Bien he visto la aflicción de mi pueblo que está en Egipto, y he oído su clamor a causa de sus exactores; pues he conocido sus angustias» (Éx 3:7).</p>
+<p>He visto. He oído. He conocido. Dios no es un dios lejano que no se entera. Conoce las angustias. Las conoce por dentro.</p>
+<p>Y le dice que lo va a mandar a él, a Moisés, al faraón, para sacar a su pueblo de Egipto.</p>
+<p>«¿Quién soy yo para que vaya a Faraón, y saque de Egipto a los hijos de Israel?» (Éx 3:11).</p>
+<p>Es la pregunta de un hombre quebrado. Cuarenta años antes se creía capaz de liberar a su pueblo con sus propias manos. Ahora no se cree capaz de nada. Y Dios no le contesta diciéndole quién es Moisés. Le contesta diciéndole quién está con él. Moisés le pregunta su nombre, qué les va a decir a los israelitas cuando le pregunten quién lo envía. Y Dios responde:</p>
+<p>«YO SOY EL QUE SOY. Y dijo: Así dirás a los hijos de Israel: YO SOY me envió a vosotros» (Éx 3:14).</p>
+<p>Guarda ese nombre. YO SOY. Lo vamos a escuchar otra vez, muchos siglos después, en boca de alguien que caminaba por Galilea.</p>
+<p class="lucha"><strong>Su lucha.</strong> Moisés no quiere ir. Y no es humildad bonita: es miedo. Pone excusas, una detrás de otra. Que no le van a creer. Que quién es él. Y al final saca la que más le duele: «¡Ay, Señor! nunca he sido hombre de fácil palabra, ni antes, ni desde que tú hablas a tu siervo; porque soy tardo en el habla y torpe de lengua» (Éx 4:10). El príncipe que era poderoso en palabras ahora se siente torpe para hablar. Cuarenta años de ovejas le enseñaron el silencio. Dios le responde que Él hizo la boca del hombre, y que va a estar con su boca. Y Moisés, sin más argumentos, dice lo que de verdad siente: «¡Ay, Señor! envía, te ruego, por medio del que debes enviar» (Éx 4:13). Manda a otro. A cualquiera menos a mí. Dios se enoja, pero no lo descarta. Le da a su hermano Aarón para que hable por él. Y lo manda igual. Así es la lucha de Moisés, de principio a fin: un hombre con un temperamento que una vez lo llevó a matar, con un pasado que lo persigue, con una boca que no le responde, y con un pueblo que lo va a hacer renegar cuarenta años más. Moisés no es un héroe de mármol. Es un hombre cansado al que Dios no suelta.</p>
+<h3>¿Quién es Jehová?</h3>
+<p>Moisés vuelve a Egipto. Ochenta años, una vara de pastor en la mano y su hermano al lado. Entra al palacio donde se crió, y le dice al faraón que el Dios de Israel le manda dejar ir a su pueblo.</p>
+<p>Y el faraón se ríe.</p>
+<p>«¿Quién es Jehová, para que yo oiga su voz y deje ir a Israel? Yo no conozco a Jehová, ni tampoco dejaré ir a Israel» (Éx 5:2).</p>
+<p>En vez de soltarlos, les quita la paja para los ladrillos. Que la busquen ellos, y que hagan la misma cantidad. Los capataces hebreos son golpeados. El pueblo maldice a Moisés. Y Moisés le reclama a Dios por qué lo mandó, si todo está peor que antes.</p>
+<p>Entonces llegan las plagas. El Nilo convertido en sangre. Ranas, piojos, moscas. El ganado muerto. Úlceras. Granizo. Langostas que se comen todo lo verde. Tres días de oscuridad tan espesa que se puede palpar. Nueve golpes, uno tras otro, contra los dioses de Egipto: el río sagrado, el sol que adoraban, la tierra fértil de la que estaban tan orgullosos. Y nueve veces el faraón endurece su corazón.</p>
+<p>Queda una sola plaga. La más terrible. Y esta vez, Dios va a pasar por Egipto a medianoche.</p>
+<h3>La noche de la Pascua</h3>
+<p>Imagina a un padre hebreo. Uno cualquiera. Un hombre con las manos curtidas por el barro y la espalda llena de marcas.</p>
+<p>Diez días antes de esa noche, Moisés les dio una instrucción extraña: «En el diez de este mes tómese cada uno un cordero según las familias de los padres, un cordero por familia» (Éx 12:3). No cualquier cordero. Tiene que ser perfecto: «El animal será sin defecto, macho de un año» (Éx 12:5).</p>
+<p>Así que el padre va al rebaño y busca el mejor. Lo revisa entero: las patas, los ojos, la lana, que no cojee, que no tenga una herida. Y lo lleva a la casa.</p>
+<p>Y el cordero vive con ellos cuatro días. Del diez al catorce del mes. Los niños le ponen nombre. Le dan de comer en la mano. Duerme en un rincón de la casa, y por la mañana bala pidiendo agua. El hijo menor lo abraza del cuello. Cuatro días es suficiente para encariñarse.</p>
+<p>Y llega la tarde del día catorce. Entre las dos tardes, cuando el sol empieza a bajar, todas las familias de Israel, al mismo tiempo, sacrifican a su cordero. Se oye en todo Gosén. Los niños lloran. No entienden por qué tiene que morir el cordero que no hizo nada.</p>
+<p>Y ese es justamente el punto. El cordero no hizo nada.</p>
+<p>El padre recoge la sangre en una vasija. Toma un manojo de hisopo, una planta pequeña, de ramitas finas, que sirve como brocha. Y sale a la puerta de su casa.</p>
+<p>«Y tomad un manojo de hisopo, y mojadlo en la sangre que estará en un lebrillo, y untad el dintel y los dos postes con la sangre» (Éx 12:22).</p>
+<p>Le tiembla el pulso. Sabe lo que va a pasar esa noche. Moisés lo dijo: a medianoche, el primogénito de cada casa de Egipto va a morir. Y él tiene un primogénito. Está ahí, detrás de él, mirándolo pintar la puerta.</p>
+<p>Primero un poste. Después el otro. Después arriba, en el dintel. La sangre del cordero escurriendo por la madera.</p>
+<figure class="ph ilus" id="cap04_sangre_puerta"><div class="ph-box" style="aspect-ratio:3/4"><span class="ph-tag">[ilustración en preparación]</span><span class="ph-desc">Un padre hebreo, al atardecer, pinta con un manojo de hisopo la sangre del cordero en el dintel de su casa de adobe; dentro, la familia vestida para el viaje lo mira; un niño pequeño se aferra a su túnica.</span></div></figure>
+<p>Y la promesa que lo sostiene es una sola:</p>
+<p>«Y la sangre os será por señal en las casas donde vosotros estéis; y veré la sangre y pasaré de vosotros, y no habrá en vosotros plaga de mortandad cuando hiera la tierra de Egipto» (Éx 12:13).</p>
+<p>Veré la sangre. No dice: veré lo buenos que son. No dice: veré si se portaron bien. Dentro de esas casas había hebreos que habían renegado de Dios, que habían maldecido a Moisés, que tenían el corazón tan duro como cualquier egipcio. Lo que los salva esa noche no es su bondad. Es la sangre en la puerta.</p>
+<p>Entran. Cierran. Nadie puede salir hasta la mañana. Comen el cordero asado al fuego, con pan sin levadura y hierbas amargas, vestidos para el camino, con las sandalias puestas y el bastón en la mano. De pie, casi. Apurados. Y hay una regla más, pequeña, que parece un detalle de cocina y que después va a ser enorme: no deben quebrarle ningún hueso al cordero, «ni quebraréis hueso suyo» (Éx 12:46).</p>
+<p>Y llega la medianoche.</p>
+<p>Afuera, el silencio. Y de pronto, un grito. Y otro. Y otro más, en otra calle. Y Egipto entero se despierta llorando.</p>
+<p>«Y se levantó aquella noche Faraón, él y todos sus siervos, y todos los egipcios; y hubo un gran clamor en Egipto, porque no había casa donde no hubiese un muerto» (Éx 12:30).</p>
+<p>Ninguna casa. Desde el palacio del faraón hasta la cárcel. Pero en las casas con sangre en la puerta, la muerte pasó de largo. Por eso esa noche se llama Pascua, que viene de una palabra hebrea, <em>pésaj</em>, que quiere decir «pasar por encima», «pasar de largo».</p>
+<p>Esa misma noche el faraón manda llamar a Moisés y le dice que se vayan. Que se lleven todo. Que se vayan ya.</p>
+<p>Y Dios les manda algo para siempre: que cada año, en esa misma fecha, repitan esa cena. Y que cuando sus hijos pregunten qué significa ese rito, les cuenten la historia. Por eso, hasta hoy, en las casas judías, un niño pregunta en la noche de Pascua por qué esa noche es diferente. Y un padre le cuenta lo del cordero.</p>
+<h3>Entre dos muros de agua</h3>
+<p>Salen de Egipto de madrugada. Una multitud enorme, con sus niños, sus ancianos, sus rebaños, sus masas de pan sin cocer envueltas en la ropa. Libres. Por primera vez en cuatrocientos años.</p>
+<p>Pero el faraón se arrepiente. Sale detrás de ellos con sus carros de guerra. Y los alcanza junto al mar.</p>
+<p>Detrás, los carros. Delante, el agua. Y el pueblo, que la noche anterior vio el poder de Dios, entra en pánico. Le gritan a Moisés si no había sepulcros en Egipto para que los trajera a morir en el desierto (Éx 14:11). Así de rápido se olvida el corazón humano.</p>
+<p>Moisés, el que no sabía hablar, les dice: no tengan miedo. Estén firmes. Miren lo que Dios va a hacer hoy.</p>
+<p>«Jehová peleará por vosotros, y vosotros estaréis tranquilos» (Éx 14:14).</p>
+<p>Extiende la mano sobre el mar. Y sopla un viento recio del oriente toda la noche. Y el mar se abre.</p>
+<p>«Entonces los hijos de Israel entraron por en medio del mar, en seco, teniendo las aguas como muro a su derecha y a su izquierda» (Éx 14:22).</p>
+<figure class="ph ilus" id="cap04_mar"><div class="ph-box" style="aspect-ratio:3/4"><span class="ph-tag">[ilustración en preparación]</span><span class="ph-desc">El pueblo cruza de noche por el fondo seco del mar, entre dos muros de agua; una abuela del brazo de su hijo, un niño de la mano, Moisés con la vara extendida al frente.</span></div></figure>
+<p>Imagina caminar por ahí. De noche, con el viento en la cara. Un muro de agua a cada lado, oscuro, temblando. Un niño de la mano. Una abuela apoyada en el hombro de su hijo. El cordero de la noche anterior todavía en el estómago, y la sangre todavía seca en la puerta de una casa vacía allá atrás.</p>
+<p>Pasan todos. Y cuando los egipcios entran detrás, el agua vuelve. A la mañana, Israel está en la otra orilla. Libre. Y María, la hermana de Moisés y de Aarón, que muchos identifican con aquella niña escondida entre las cañas del río, toma un pandero y se pone a cantar y a bailar con todas las mujeres.</p>
+<h3>El Día de la Expiación</h3>
+<p>Desde ahí, Moisés lleva al pueblo al mismo monte donde vio la zarza, el Sinaí. Ahí Dios les da su ley, y también les da una forma de acercarse a Él a pesar de sus pecados: los sacrificios. Y un día, uno solo en todo el año, que es el más solemne de todos: el Día de la Expiación.</p>
+<p>Ese día el sumo sacerdote, Aarón, entra solo al lugar más santo del tabernáculo, detrás de un velo grueso, con la sangre de un sacrificio. Y después hace algo que todo el pueblo mira en silencio. Le traen un macho cabrío vivo. Aarón pone las dos manos sobre la cabeza del animal y confiesa en voz alta todas las maldades de Israel, todos sus pecados, como si los fuera pasando de sus manos al animal (Lv 16:21). Y después lo llevan al desierto y lo sueltan.</p>
+<p>«Y aquel macho cabrío llevará sobre sí todas las iniquidades de ellos a tierra inhabitada» (Lv 16:22).</p>
+<p>Miles de personas viendo cómo se aleja ese animal por el desierto, cargando lo que ellos hicieron. Hasta que se pierde en el horizonte. Y la promesa de ese día es hermosa:</p>
+<p>«Porque en este día se hará expiación por vosotros, y seréis limpios de todos vuestros pecados delante de Jehová» (Lv 16:30).</p>
+<p>Limpios. Pero hay un problema. Ese día había que repetirlo una vez al año (Lv 16:34). Y el año siguiente otra vez. Y el siguiente. Corderos, toros, machos cabríos. Generación tras generación. Siglos de sangre en el altar. Era un perdón verdadero, pero era un perdón que no terminaba nunca. Como si todos supieran que faltaba algo. Que faltaba alguien.</p>
+<h3>El enojo en la peña</h3>
+<p>Moisés guía a ese pueblo cuarenta años por el desierto. Cuarenta años de quejas. Que no hay agua. Que no hay carne. Que en Egipto estaban mejor. Que quién se cree Moisés. Cuarenta años cargando a un pueblo que le recuerda a cada rato a aquel hebreo que le dijo «¿quién te ha puesto a ti?».</p>
+<p>Y un día, en Cades, otra vez sin agua, otra vez las quejas, a Moisés se le acaba la paciencia. Dios le dice que tome la vara y que le hable a la roca, y que la roca dará agua. Que le hable. Pero Moisés reúne al pueblo delante de la peña, y le sale de adentro el mismo hombre que mató al egipcio:</p>
+<p>«¡Oíd ahora, rebeldes! ¿Os hemos de hacer salir aguas de esta peña?» (Nm 20:10).</p>
+<p>Y en vez de hablarle a la roca, la golpea. Dos veces. Con rabia.</p>
+<p>El agua sale igual. Dios no deja a su pueblo con sed por el enojo de Moisés. Pero a Moisés le dice algo que le debió doler en el alma:</p>
+<p>«Por cuanto no creísteis en mí, para santificarme delante de los hijos de Israel, por tanto, no meteréis esta congregación en la tierra que les he dado» (Nm 20:12).</p>
+<p>Cuarenta años caminando hacia la tierra prometida. Y no va a entrar.</p>
+<p>Al final de su vida, Moisés sube al monte Nebo, al otro lado del Jordán, frente a Jericó. Tiene ciento veinte años. Desde arriba, Dios le muestra toda la tierra: los valles, las colinas, el verde del Jordán, a lo lejos las montañas donde siglos después va a estar Jerusalén. Y le dice:</p>
+<p>«Esta es la tierra de que juré a Abraham, a Isaac y a Jacob, diciendo: A tu descendencia la daré. Te he permitido verla con tus ojos, mas no pasarás allá» (Dt 34:4).</p>
+<p>Y Moisés muere ahí, mirándola. Lo entierran en un valle de Moab, y hasta hoy nadie sabe dónde está su tumba.</p>
+<p>Es un final triste. Pero no es el final de Moisés. Mil cuatrocientos años después, en otro monte, Moisés va a aparecer hablando con Jesús, dentro de la tierra prometida (Mt 17:3). Lo que no pudo alcanzar con su vara, Dios se lo dio por gracia.</p></section>
+<section class="texto"><h2>La historia según la Biblia</h2>
+<p><em>Reina-Valera 1960</em></p>
+<p><strong>El nombre de Dios</strong></p>
+<blockquote class="verso">
+<p>«Y respondió Dios a Moisés: YO SOY EL QUE SOY. Y dijo: Así dirás a los hijos de Israel: YO SOY me envió a vosotros.» — Éxodo 3:14</p>
+</blockquote>
+<p><strong>El cordero sin defecto</strong></p>
+<blockquote class="verso">
+<p>«El animal será sin defecto, macho de un año; lo tomaréis de las ovejas o de las cabras.» — Éxodo 12:5</p>
+</blockquote>
+<p><strong>La sangre en la puerta</strong></p>
+<blockquote class="verso">
+<p>«Y la sangre os será por señal en las casas donde vosotros estéis; y veré la sangre y pasaré de vosotros, y no habrá en vosotros plaga de mortandad cuando hiera la tierra de Egipto.» — Éxodo 12:13</p>
+</blockquote>
+<p><strong>El mar abierto</strong></p>
+<blockquote class="verso">
+<p>«Entonces los hijos de Israel entraron por en medio del mar, en seco, teniendo las aguas como muro a su derecha y a su izquierda.» — Éxodo 14:22</p>
+</blockquote>
+<p><strong>El Día de la Expiación</strong></p>
+<blockquote class="verso">
+<p>«Porque en este día se hará expiación por vosotros, y seréis limpios de todos vuestros pecados delante de Jehová.» — Levítico 16:30</p>
+</blockquote>
+</section>
+<aside class="box historia"><h3>Lo que dice la historia</h3><p><strong>Ladrillos de barro y capataces.</strong> En la tumba de Rejmira, un visir de Egipto, en Tebas (la actual Luxor), hay una pintura de hacia el año 1450 a. C. que muestra paso a paso cómo se hacían ladrillos: hombres sacando agua de un estanque, mezclando el barro, llenándolo en moldes de madera y poniendo los ladrillos a secar al sol. Muchos de los obreros están pintados como extranjeros, de piel más clara y con barba, gente de Canaán y Siria, y al lado hay capataces egipcios con un palo en la mano. La pintura no habla de Israel, pero muestra un trabajo forzado muy parecido al que describe Éxodo 1.</p>
+<p><strong>Ramesés.</strong> Una de las ciudades que construyeron los hebreos se llama en la Biblia Ramesés (Éx 1:11). Los arqueólogos identifican la gran capital de los faraones ramésidas, Pi-Ramsés, en el delta oriental del Nilo, cerca de la actual Qantir. Es justamente la zona de Gosén, donde la Biblia ubica a los israelitas.</p>
+<p><strong>El nombre «Israel» en piedra.</strong> La mención más antigua del nombre de Israel fuera de la Biblia está en una estela egipcia del faraón Merneptah, de hacia el año 1208 a. C. Entre los pueblos que el faraón dice haber vencido en Canaán aparece «Israel», escrito con el signo que los egipcios usaban para un pueblo, no para una ciudad. Para esa fecha, Israel ya estaba en Canaán.</p>
+<p><strong>Un nombre egipcio.</strong> «Moisés» se parece a una palabra egipcia, <em>mose</em>, que quiere decir «hijo» o «nacido de», y que aparece en nombres de faraones como Tutmosis o Ramsés. La Biblia lo relaciona además con un verbo hebreo que suena parecido: «sacar» de las aguas. Es el nombre que le pondría una princesa egipcia.</p></aside>
+<aside class="box lugar"><h3>El lugar hoy</h3><p><strong>El monte Sinaí.</strong> La tradición lo identifica con el Yébel Musa, «el monte de Moisés», en el sur de la península del Sinaí, en Egipto, de unos 2.285 m de altura. A sus pies está el monasterio de Santa Catalina, construido en el siglo VI por orden del emperador Justiniano y habitado por monjes hasta hoy. Hay estudiosos que proponen otros lugares, y el sitio exacto no se puede probar.</p>
+<p><strong>El mar.</strong> El hebreo dice <em>yam suf</em>, «mar de los juncos». Dónde lo cruzaron exactamente se discute: unos piensan en los lagos y lagunas del norte, entre el delta y el desierto; otros, en el golfo de Suez. La Biblia da los nombres de los lugares, pero varios ya no se pueden identificar con seguridad.</p>
+<p><strong>El monte Nebo</strong> está en Jordania, unos 8 km al noroeste de Madaba. Desde el mirador del Pisga, a unos 710 m sobre el nivel del mar, se ve el valle del Jordán, el mar Muerto y Jericó; Jerusalén, a 46 km en línea recta, solo se distingue en los días muy claros. Ahí hay hoy una escultura de una serpiente de bronce enroscada en una cruz.</p>
+<p><strong>La Pascua todavía se celebra.</strong> Cada año, millones de judíos en todo el mundo celebran la cena de Pascua, <em>Pésaj</em>, y el niño más pequeño de la mesa pregunta por qué esa noche es diferente. Y en el monte Gerizim, junto a la ciudad de Nablus, la pequeña comunidad samaritana, de unas ochocientas personas, sigue sacrificando corderos cada primavera, a la caída del sol, como manda Éxodo 12.</p></aside>
+<aside class="box pregunta"><h3>La pregunta difícil</h3><p><strong>¿Por qué murieron los primogénitos de Egipto?</strong> Es una de las páginas más duras de la Biblia, y no hay que esconderla. Algunas cosas ayudan a leerla. Fue el faraón quien empezó la muerte de los niños, cuando mandó tirar al Nilo a los bebés hebreos (Éx 1:22). Antes de esa noche hubo nueve avisos, nueve oportunidades, y nueve veces el faraón dijo que no. Y la salida que Dios dio esa noche, la sangre del cordero, no estaba cerrada a nadie: la Biblia cuenta que con Israel salió también una gran multitud de gente de toda clase (Éx 12:38). Aun así, queda un dolor que no se explica del todo. La Biblia no lo esconde. Y en el centro de esa noche pone una idea que va a atravesar todo este libro: alguien muere en lugar de otro. Esa noche fue un cordero. Un día, el que va a morir en lugar de todos va a ser el Hijo primogénito de Dios.</p></aside>
+<section class="box sombra"><h2>La sombra de Jesús</h2><p><strong>El cordero de la Pascua.</strong> Mil cuatrocientos años después de esa noche, Jesús murió en Jerusalén justamente durante la fiesta de la Pascua, cuando miles de corderos se sacrificaban en el templo. No fue casualidad. Pablo lo dice sin rodeos: «porque nuestra pascua, que es Cristo, ya fue sacrificada por nosotros» (1 Co 5:7). El cordero que el padre hebreo revisó para que no tuviera defecto era un dibujo de Él. Pedro escribe que fuimos rescatados «con la sangre preciosa de Cristo, como de un cordero sin mancha y sin contaminación» (1 P 1:19).</p>
+<p><strong>Ningún hueso quebrado.</strong> A los crucificados, para que murieran más rápido, les quebraban las piernas. A los dos ladrones que estaban junto a Jesús se las quebraron. Pero cuando llegaron a Jesús, ya estaba muerto, y no se las quebraron. Juan, que estaba ahí, lo vio y lo anotó: «Porque estas cosas sucedieron para que se cumpliese la Escritura: No será quebrado hueso suyo» (Jn 19:36). La regla de cocina de la noche de Pascua, cumplida en la cruz.</p>
+<p><strong>El hisopo.</strong> Con un manojo de hisopo el padre hebreo pintó la sangre en la puerta. Y en la cruz, cuando Jesús dijo que tenía sed, le acercaron a la boca una esponja con vinagre puesta en un hisopo (Jn 19:29). La misma planta, en la primera Pascua y en la última.</p>
+<p><strong>La sangre que se ve.</strong> «Veré la sangre y pasaré de vosotros». Esa noche no se salvaron los mejores, sino los que estaban detrás de la sangre. Así es el perdón que trae Jesús. No se gana. Se recibe.</p>
+<p><strong>El perdón que ya no se repite.</strong> El Día de la Expiación había que repetirlo cada año, para siempre. Y la carta a los Hebreos explica por qué: «porque la sangre de los toros y de los machos cabríos no puede quitar los pecados» (He 10:4). Apuntaban a algo. Esperaban a alguien. Jesús es el que carga de verdad con los pecados, como el macho cabrío que se perdía en el desierto, pero no una vez al año. Una vez y para siempre.</p>
+<p><strong>YO SOY.</strong> El nombre que Dios le dio a Moisés en la zarza lo vamos a escuchar otra vez en los labios de Jesús. Ese momento, y lo que significa, lo dejamos para más adelante en este libro.</p></section>
+<aside class="box escrito"><h3>La serpiente de bronce</h3><p>Cerca del final de los cuarenta años, el pueblo vuelve a quejarse contra Dios y contra Moisés, y en el campamento aparecen serpientes venenosas. Muchos mueren. El pueblo reconoce su pecado y le pide a Moisés que ore. Y Dios le da una instrucción extraña: «Hazte una serpiente ardiente, y ponla sobre un asta; y cualquiera que fuere mordido y mirare a ella, vivirá» (Nm 21:8). Moisés hace una serpiente de bronce y la levanta en un palo en medio del campamento. El que estaba mordido, muriéndose, no tenía que hacer nada más que mirar.</p>
+<p>Mil cuatrocientos años después, una noche en Jerusalén, Jesús le explica a un maestro de la ley llamado Nicodemo lo que iba a pasar con Él, y usa justamente esta historia: «Y como Moisés levantó la serpiente en el desierto, así es necesario que el Hijo del Hombre sea levantado, para que todo aquel que en él cree, no se pierda, mas tenga vida eterna» (Jn 3:14-15).</p>
+<p>Levantado en un palo. Mirar y vivir. Jesús estaba hablando de la cruz.</p></aside>
+<section class="texto"><h2>Para seguir leyendo</h2>
+<ul>
+<li><strong>Éxodo 1 a 4:</strong> la esclavitud, el niño en el río, la huida y la zarza.</li>
+<li><strong>Éxodo 5 a 12:</strong> el faraón, las plagas y la noche de la Pascua.</li>
+<li><strong>Éxodo 14 y 15:</strong> el mar abierto y el canto de Moisés y de María.</li>
+<li><strong>Levítico 16:</strong> el Día de la Expiación.</li>
+<li><strong>Números 20 y 21:</strong> la peña de Cades y la serpiente de bronce.</li>
+<li><strong>Deuteronomio 34:</strong> Moisés en el monte Nebo.</li>
+<li><strong>Juan 3 y Juan 19:</strong> la serpiente levantada y el cordero en la cruz.</li>
+</ul></section>
+<footer class="derechos"><p><em>Las citas bíblicas son de la Reina-Valera © 1960 Sociedades Bíblicas en América Latina; © renovado 1988 Sociedades Bíblicas Unidas. Utilizado con permiso.</em></p></footer>
+</main>
+<nav class="libro"><a href="cap03.html">‹ Capítulo 3</a><a href="index.html">Índice</a><a href="cap05.html">Capítulo 5 ›</a></nav></body>
+</html>

@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Capítulo 6 — David: el rey que cayó y se levantó</title>
+<style>
+:root{--paper:#fbf7ef;--ink:#2b2622;--muted:#7a6f63;--accent:#8a5a2b;--rule:#e3d8c6;
+--hist:#f3ece0;--hist-b:#b08a5a;--lugar:#eaf1ee;--lugar-b:#4f7f72;--sombra:#f7efdc;--sombra-b:#b8892d;
+--escr:#f1ede6;--escr-b:#6d5c4a;--nota:#fffdf8;--nota-b:#8a5a2b}
+@media (prefers-color-scheme:dark){:root{--paper:#1d1a17;--ink:#e9e1d4;--muted:#a89c8c;--accent:#d7a76b;--rule:#3a332c;
+--hist:#2a241d;--lugar:#1f2a27;--sombra:#2d2618;--escr:#27231f;--nota:#221e1a}}
+*{box-sizing:border-box}
+html{font-size:18px;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--paper);color:var(--ink);
+font-family:"Iowan Old Style","Palatino Linotype",Palatino,"Book Antiqua",Georgia,"Times New Roman",serif;
+line-height:1.65;text-rendering:optimizeLegibility;hyphens:auto}
+main{max-width:36rem;margin:0 auto;padding:2.5rem 1.2rem 4rem}
+header.cap{text-align:center;margin:1rem 0 2.5rem;padding-bottom:1.5rem;border-bottom:1px solid var(--rule)}
+.kicker{font-variant:small-caps;letter-spacing:.18em;color:var(--accent);margin:0}
+h1{font-weight:normal;font-size:2rem;line-height:1.2;margin:.4rem 0 .6rem}
+.sub{font-style:italic;color:var(--muted);font-size:.9rem;margin:0}
+h2{font-weight:normal;font-size:1.45rem;color:var(--accent);margin:2.6rem 0 1rem;text-align:center;font-variant:small-caps;letter-spacing:.05em}
+h3{font-size:1.1rem;font-style:italic;font-weight:normal;margin:2rem 0 .8rem}
+p{margin:0 0 1em}
+.texto>p:first-of-type em:only-child{color:var(--muted);font-size:.92rem}
+p.lucha{border-left:3px solid var(--accent);padding-left:.9rem}
+blockquote.verso{margin:1rem 0 1.4rem;padding:.2rem 0 .2rem 1rem;border-left:2px solid var(--rule);font-style:italic}
+blockquote.verso p{margin:0}
+table{width:100%;border-collapse:collapse;font-size:.85rem;margin:1rem 0 1.5rem;line-height:1.45}
+th,td{border-bottom:1px solid var(--rule);padding:.5rem .4rem;vertical-align:top;text-align:left}
+th{font-variant:small-caps;letter-spacing:.04em;color:var(--accent);font-weight:normal}
+.box{border-radius:6px;padding:1.1rem 1.2rem .4rem;margin:2rem 0;font-size:.93rem;border-left:4px solid}
+.box h3,.box h2{margin-top:0;font-style:normal;font-variant:small-caps;letter-spacing:.06em;font-size:1.05rem;text-align:left}
+.historia{background:var(--hist);border-color:var(--hist-b)} .historia h3{color:var(--hist-b)}
+.lugar{background:var(--lugar);border-color:var(--lugar-b)} .lugar h3{color:var(--lugar-b)}
+.escrito{background:var(--escr);border-color:var(--escr-b)} .escrito h3{color:var(--escr-b)}
+.sombra{background:var(--sombra);border-color:var(--sombra-b)} .sombra h2{color:var(--sombra-b);font-size:1.25rem}
+.nota{background:var(--nota);border:1px solid var(--rule);border-left:4px solid var(--nota-b);font-style:italic;font-size:1rem}
+.nota h2{color:var(--nota-b);font-size:1.25rem}
+figure.ph{margin:2rem auto}
+figure.ilus{max-width:24rem} figure.video{max-width:17rem}
+.ph-box{width:100%;border:2px dashed var(--accent);border-radius:8px;display:flex;flex-direction:column;align-items:center;justify-content:center;
+text-align:center;padding:1rem;background:repeating-linear-gradient(45deg,transparent,transparent 10px,rgba(138,90,43,.05) 10px,rgba(138,90,43,.05) 20px)}
+.ph-tag{font-family:system-ui,sans-serif;font-weight:700;color:var(--accent);font-size:1rem;margin-bottom:.6rem}
+.ph-desc{font-size:.8rem;color:var(--muted);font-style:italic}
+footer.derechos{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--rule);font-size:.75rem;color:var(--muted);text-align:center}
+ul{padding-left:1.2rem} li{margin-bottom:.4rem}
+@media (max-width:480px){html{font-size:17px} main{padding:1.5rem 1rem 3rem} h1{font-size:1.6rem} table{font-size:.8rem} .box{padding:.9rem .9rem .3rem}}
+@media print{body{background:#fff} .ph-box{background:none}}
+
+figure.media{margin:2rem auto}
+figure.media img,figure.media video{width:100%;height:auto;display:block;border-radius:8px;background:#1a1612}
+figure.media figcaption{font-size:.8rem;color:var(--muted);font-style:italic;text-align:center;margin-top:.6rem;line-height:1.4}
+@media print{figure.media video{display:none} figure.media img{-webkit-print-color-adjust:exact;print-color-adjust:exact}}
+.pregunta{background:var(--escr);border-color:var(--accent)} .pregunta h3{color:var(--accent)}
+</style>
+<style>nav.libro{max-width:36rem;margin:0 auto;padding:.8rem 1.2rem;display:flex;justify-content:space-between;font-size:.85rem;font-variant:small-caps;letter-spacing:.08em;border-bottom:1px solid var(--rule,#e3d8c6)}nav.libro a{color:var(--accent,#8a5a2b);text-decoration:none}nav.libro span{color:transparent}</style></head>
+<body><nav class="libro"><a href="cap05.html">‹ Capítulo 5</a><a href="index.html">Índice</a><a href="cap11.html">Capítulo 11 ›</a></nav>
+<main>
+<header class="cap"><p class="kicker">Capítulo 6</p><h1>David: el rey que cayó y se levantó</h1><p class="sub">Parte I: la promesa · 1 y 2 Samuel; Salmos 23, 32, 51 y 22</p></header>
+<section class="texto"><h2>La escena</h2>
+<p><em>Recreación: así pudo haber sido. Los hechos están en 1 y 2 Samuel y en los Salmos. Lo que pensaban y sentían se imagina a partir del texto y de lo que se sabe de la época.</em></p>
+<h3>El menor, el que cuida las ovejas</h3>
+<p>Israel por fin tiene rey. El pueblo lo pidió, cansado de los tiempos de los jueces, y el primer rey fue Saúl: alto, buen mozo, una cabeza más alto que todos. Pero Saúl empezó bien y terminó mal. Desobedeció a Dios, se llenó de celos y de miedo, y Dios lo desechó.</p>
+<p>Entonces Dios le dice al profeta Samuel que llene su cuerno de aceite y que vaya a Belén. A la casa de un hombre llamado Isaí. Uno de sus hijos va a ser el nuevo rey.</p>
+<p>Belén. La casa del pan. El pueblo de Booz y de Rut. Isaí es su nieto.</p>
+<p>Samuel llega, y la gente del pueblo tiembla, porque cuando el profeta aparece sin avisar es que algo grave pasa. Samuel los tranquiliza, prepara un sacrificio, y le pide a Isaí que le presente a sus hijos.</p>
+<p>Entra el mayor, Eliab. Alto, fuerte, de buena presencia. Y Samuel piensa: este es. Seguro que este es.</p>
+<p>Y Dios le dice que no.</p>
+<p>«Jehová no mira lo que mira el hombre; pues el hombre mira lo que está delante de sus ojos, pero Jehová mira el corazón» (1 S 16:7).</p>
+<p>Pasa el segundo. Tampoco. El tercero. Tampoco. Siete hijos pasan delante del profeta, y de ninguno dice Dios: este es. Samuel, confundido, le pregunta a Isaí si esos son todos sus hijos.</p>
+<p>Y el padre contesta, casi con vergüenza: «Queda aún el menor, que apacienta las ovejas» (1 S 16:11).</p>
+<p>Al menor ni lo llamaron. Nadie pensó que valiera la pena traerlo del campo para algo importante. Estaba afuera, con el rebaño, como siempre.</p>
+<p>Samuel dice que nadie se sienta a la mesa hasta que llegue. Y mandan a buscarlo. Entra un muchacho todavía con olor a oveja, rojizo, de ojos bonitos, sin entender por qué lo llamaron. Y Dios le dice a Samuel:</p>
+<p>«Levántate y úngelo, porque este es» (1 S 16:12).</p>
+<p>Samuel le derrama el aceite en la cabeza, ahí, en medio de sus hermanos mayores. Y desde ese día, dice la Biblia, el Espíritu de Dios vino sobre David.</p>
+<h3>Cinco piedras del arroyo</h3>
+<p>Pasa un tiempo. David sigue cuidando ovejas, aunque ya está ungido. Y un día su padre lo manda al frente de batalla, al valle de Elá, a llevarles pan y queso a sus hermanos, que están en el ejército de Saúl.</p>
+<p>Llega. Y ve algo que lo deja indignado.</p>
+<p>En un cerro están los filisteos; en el otro, Israel; en medio, el valle. Y cada mañana y cada tarde, durante cuarenta días, baja al valle un guerrero filisteo de la ciudad de Gat, un gigante llamado Goliat, con casco de bronce, una cota de malla que pesa como un hombre y una lanza enorme. Y grita que le manden a alguien para pelear con él.</p>
+<p>Y nadie baja. Ni siquiera el rey Saúl, el más alto de Israel. Todo el ejército tiene miedo.</p>
+<p>David escucha los gritos, y pregunta quién es ese filisteo para provocar «a los escuadrones del Dios viviente» (1 S 17:26). Su hermano mayor lo regaña, le dice que es un insolente, que vino a mirar la batalla. Pero las palabras de David llegan hasta Saúl, y el rey lo manda a llamar.</p>
+<p>Saúl lo mira y le dice que no puede, que es un muchacho y el otro es un guerrero desde su juventud. Y David le cuenta lo que aprendió con las ovejas: que cuando venía un león o un oso y se llevaba un cordero del rebaño, él salía detrás, lo golpeaba y le sacaba el cordero de la boca. Un pastor de verdad no deja que se le lleven un cordero.</p>
+<p>Saúl le presta su armadura, pero a David le queda enorme. Se la quita. Toma su cayado, su honda, y baja al arroyo. Escoge cinco piedras lisas. Las pone en su bolsa de pastor. Y camina hacia el gigante.</p>
+<p>Goliat lo ve venir y se ríe. Lo maldice por sus dioses. Y David, en medio del valle, le contesta:</p>
+<p>«Tú vienes a mí con espada y lanza y jabalina; mas yo vengo a ti en el nombre de Jehová de los ejércitos, el Dios de los escuadrones de Israel, a quien tú has provocado» (1 S 17:45).</p>
+<p>Una piedra. Una sola. Gira la honda, la suelta, y la piedra se le clava al gigante en la frente. Goliat cae de cara al suelo.</p>
+<p>Ese día, el muchacho de las ovejas se convierte en el héroe de Israel. Y ahí empiezan sus problemas.</p>
+<h3>Años de huida</h3>
+<p>Las mujeres salen a cantar que Saúl mató a sus miles, y David a sus diez miles. Y a Saúl se le mete el veneno de los celos. Dos veces le tira una lanza a David mientras él toca el arpa para calmarlo. Lo persigue por los desiertos. David pasa años escondido en cuevas, en las montañas de Judá, en tierra de los filisteos, con un grupo de hombres endeudados y amargados que se le van uniendo.</p>
+<p>Dos veces tiene a Saúl en sus manos y lo podría matar. Y no lo hace. Dice que no va a levantar la mano contra el ungido de Dios. Espera.</p>
+<p>En esos años de cuevas y de miedo, David escribe canciones. Y una de ellas es la más conocida del mundo, la que se recita en los hospitales y en los funerales, la que se aprenden los niños:</p>
+<p>«Jehová es mi pastor; nada me faltará» (Sal 23:1).</p>
+<p>Lo escribe un pastor. Un hombre que sabía lo que era cuidar ovejas de noche, buscarles pasto y agua, defenderlas de las fieras. Y que en sus peores años, perseguido, se sintió así: como una oveja a la que Dios cuida.</p>
+<h3>El rey en Jerusalén</h3>
+<p>Saúl muere en batalla. Y David, a los treinta años, es coronado rey. Primero de Judá, en Hebrón. Después de todo Israel.</p>
+<p>Conquista una fortaleza cananea en lo alto de un cerro, que nadie había podido tomar: Jebús. La convierte en su capital y le pone un nombre que todavía conocemos: Jerusalén, la ciudad de David. Lleva allí el arca de Dios, y entra delante de ella danzando con todas sus fuerzas, como un niño, sin importarle lo que digan.</p>
+<p>Y un día, ya instalado en su palacio de cedro, David siente vergüenza: él vive en una casa de lujo y el arca de Dios está en una tienda. Quiere construirle a Dios un templo.</p>
+<p>Y Dios le responde, por medio del profeta Natán, con una sorpresa. No vas a ser tú el que me construya una casa a mí. Yo te voy a construir una casa a ti. Una familia. Una dinastía. Y le hace una promesa que va a sostener a Israel durante mil años de oscuridad:</p>
+<p>«Y será afirmada tu casa y tu reino para siempre delante de tu rostro, y tu trono será estable eternamente» (2 S 7:16).</p>
+<p>Para siempre. Eternamente. David no entiende del todo lo que le prometen. Se sienta delante de Dios y le pregunta quién es él, y qué es su casa, para que Dios lo haya traído hasta aquí. El muchacho de las ovejas, con una promesa eterna en las manos.</p>
+<p>Todo va bien. Demasiado bien.</p>
+<h3>Una tarde en el terrado</h3>
+<p>«Aconteció al año siguiente, en el tiempo que salen los reyes a la guerra, que David envió a Joab, y con él a sus siervos y a todo Israel, y destruyeron a los amonitas, y sitiaron a Rabá; pero David se quedó en Jerusalén» (2 S 11:1).</p>
+<p>Pero David se quedó.</p>
+<p>Es primavera, el tiempo en que los reyes salen a la guerra. Y el rey no sale. Manda a otros. Se queda en casa.</p>
+<p>Una tarde se levanta de la cama, aburrido, y se pone a caminar por la azotea del palacio. Desde ahí arriba se ven los patios de las casas de abajo. Y ve a una mujer que se está bañando. Es muy hermosa.</p>
+<p>Pregunta quién es. Y le contestan con una frase que debió haberlo detenido en seco: «Aquella es Betsabé hija de Eliam, mujer de Urías heteo» (2 S 11:3).</p>
+<p>Mujer de Urías. Casada. Y su marido no es un desconocido: es uno de los guerreros más leales de David, uno de sus valientes, que en ese momento está en el frente de batalla peleando por él.</p>
+<p>David lo sabe. Y aun así la manda a buscar.</p>
+<p>La Biblia lo cuenta en una sola línea seca: envió mensajeros, la tomó, durmió con ella, y ella volvió a su casa. No hay una palabra de ella. Es el rey el que manda, y nadie le dice que no a un rey. Y unas semanas después, llega un mensaje al palacio. Dos palabras:</p>
+<p>«Estoy encinta» (2 S 11:5).</p>
+<h3>La carta</h3>
+<p>Y aquí David, el hombre conforme al corazón de Dios, empieza a hundirse cada vez más hondo para tapar lo que hizo.</p>
+<p>Manda traer a Urías del frente. Lo recibe con amabilidad, le pregunta cómo va la guerra, y le dice que baje a su casa a descansar, a lavarse los pies. Le manda un regalo de la mesa real. La idea es simple: que Urías duerma con su esposa, y que el niño parezca suyo.</p>
+<p>Pero Urías no va a su casa. Duerme a la puerta del palacio, en el suelo, con los guardias. Y cuando David le pregunta por qué, Urías le contesta con una lealtad que le debió quemar al rey por dentro:</p>
+<p>«El arca e Israel y Judá están bajo tiendas, y mi señor Joab, y los siervos de mi señor, en el campo; ¿y había yo de entrar en mi casa para comer y beber, y a dormir con mi mujer?» (2 S 11:11).</p>
+<p>Un extranjero, un hitita, más fiel a Israel que el rey de Israel.</p>
+<p>David lo intenta otra vez. Lo invita a comer y lo emborracha. Y Urías, borracho y todo, vuelve a dormir a la puerta con los guardias.</p>
+<p>Entonces David hace lo peor. A la mañana escribe una carta a Joab, su general. La sella. Y se la entrega a Urías para que él mismo la lleve.</p>
+<figure class="ph ilus" id="cap06_carta_urias"><div class="ph-box" style="aspect-ratio:3/4"><span class="ph-tag">[ilustración en preparación]</span><span class="ph-desc">En una sala del palacio, al amanecer, el rey David entrega una carta sellada a Urías, soldado leal con armadura; David evita mirarlo a los ojos.</span></div></figure>
+<p>Urías camina de vuelta al frente llevando en la mano su propia sentencia de muerte. Leal hasta el final. Y la carta dice:</p>
+<p>«Poned a Urías al frente, en lo más recio de la batalla, y retiraos de él, para que sea herido y muera» (2 S 11:15).</p>
+<p>Joab obedece. Urías muere en un ataque a la muralla de Rabá, junto con otros soldados. Llega el mensajero con la noticia, y David responde con una frialdad que asusta: que no se preocupe Joab, que la espada mata a unos y a otros.</p>
+<p>Betsabé hace luto por su marido. Y cuando pasa el luto, David la trae al palacio y se casa con ella. Nace el niño. Todo parece arreglado. Nadie dice nada.</p>
+<p>Pero la Biblia cierra el capítulo con una frase que lo cambia todo:</p>
+<p>«Mas esto que David había hecho, fue desagradable ante los ojos de Jehová» (2 S 11:27).</p>
+<p class="lucha"><strong>Su lucha.</strong> David no cae de golpe. Va bajando, un escalón detrás de otro. Primero se queda en casa cuando debía estar con su gente. Después mira. Después pregunta. Después manda a buscarla, aun sabiendo que es casada. Después miente. Después emborracha a un hombre leal. Después lo manda a matar. Y después se calla. Durante meses vive como si nada, mientras su conciencia lo va comiendo por dentro. Él mismo lo contará después, en un salmo: «Mientras callé, se envejecieron mis huesos en mi gemir todo el día» (Sal 32:3). El gran rey, el que mató al gigante, el que escribió «Jehová es mi pastor», derrotado por su propio deseo y por el poder de hacer lo que quería sin que nadie lo detuviera. Es la lucha de cualquier persona que tiene poder sobre otros, y de cualquier persona que alguna vez quiso tapar un pecado con otro pecado.</p>
+<h3>Tú eres aquel hombre</h3>
+<p>Dios no deja a David en su silencio. Le manda a Natán.</p>
+<p>Natán no llega acusando. Llega contando una historia, como si le trajera al rey un caso para juzgar. En una ciudad había dos hombres, uno rico y otro pobre. El rico tenía muchísimas ovejas y vacas. El pobre no tenía más que una corderita que había comprado y criado. La corderita creció con él y con sus hijos, comía de su pan, bebía de su vaso, dormía en su pecho, «y la tenía como a una hija» (2 S 12:3).</p>
+<p>Un día le llegó una visita al rico. Y el rico, para no tocar sus propias ovejas, le quitó la corderita al pobre, la mató y se la sirvió a su invitado.</p>
+<p>David, el pastor, el que salía detrás del león para salvar un cordero, se enfurece. Se le enciende la sangre. Grita que el que hizo eso merece la muerte, que tiene que pagar cuatro veces la corderita, porque no tuvo misericordia.</p>
+<p>Y Natán lo mira a los ojos y le dice cuatro palabras:</p>
+<p>«Tú eres aquel hombre» (2 S 12:7).</p>
+<figure class="ph ilus" id="cap06_natan"><div class="ph-box" style="aspect-ratio:3/4"><span class="ph-tag">[ilustración en preparación]</span><span class="ph-desc">El profeta Natán, de pie en el salón del trono, señala al rey David; David, en el trono, se ha quedado helado; los cortesanos miran al suelo.</span></div></figure>
+<p>Silencio en el salón del trono.</p>
+<p>Natán sigue, con la voz de Dios: yo te ungí, yo te libré de Saúl, yo te di todo, y si eso era poco te hubiera dado más. ¿Por qué despreciaste mi palabra? A Urías lo mataste con la espada de los amonitas, y tomaste a su mujer.</p>
+<p>David tenía el poder para hacer callar a Natán. Para echarlo, para matarlo, como mató a Urías. Cualquier otro rey de la época lo hubiera hecho. Pero David no se defiende. No se justifica. No le echa la culpa a Betsabé ni a Joab ni a las circunstancias. Dice dos palabras:</p>
+<p>«Pequé contra Jehová. Y Natán dijo a David: También Jehová ha remitido tu pecado; no morirás» (2 S 12:13).</p>
+<p>Pequé. Y en ese mismo instante, la respuesta: Dios ha quitado tu pecado. No hay una pausa. No hay un periodo de prueba. El perdón llega en la siguiente línea.</p>
+<p>Pero el perdón no borra las consecuencias. Natán le anuncia que el niño que nació va a morir, y que la espada no se va a apartar nunca de su casa. Y así fue.</p>
+<h3>Siete días en el suelo</h3>
+<p>El niño se enferma. Y David hace algo que conmueve: se tira al suelo. Ayuna. Pasa las noches acostado en la tierra, rogándole a Dios por el bebé. Los ancianos de su casa tratan de levantarlo, y no quiere. No come. No se cambia de ropa.</p>
+<figure class="ph ilus" id="cap06_david_suelo"><div class="ph-box" style="aspect-ratio:3/4"><span class="ph-tag">[ilustración en preparación]</span><span class="ph-desc">De noche, David, sin corona, tendido en el suelo de piedra de su cuarto, ayunando y orando; ancianos de su casa en la puerta intentando levantarlo.</span></div></figure>
+<p>Al séptimo día el niño muere. Los siervos tienen miedo de decírselo; si así estaba cuando el niño vivía, ¿qué va a hacer ahora? Pero David los ve cuchichear y entiende. Pregunta si el niño murió. Le dicen que sí.</p>
+<p>Y David se levanta del suelo. Se lava, se perfuma, se cambia de ropa. Va a la casa de Dios a adorar. Y después pide que le sirvan de comer. Sus siervos no entienden. Y él les explica que mientras el niño vivía, ayunaba y lloraba pensando que quizás Dios tendría compasión. Pero ahora ya no puede hacerlo volver: «Yo voy a él, mas él no volverá a mí» (2 S 12:23).</p>
+<p>Después consuela a Betsabé. Y les nace otro hijo, Salomón. Y la Biblia dice algo precioso: que Dios lo amó.</p>
+<p>El resto de la vida de David no es fácil. La espada no se aparta de su casa. Sus propios hijos se hieren entre ellos. Su hijo Absalón se rebela contra él y lo saca de Jerusalén. Y cuando Absalón muere en la guerra, David sube a una sala sobre la puerta de la ciudad y llora como nunca había llorado:</p>
+<p>«¡Hijo mío Absalón, hijo mío, hijo mío Absalón! ¡Quién me diera que muriera yo en lugar de ti, Absalón, hijo mío, hijo mío!» (2 S 18:33).</p>
+<p>Quién me diera morir en tu lugar. Lo grita un padre que no podía. Guarda esa frase.</p>
+<h3>Un corazón limpio</h3>
+<p>Después de que Natán lo confrontó, David escribió una oración. Es el Salmo 51. Es la oración de arrepentimiento más honda que se ha escrito, y empieza así:</p>
+<p>«Ten piedad de mí, oh Dios, conforme a tu misericordia; conforme a la multitud de tus piedades borra mis rebeliones» (Sal 51:1).</p>
+<p>No pide que Dios mire sus buenas obras. No le recuerda a Goliat, ni el arca, ni los salmos que escribió. Se apoya en una sola cosa: la misericordia de Dios.</p>
+<p>Y en medio de la oración aparece una planta que ya conocemos:</p>
+<p>«Purifícame con hisopo, y seré limpio; lávame, y seré más blanco que la nieve» (Sal 51:7).</p>
+<p>El hisopo. La planta con la que los padres hebreos pintaron la sangre del cordero en las puertas la noche de la Pascua. David sabe que su pecado es tan grande que necesita lo mismo que los primogénitos de Egipto: que la sangre lo cubra.</p>
+<p>Y pide algo que ningún sacrificio podía darle:</p>
+<p>«Crea en mí, oh Dios, un corazón limpio, y renueva un espíritu recto dentro de mí» (Sal 51:10).</p>
+<p>Crea. La misma palabra del principio de la Biblia, cuando Dios creó los cielos y la tierra. David sabe que no le basta con un arreglo. Necesita que Dios le haga un corazón nuevo, desde cero.</p>
+<p>Y casi al final dice una frase que podría resumir todo este libro:</p>
+<p>«Los sacrificios de Dios son el espíritu quebrantado; al corazón contrito y humillado no despreciarás tú, oh Dios» (Sal 51:17).</p>
+<p>Y en otro salmo, el 32, cuenta cómo se siente un hombre cuando por fin deja de esconderse:</p>
+<p>«Mi pecado te declaré, y no encubrí mi iniquidad. Dije: Confesaré mis transgresiones a Jehová; y tú perdonaste la maldad de mi pecado» (Sal 32:5).</p>
+<p>Y empieza ese salmo con una palabra que no esperarías de un hombre que mató a otro: feliz. «Bienaventurado aquel cuya transgresión ha sido perdonada, y cubierto su pecado» (Sal 32:1).</p>
+<h3>Conforme al corazón de Dios</h3>
+<p>Mil años después, el apóstol Pablo, en una sinagoga de Antioquía de Pisidia, en la actual Turquía, repasa la historia de Israel. Y cuando llega a David, cita lo que Dios dijo de él:</p>
+<p>«He hallado a David hijo de Isaí, varón conforme a mi corazón, quien hará todo lo que yo quiero» (Hch 13:22).</p>
+<p>¿Conforme al corazón de Dios? ¿El adúltero? ¿El que mandó matar a Urías?</p>
+<p>Sí. No porque no pecó. Pecó, y feo. Sino porque cuando Dios lo confrontó, no se escondió. Cayó, y se dejó levantar. Saúl, cuando lo confrontaron, se justificó. David dijo «pequé». Esa es toda la diferencia. Dios no busca gente que nunca cae. Busca gente que, cuando cae, vuelve a Él.</p></section>
+<section class="texto"><h2>La historia según la Biblia</h2>
+<p><em>Reina-Valera 1960</em></p>
+<p><strong>Dios mira el corazón</strong></p>
+<blockquote class="verso">
+<p>«Y Jehová respondió a Samuel: No mires a su parecer, ni a lo grande de su estatura, porque yo lo desecho; porque Jehová no mira lo que mira el hombre; pues el hombre mira lo que está delante de sus ojos, pero Jehová mira el corazón.» — 1 Samuel 16:7</p>
+</blockquote>
+<p><strong>La promesa del trono eterno</strong></p>
+<blockquote class="verso">
+<p>«Y será afirmada tu casa y tu reino para siempre delante de tu rostro, y tu trono será estable eternamente.» — 2 Samuel 7:16</p>
+</blockquote>
+<p><strong>Pequé</strong></p>
+<blockquote class="verso">
+<p>«Entonces dijo David a Natán: Pequé contra Jehová. Y Natán dijo a David: También Jehová ha remitido tu pecado; no morirás.» — 2 Samuel 12:13</p>
+</blockquote>
+<p><strong>Un corazón nuevo</strong></p>
+<blockquote class="verso">
+<p>«Crea en mí, oh Dios, un corazón limpio, Y renueva un espíritu recto dentro de mí.» — Salmo 51:10</p>
+</blockquote>
+</section>
+<aside class="box historia"><h3>Lo que dice la historia</h3><p><strong>«La casa de David» en piedra.</strong> Durante mucho tiempo hubo estudiosos que dudaban de que David hubiera existido. En 1993, en las excavaciones de Tel Dan, en el norte de Israel, apareció un fragmento de basalto empotrado en un muro antiguo, y al año siguiente otros dos. Es parte de un monumento de victoria de un rey arameo, probablemente Hazael de Damasco, del siglo IX a. C. Ahí el rey presume de haber vencido al rey de Israel y al rey de «la casa de David». Es la mención más antigua de David que se conoce fuera de la Biblia, apenas unos 150 años después de su muerte, y muestra que para entonces ya se le recordaba como el fundador de la dinastía de Judá. Se exhibe en el Museo de Israel, en Jerusalén.</p>
+<p><strong>La honda no era un juguete.</strong> La honda era un arma de guerra en todo el antiguo Oriente. En las excavaciones aparecen piedras de honda redondeadas, del tamaño de una pelota de tenis, y en el palacio de Nínive los asirios pintaron en relieve a sus honderos. La Biblia habla de setecientos honderos de la tribu de Benjamín que tiraban una piedra a un cabello y no fallaban (Jue 20:16). David no fue a pelear con un juguete de niño, sino con el arma de un pastor, que era también un arma de guerra.</p>
+<p><strong>¿Cuánto medía Goliat?</strong> El texto hebreo tradicional dice seis codos y un palmo, unos 2,9 m. Pero la traducción griega antigua, la Septuaginta, y un rollo de Samuel encontrado entre los manuscritos del mar Muerto dicen cuatro codos y un palmo, unos 2 m. Aun así, un guerrero de dos metros, con armadura completa, frente a un muchacho, era un gigante.</p>
+<p><strong>Urías el heteo.</strong> Los heteos o hititas eran un pueblo que vino del norte, de la actual Turquía. Urías era un extranjero al servicio de David, y su nombre en hebreo quiere decir «el Señor es mi luz». Un extranjero con nombre de fe, que fue más fiel que el rey.</p></aside>
+<aside class="box lugar"><h3>El lugar hoy</h3><p><strong>El valle de Elá</strong>, donde David enfrentó a Goliat, está unos 25 km al suroeste de Jerusalén. Todavía se puede caminar por él, y un arroyo con piedras lisas cruza el fondo del valle en tiempo de lluvias. Sobre una de sus colinas, en Jirbet Qeiyafa, los arqueólogos excavaron una ciudad fortificada de alrededor del año 1000 a. C., la época de David.</p>
+<p><strong>La Ciudad de David</strong> es la colina más antigua de Jerusalén, al sur del monte del templo. Hoy es un gran sitio arqueológico, con murallas, casas y túneles de agua de la época de los reyes de Judá. Desde ahí se entiende la escena del terrado: las casas bajaban por la ladera, y desde lo alto del palacio se veían los patios.</p>
+<p><strong>Belén</strong>, el pueblo de David, sigue a unos 9 km al sur de Jerusalén. Por eso, mil años después, a Belén se la seguía llamando «la ciudad de David».</p></aside>
+<section class="box sombra"><h2>La sombra de Jesús</h2><p><strong>El Hijo de David.</strong> La promesa del trono eterno parecía imposible. Los reyes de la familia de David fueron cayendo uno tras otro, y siglos después ya no hubo ningún rey en Jerusalén. Pero Dios no se olvidó. Mil años después de David, el ángel Gabriel le dijo a una muchacha de Nazaret, de la familia de David, que su hijo «será grande, y será llamado Hijo del Altísimo; y el Señor Dios le dará el trono de David su padre» (Lc 1:32). Y Pablo, en Antioquía, termina su repaso así: «De la descendencia de este, y conforme a la promesa, Dios levantó a Jesús por Salvador a Israel» (Hch 13:23). Cuando Jesús entró en Jerusalén montado en un burrito, la gente gritaba: «¡Hosanna al Hijo de David!» (Mt 21:9).</p>
+<p><strong>El buen pastor.</strong> David escribió «Jehová es mi pastor». Y Jesús, el Hijo de David, dijo: «Yo soy el buen pastor; el buen pastor su vida da por las ovejas» (Jn 10:11). David salía detrás del león para salvar a un cordero. Jesús dio su vida por las ovejas.</p>
+<p><strong>«Quién me diera morir en tu lugar».</strong> David lo gritó por Absalón, y no pudo hacerlo. Jesús, el Hijo de David, sí lo hizo. Murió en lugar de nosotros.</p>
+<p><strong>El Salmo 22.</strong> David escribió un salmo que empieza con un grito: «Dios mío, Dios mío, ¿por qué me has desamparado?» (Sal 22:1). Mil años después, en la cruz, Jesús gritó exactamente esas palabras: «Elí, Elí, ¿lama sabactani? Esto es: Dios mío, Dios mío, ¿por qué me has desamparado?» (Mt 27:46). Y el mismo salmo describe cosas que David nunca vivió: «Horadaron mis manos y mis pies» (Sal 22:16) (en este verso, el texto hebreo tradicional dice «como león»; la traducción griega antigua y un manuscrito hallado cerca del mar Muerto leen «horadaron»); «Repartieron entre sí mis vestidos, y sobre mi ropa echaron suertes» (Sal 22:18). Cuando David escribió esto, faltaban siglos para que los romanos usaran la cruz como castigo. Los soldados romanos, al pie de la cruz, se repartieron la ropa de Jesús y echaron suertes sobre su túnica (Jn 19:23-24). Esta historia la vamos a contar despacio en su capítulo.</p>
+<p><strong>El perdón de David, y el nuestro.</strong> David dijo «pequé», y Dios le quitó el pecado en ese mismo instante. Pero ¿cómo puede Dios perdonar un adulterio y un asesinato así, de una línea a la otra? Pablo responde en Romanos 4: cita justamente a David, el Salmo 32, para explicar que Dios perdona al que cree, no al que se lo gana. David fue perdonado mirando hacia adelante, a un sacrificio que todavía no había ocurrido. Nosotros miramos hacia atrás, a la cruz. Es el mismo perdón. Es la misma sangre.</p></section>
+<section class="texto"><h2>Para seguir leyendo</h2>
+<ul>
+<li><strong>1 Samuel 16 y 17:</strong> David ungido y Goliat.</li>
+<li><strong>1 Samuel 24:</strong> David perdona la vida a Saúl en la cueva.</li>
+<li><strong>2 Samuel 7:</strong> la promesa del trono eterno.</li>
+<li><strong>2 Samuel 11 y 12:</strong> Betsabé, Urías y Natán.</li>
+<li><strong>Salmos 23, 32 y 51:</strong> el pastor, el perdón y el corazón limpio.</li>
+<li><strong>Salmo 22 y Mateo 27:</strong> el grito de la cruz.</li>
+</ul></section>
+<footer class="derechos"><p><em>Las citas bíblicas son de la Reina-Valera © 1960 Sociedades Bíblicas en América Latina; © renovado 1988 Sociedades Bíblicas Unidas. Utilizado con permiso.</em></p></footer>
+</main>
+<nav class="libro"><a href="cap05.html">‹ Capítulo 5</a><a href="index.html">Índice</a><a href="cap11.html">Capítulo 11 ›</a></nav></body>
+</html>

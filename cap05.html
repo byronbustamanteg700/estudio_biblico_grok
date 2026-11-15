@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Capítulo 5 — Rut: una extranjera y su redentor</title>
+<style>
+:root{--paper:#fbf7ef;--ink:#2b2622;--muted:#7a6f63;--accent:#8a5a2b;--rule:#e3d8c6;
+--hist:#f3ece0;--hist-b:#b08a5a;--lugar:#eaf1ee;--lugar-b:#4f7f72;--sombra:#f7efdc;--sombra-b:#b8892d;
+--escr:#f1ede6;--escr-b:#6d5c4a;--nota:#fffdf8;--nota-b:#8a5a2b}
+@media (prefers-color-scheme:dark){:root{--paper:#1d1a17;--ink:#e9e1d4;--muted:#a89c8c;--accent:#d7a76b;--rule:#3a332c;
+--hist:#2a241d;--lugar:#1f2a27;--sombra:#2d2618;--escr:#27231f;--nota:#221e1a}}
+*{box-sizing:border-box}
+html{font-size:18px;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--paper);color:var(--ink);
+font-family:"Iowan Old Style","Palatino Linotype",Palatino,"Book Antiqua",Georgia,"Times New Roman",serif;
+line-height:1.65;text-rendering:optimizeLegibility;hyphens:auto}
+main{max-width:36rem;margin:0 auto;padding:2.5rem 1.2rem 4rem}
+header.cap{text-align:center;margin:1rem 0 2.5rem;padding-bottom:1.5rem;border-bottom:1px solid var(--rule)}
+.kicker{font-variant:small-caps;letter-spacing:.18em;color:var(--accent);margin:0}
+h1{font-weight:normal;font-size:2rem;line-height:1.2;margin:.4rem 0 .6rem}
+.sub{font-style:italic;color:var(--muted);font-size:.9rem;margin:0}
+h2{font-weight:normal;font-size:1.45rem;color:var(--accent);margin:2.6rem 0 1rem;text-align:center;font-variant:small-caps;letter-spacing:.05em}
+h3{font-size:1.1rem;font-style:italic;font-weight:normal;margin:2rem 0 .8rem}
+p{margin:0 0 1em}
+.texto>p:first-of-type em:only-child{color:var(--muted);font-size:.92rem}
+p.lucha{border-left:3px solid var(--accent);padding-left:.9rem}
+blockquote.verso{margin:1rem 0 1.4rem;padding:.2rem 0 .2rem 1rem;border-left:2px solid var(--rule);font-style:italic}
+blockquote.verso p{margin:0}
+table{width:100%;border-collapse:collapse;font-size:.85rem;margin:1rem 0 1.5rem;line-height:1.45}
+th,td{border-bottom:1px solid var(--rule);padding:.5rem .4rem;vertical-align:top;text-align:left}
+th{font-variant:small-caps;letter-spacing:.04em;color:var(--accent);font-weight:normal}
+.box{border-radius:6px;padding:1.1rem 1.2rem .4rem;margin:2rem 0;font-size:.93rem;border-left:4px solid}
+.box h3,.box h2{margin-top:0;font-style:normal;font-variant:small-caps;letter-spacing:.06em;font-size:1.05rem;text-align:left}
+.historia{background:var(--hist);border-color:var(--hist-b)} .historia h3{color:var(--hist-b)}
+.lugar{background:var(--lugar);border-color:var(--lugar-b)} .lugar h3{color:var(--lugar-b)}
+.escrito{background:var(--escr);border-color:var(--escr-b)} .escrito h3{color:var(--escr-b)}
+.sombra{background:var(--sombra);border-color:var(--sombra-b)} .sombra h2{color:var(--sombra-b);font-size:1.25rem}
+.nota{background:var(--nota);border:1px solid var(--rule);border-left:4px solid var(--nota-b);font-style:italic;font-size:1rem}
+.nota h2{color:var(--nota-b);font-size:1.25rem}
+figure.ph{margin:2rem auto}
+figure.ilus{max-width:24rem} figure.video{max-width:17rem}
+.ph-box{width:100%;border:2px dashed var(--accent);border-radius:8px;display:flex;flex-direction:column;align-items:center;justify-content:center;
+text-align:center;padding:1rem;background:repeating-linear-gradient(45deg,transparent,transparent 10px,rgba(138,90,43,.05) 10px,rgba(138,90,43,.05) 20px)}
+.ph-tag{font-family:system-ui,sans-serif;font-weight:700;color:var(--accent);font-size:1rem;margin-bottom:.6rem}
+.ph-desc{font-size:.8rem;color:var(--muted);font-style:italic}
+footer.derechos{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--rule);font-size:.75rem;color:var(--muted);text-align:center}
+ul{padding-left:1.2rem} li{margin-bottom:.4rem}
+@media (max-width:480px){html{font-size:17px} main{padding:1.5rem 1rem 3rem} h1{font-size:1.6rem} table{font-size:.8rem} .box{padding:.9rem .9rem .3rem}}
+@media print{body{background:#fff} .ph-box{background:none}}
+
+figure.media{margin:2rem auto}
+figure.media img,figure.media video{width:100%;height:auto;display:block;border-radius:8px;background:#1a1612}
+figure.media figcaption{font-size:.8rem;color:var(--muted);font-style:italic;text-align:center;margin-top:.6rem;line-height:1.4}
+@media print{figure.media video{display:none} figure.media img{-webkit-print-color-adjust:exact;print-color-adjust:exact}}
+.pregunta{background:var(--escr);border-color:var(--accent)} .pregunta h3{color:var(--accent)}
+</style>
+<style>nav.libro{max-width:36rem;margin:0 auto;padding:.8rem 1.2rem;display:flex;justify-content:space-between;font-size:.85rem;font-variant:small-caps;letter-spacing:.08em;border-bottom:1px solid var(--rule,#e3d8c6)}nav.libro a{color:var(--accent,#8a5a2b);text-decoration:none}nav.libro span{color:transparent}</style></head>
+<body><nav class="libro"><a href="cap04.html">‹ Capítulo 4</a><a href="index.html">Índice</a><a href="cap06.html">Capítulo 6 ›</a></nav>
+<main>
+<header class="cap"><p class="kicker">Capítulo 5</p><h1>Rut: una extranjera y su redentor</h1><p class="sub">Parte I: la promesa · Rut 1–4; con un puente por Josué y Jueces</p></header>
+<section class="texto"><h2>La escena</h2>
+<p><em>Recreación: así pudo haber sido. Los hechos están en el libro de Rut. Lo que pensaban y sentían se imagina a partir del texto y de lo que se sabe de la época.</em></p>
+<h3>Después de Moisés</h3>
+<p>Moisés murió mirando la tierra prometida desde lejos. El que hizo entrar al pueblo fue su ayudante, Josué. Cruzaron el Jordán, cayeron los muros de Jericó, y poco a poco Israel se fue asentando en Canaán, tribu por tribu, cada familia en su pedazo de tierra.</p>
+<p>En Jericó, por cierto, pasó algo que vamos a necesitar al final de este capítulo. Cuando Josué mandó espías a la ciudad, los escondió una mujer cananea, una prostituta llamada Rahab. Ella creyó en el Dios de Israel cuando nadie en su ciudad creía, y cuando cayeron los muros, ella y su familia fueron salvadas. Se quedó a vivir con los israelitas. Una extranjera, con un pasado que todos conocían, adentro del pueblo de Dios. Guarda ese nombre.</p>
+<p>Después de Josué vienen unos tiempos oscuros. Son los años de los jueces: líderes que Dios levantaba cuando el pueblo se hundía, como Gedeón o Sansón. Pero el pueblo se olvidaba de Dios, caía, clamaba, era rescatado, y volvía a olvidarse. Una y otra vez. El libro de los Jueces termina con una frase que retrata a esa época:</p>
+<p>«En estos días no había rey en Israel; cada uno hacía lo que bien le parecía» (Jue 21:25).</p>
+<p>Y justo en esos días, en medio de ese desorden, la Biblia cuenta una historia pequeña. Sin batallas, sin milagros espectaculares. La historia de dos viudas pobres y de un campo de cebada. Y esa historia pequeña va a terminar en el rey David. Y de David, en Jesús.</p>
+<h3>Hambre en la casa del pan</h3>
+<p>«Aconteció en los días que gobernaban los jueces, que hubo hambre en la tierra. Y un varón de Belén de Judá fue a morar en los campos de Moab, él y su mujer, y dos hijos suyos» (Rt 1:1).</p>
+<p>Belén quiere decir «casa del pan». Y en la casa del pan no hay pan. La lluvia no llega, la tierra se agrieta, los graneros se vacían. Y un hombre llamado Elimelec toma una decisión que cualquier padre entendería: agarra a su esposa, Noemí, y a sus dos hijos, y se va a buscar comida al otro lado.</p>
+<p>Al otro lado es Moab. Las mesetas que se ven desde Belén en los días claros, al este, más allá del mar Muerto. Tierra de otro pueblo, de otro idioma parecido, de otro dios: Quemos. Un pueblo con el que Israel tenía una historia larga de desconfianza.</p>
+<p>Se suponía que iba a ser por un tiempo. Se quedaron diez años.</p>
+<p>Y en esos diez años se le va la vida a Noemí. Primero muere su marido. Los hijos se casan con dos muchachas moabitas, Orfa y Rut. Y después mueren también los dos hijos, sin dejar nietos.</p>
+<p>La Biblia lo dice con una sola frase, y en esa frase está el tamaño del vacío: Noemí se quedó «desamparada de sus dos hijos y de su marido» (Rt 1:5).</p>
+<p>En ese mundo, una viuda sin hijos varones no era solo una mujer triste. Era una mujer sin protección, sin tierra que trabajar, sin nadie que hablara por ella en la puerta de la ciudad. Una mujer que podía morirse de hambre sin que a nadie le importara.</p>
+<h3>Una encrucijada en el camino</h3>
+<p>Un día llega la noticia: en Belén ha vuelto a llover. Dios ha visitado a su pueblo y hay pan otra vez. Y Noemí decide volver a casa.</p>
+<p>Sus dos nueras salen con ella. Tres viudas caminando juntas, con lo poco que les queda en un atado. Pero en algún punto del camino, Noemí se detiene. Lo ha estado pensando. ¿Qué futuro les espera a estas dos muchachas en Belén? Allá van a ser extranjeras, moabitas, viudas, pobres. Nadie se va a casar con ellas. En cambio aquí, en su tierra, con sus madres, todavía pueden rehacer su vida.</p>
+<p>Entonces les dice que se vuelvan. Las besa. Y las tres se ponen a llorar en medio del camino.</p>
+<p>Las muchachas dicen que no, que se van con ella. Noemí insiste, con una lógica dolorosa: que ella ya no tiene más hijos para darles por maridos, que está vieja, que la mano de Dios se ha vuelto contra ella. Y lloran otra vez.</p>
+<p>«Y Orfa besó a su suegra, mas Rut se quedó con ella» (Rt 1:14).</p>
+<figure class="ph ilus" id="cap05_encrucijada"><div class="ph-box" style="aspect-ratio:3/4"><span class="ph-tag">[ilustración en preparación]</span><span class="ph-desc">En un camino de tierra de Moab, Rut abraza a Noemí y no la suelta; Orfa se aleja despacio por otro camino, mirando atrás.</span></div></figure>
+<p>Orfa no hace nada malo. Hace lo sensato. Vuelve a su casa, a su gente. Se va despacio, mirando atrás. Y Rut se queda abrazada a Noemí, agarrada a ella, en medio del polvo. Noemí le insiste una vez más: mira, tu cuñada se volvió a su pueblo y a sus dioses; vuélvete tú también.</p>
+<p>Y Rut, una muchacha moabita que no tiene ninguna obligación, que tiene todo para perder y nada que ganar, le responde con unas palabras que se han dicho en miles de bodas sin que la gente sepa que las dijo una nuera a su suegra viuda en un camino de tierra:</p>
+<p>«No me ruegues que te deje, y me aparte de ti; porque a dondequiera que tú fueres, iré yo, y dondequiera que vivieres, viviré. Tu pueblo será mi pueblo, y tu Dios mi Dios» (Rt 1:16).</p>
+<p>Y todavía agrega más. Que donde Noemí muera, ella va a morir, y ahí la van a enterrar, «que solo la muerte hará separación entre nosotras dos» (Rt 1:17).</p>
+<p>Tu Dios mi Dios. Rut no conocía la ley de Moisés. No había visto el mar abierto. No había estado en el Sinaí. Pero algo vio en esa suegra, aun amargada, aun vacía, que la hizo elegir al Dios de Israel. Y lo eligió para siempre.</p>
+<h3>No me llaméis Noemí</h3>
+<p>Llegan a Belén. Y el pueblo entero se alborota. Las mujeres se asoman, se juntan, se preguntan: ¿no es esta Noemí? ¿La que se fue hace diez años? Se fue con marido y con dos hijos. Vuelve sola, flaca, envejecida, con una extranjera al lado.</p>
+<p>Noemí quiere decir «agradable», «dulce». Y ella les contesta:</p>
+<p>«No me llaméis Noemí, sino llamadme Mara; porque en grande amargura me ha puesto el Todopoderoso» (Rt 1:20).</p>
+<p>Mara quiere decir «amarga». Y dice algo más, que es una de las frases más honestas de toda la Biblia: «Yo me fui llena, pero Jehová me ha vuelto con las manos vacías» (Rt 1:21).</p>
+<p>Noemí no esconde lo que siente. No dice que todo está bien. Le reclama a Dios delante de todo el pueblo. Y lo notable es que la Biblia no la regaña. Deja que su queja quede escrita, para que la leamos tres mil años después.</p>
+<p>Y sin embargo hay un detalle que se le escapa a Noemí. Dice que volvió con las manos vacías. Pero no volvió sola. A su lado está Rut. Y además, dice el texto, llegaron a Belén «al comienzo de la siega de la cebada» (Rt 1:22). Llegaron justo cuando empezaba la cosecha. Dios ya estaba moviendo las piezas, aunque Noemí todavía no lo podía ver.</p>
+<p class="lucha"><strong>Su lucha.</strong> La lucha de Rut está toda en tres palabras que la gente de Belén le iba a decir con la mirada: viuda, pobre, extranjera. Pero había algo peor. Era moabita, y la ley de Moisés decía: «No entrará amonita ni moabita en la congregación de Jehová, ni hasta la décima generación de ellos» (Dt 23:3). Rut eligió a un Dios cuyo pueblo, en el papel, no la podía recibir. Cada vez que saliera a la calle, alguien iba a recordar de dónde venía. Y no tenía a nadie: ni marido, ni padre, ni hermanos que la defendieran. Solo una suegra amargada y sus propias manos. Y está también la lucha de Noemí, que es la de tantos: la de una mujer creyente que siente que Dios se ha puesto en su contra, que lo perdió todo y que no le encuentra sentido a nada. Dos mujeres heridas, cada una a su manera, sosteniéndose una a la otra.</p>
+<h3>Espigas detrás de los segadores</h3>
+<p>Hay que comer. Y Rut no se queda esperando.</p>
+<p>«Te ruego que me dejes ir al campo, y recogeré espigas en pos de aquel a cuyos ojos hallare gracia» (Rt 2:2).</p>
+<p>En la ley de Moisés había una norma preciosa, pensada para gente como ella. Cuando un israelita cosechaba su campo, no debía segar hasta el último rincón, ni volver a recoger lo que se caía. Eso se dejaba. «Para el pobre y para el extranjero lo dejarás» (Lv 19:10). Rut es las dos cosas.</p>
+<p>Así que sale de madrugada. Se mete detrás de los segadores, agachada, recogiendo una espiga aquí, otra allá. Las que se les caen. Las que quedan en el borde. El sol de la mañana en la espalda, el polvo de la paja en la garganta, la vergüenza de ser vista recogiendo sobras.</p>
+<p>Y la Biblia, con una sonrisa escondida, dice: «y aconteció que aquella parte del campo era de Booz» (Rt 2:3).</p>
+<p>Aconteció. Así, como de casualidad. De todos los campos de Belén, fue a dar justamente al campo de un pariente de su suegro. La Biblia no lo llama milagro. Pero el lector sabe que no fue casualidad.</p>
+<figure class="ph ilus" id="cap05_espigando"><div class="ph-box" style="aspect-ratio:3/4"><span class="ph-tag">[ilustración en preparación]</span><span class="ph-desc">Rut, agachada, recoge espigas detrás de los segadores en un campo dorado de cebada en las colinas de Belén; al fondo llega Booz desde el pueblo.</span></div></figure>
+<p>A media mañana llega Booz desde el pueblo. Es un hombre mayor, rico, respetado. Y lo primero que hace al llegar a su campo es saludar a sus trabajadores, y la Biblia guarda ese saludo: «Jehová sea con vosotros. Y ellos respondieron: Jehová te bendiga» (Rt 2:4). Así era ese hombre con su gente.</p>
+<p>Y ve a una muchacha que no conoce. Pregunta: «¿De quién es esta joven?» (Rt 2:5). El capataz le cuenta que es la moabita que volvió con Noemí, que pidió permiso para espigar, y que está ahí desde temprano, sin descansar ni un momento.</p>
+<p>Booz se acerca. Le habla con ternura. Le dice que no se vaya a otro campo, que se quede con sus criadas, que ya dio orden a los muchachos de que nadie la moleste, y que cuando tenga sed vaya a tomar del agua de los cántaros.</p>
+<p>Rut no lo puede creer. Se arrodilla, con la cara en el suelo:</p>
+<p>«¿Por qué he hallado gracia en tus ojos para que me reconozcas, siendo yo extranjera?» (Rt 2:10).</p>
+<p>Siendo yo extranjera. Ahí está toda su herida. Y Booz le responde que ya sabe todo: lo que hizo por su suegra, cómo dejó a su padre y a su madre y a su tierra para venir a un pueblo que no conocía. Y la bendice con una imagen hermosa:</p>
+<p>«Jehová recompense tu obra, y tu remuneración sea cumplida de parte de Jehová Dios de Israel, bajo cuyas alas has venido a refugiarte» (Rt 2:12).</p>
+<p>Bajo sus alas. Como un pollito que corre a esconderse debajo de su madre. Eso fue lo que hizo Rut en aquel camino: correr a esconderse bajo las alas del Dios de Israel.</p>
+<p>A la hora de comer, Booz la invita a sentarse con los segadores, le da pan, le sirve él mismo grano tostado, y ella come hasta quedar satisfecha y todavía le sobra para llevar. Y cuando ella vuelve a trabajar, Booz les da a sus muchachos una orden que es pura delicadeza: que dejen caer espigas de los manojos a propósito, para que ella las encuentre, y que no la avergüencen.</p>
+<p>Rut no sabe que le están regalando la cosecha. Cree que tiene suerte.</p>
+<p>En la tarde, desgrana lo que recogió, y le sale una medida enorme de cebada. Vuelve a casa cargando el grano y las sobras de la comida. Y Noemí, que la vio salir con las manos vacías, ve entrar la abundancia.</p>
+<h3>Uno de los que pueden redimirnos</h3>
+<p>Noemí le pregunta dónde espigó. Rut le dice el nombre: Booz.</p>
+<p>Y algo se enciende en los ojos de esa mujer amargada. Por primera vez en todo el libro, Noemí bendice a Dios. Y dice:</p>
+<p>«Nuestro pariente es aquel varón, y uno de los que pueden redimirnos» (Rt 2:20).</p>
+<p>Para entender esta historia hay que entender esa palabra. En hebreo es <em>goel</em>, y quiere decir «pariente redentor». En la ley de Moisés, cuando un israelita caía en la pobreza y tenía que vender su tierra, o caía en esclavitud, había alguien que tenía el derecho y la obligación de rescatarlo: su pariente más cercano.</p>
+<p>«Cuando tu hermano empobreciere, y vendiere algo de su posesión, entonces su pariente más próximo vendrá y rescatará lo que su hermano hubiere vendido» (Lv 25:25).</p>
+<p>El pariente redentor pagaba el precio. Recuperaba la tierra. Mantenía vivo el nombre de la familia. Y para ser redentor tenía que cumplir tres cosas: ser pariente de sangre, tener con qué pagar, y querer hacerlo.</p>
+<p>Booz es pariente. Booz tiene con qué. La pregunta es si va a querer.</p>
+<h3>Medianoche en la era</h3>
+<p>Pasan las semanas. Se termina la cosecha de la cebada, y después la del trigo. Y Noemí, que ya no es Mara, arma un plan atrevido.</p>
+<p>Esa noche Booz va a estar en la era, el lugar abierto donde se avienta el grano, tirándolo al aire para que el viento se lleve la paja. Después de trabajar y de comer, se va a quedar a dormir ahí, junto al montón de cebada, para cuidarlo. Noemí le dice a Rut que se lave, que se perfume, que se ponga su mejor ropa, que espere a que él se duerma, que se acueste a sus pies, y que haga lo que él le diga.</p>
+<p>Es de noche. Hace frío en las colinas de Belén. Las estrellas, el olor a paja, los hombres dormidos alrededor de los montones de grano. Rut se acerca en silencio, le destapa los pies a Booz y se acuesta ahí.</p>
+<p>A medianoche Booz se despierta temblando de frío, se da vuelta, y hay una mujer acostada a sus pies. Le pregunta quién es. Y Rut le contesta:</p>
+<p>«Yo soy Rut tu sierva; extiende el borde de tu capa sobre tu sierva, por cuanto eres pariente cercano» (Rt 3:9).</p>
+<p>Aquí hay un detalle que en español se pierde. La palabra hebrea que Rut usa para «el borde de tu capa» es <em>kanaf</em>, la misma palabra que Booz usó en el campo para «las alas» de Dios. Booz le había dicho: viniste a refugiarte bajo las alas de Dios. Y Rut, a medianoche, le responde: entonces extiende tú tus alas sobre mí. Sé tú la respuesta a tu propia oración.</p>
+<p>Es una petición de matrimonio. Y es también una petición de redención. Cásate conmigo, rescata la tierra de mi familia, dale un nombre a los que murieron.</p>
+<p>Booz no se aprovecha. No la avergüenza. La bendice. Le dice que lo que está haciendo es todavía más noble que lo que hizo por su suegra, porque pudo haber buscado a un hombre joven, y lo buscó a él para rescatar a la familia. Y le dice:</p>
+<p>«Toda la gente de mi pueblo sabe que eres mujer virtuosa» (Rt 3:11).</p>
+<p>La moabita. La extranjera. La que recogía sobras. Todo Belén sabe que es una mujer virtuosa.</p>
+<p>Pero hay un problema, le dice Booz. Hay otro pariente más cercano que él. Ese tiene el primer derecho. Si quiere redimir, que redima. Si no, Booz le jura por Dios que lo hará él. Le llena el manto de cebada para que no vuelva a casa con las manos vacías, y la despide antes del amanecer.</p>
+<p>Y Noemí, cuando Rut le cuenta todo, le dice con una seguridad que ya no es amarga: «aquel hombre no descansará hasta que concluya el asunto hoy» (Rt 3:18).</p>
+<h3>En la puerta de la ciudad</h3>
+<p>A la mañana, Booz sube a la puerta de Belén, que era el lugar donde se trataban los negocios y se hacía justicia. Se sienta. Y espera. Pasa el otro pariente, y Booz lo llama. Junta a diez ancianos de testigos. Y le plantea el asunto: Noemí vende la tierra de Elimelec, y a él le toca el derecho de rescatarla.</p>
+<p>El hombre dice que sí, que la compra. Un buen negocio.</p>
+<p>Entonces Booz agrega la letra pequeña: el día que compre la tierra, tiene que tomar también a Rut, la moabita, para que el nombre del muerto no se borre. Los hijos que nazcan van a heredar esa tierra, no los suyos.</p>
+<p>Y el hombre se echa atrás:</p>
+<p>«No puedo redimir para mí, no sea que dañe mi heredad» (Rt 4:6).</p>
+<p>Tenía con qué pagar. Era pariente. Pero no quiso. No quiso arriesgar lo suyo por una viuda vieja y una extranjera. La Biblia ni siquiera nos dice cómo se llamaba. Booz, en cambio, no tiene que pensarlo. Se quita la sandalia, como se cerraban los tratos en aquel tiempo, y delante de todo el pueblo dice que compra todo lo que fue de Elimelec y de sus hijos, y que toma por esposa a Rut la moabita. Y les dice a todos que ellos son testigos.</p>
+<p>Y el pueblo responde que sí, que son testigos, y los bendice.</p>
+<p>Booz se casa con Rut. Y Dios les da un hijo.</p>
+<p>Y aquí la historia vuelve a quien empezó con las manos vacías. Las mujeres de Belén, las mismas que la vieron llegar flaca y amargada, ahora rodean a Noemí y le dicen que Dios no la dejó sin redentor, que ese niño le va a devolver la vida y la va a sostener en su vejez, porque lo dio a luz su nuera, la que la ama, «y ella es de más valor para ti que siete hijos» (Rt 4:15).</p>
+<p>«Y tomando Noemí el hijo, lo puso en su regazo, y fue su aya» (Rt 4:16).</p>
+<figure class="ph ilus" id="cap05_noemi_nieto"><div class="ph-box" style="aspect-ratio:3/4"><span class="ph-tag">[ilustración en preparación]</span><span class="ph-desc">Noemí, anciana, sentada en el patio de su casa de Belén con el recién nacido Obed en el regazo, sonriendo entre lágrimas; las vecinas alrededor; Rut y Booz detrás.</span></div></figure>
+<p>La mujer que dijo «llamadme Mara» tiene un bebé en las piernas. La que se fue llena y volvió vacía está llena otra vez. Y las vecinas le ponen nombre al niño:</p>
+<p>«Le ha nacido un hijo a Noemí; y lo llamaron Obed. Este es padre de Isaí, padre de David» (Rt 4:17).</p>
+<p>Ahí termina el libro. Con un nombre. David.</p>
+<p>La extranjera que no podía entrar en la congregación de Israel es la bisabuela del rey más grande de Israel. Y la historia todavía no termina.</p></section>
+<section class="texto"><h2>La historia según la Biblia</h2>
+<p><em>Reina-Valera 1960</em></p>
+<p><strong>La decisión de Rut</strong></p>
+<blockquote class="verso">
+<p>«Respondió Rut: No me ruegues que te deje, y me aparte de ti; porque a dondequiera que tú fueres, iré yo, y dondequiera que vivieres, viviré. Tu pueblo será mi pueblo, y tu Dios mi Dios.» — Rut 1:16</p>
+</blockquote>
+<p><strong>Bajo las alas de Dios</strong></p>
+<blockquote class="verso">
+<p>«Jehová recompense tu obra, y tu remuneración sea cumplida de parte de Jehová Dios de Israel, bajo cuyas alas has venido a refugiarte.» — Rut 2:12</p>
+</blockquote>
+<p><strong>La petición en la era</strong></p>
+<blockquote class="verso">
+<p>«Entonces él dijo: ¿Quién eres? Y ella respondió: Yo soy Rut tu sierva; extiende el borde de tu capa sobre tu sierva, por cuanto eres pariente cercano.» — Rut 3:9</p>
+</blockquote>
+<p><strong>El final que es un comienzo</strong></p>
+<blockquote class="verso">
+<p>«Y le dieron nombre las vecinas, diciendo: Le ha nacido un hijo a Noemí; y lo llamaron Obed. Este es padre de Isaí, padre de David.» — Rut 4:17</p>
+</blockquote>
+</section>
+<aside class="box historia"><h3>Lo que dice la historia</h3><p><strong>Moab existió, y escribió en piedra.</strong> En 1868 se encontró en Dhiban, en la actual Jordania, la antigua Dibón de Moab, una piedra de basalto negro con 34 líneas escritas en moabita, una lengua muy cercana al hebreo. Se la conoce como la estela de Mesa o piedra moabita, y es del siglo IX a. C. En ella, el rey Mesa de Moab agradece a su dios Quemos por haberlo librado de Israel, y menciona a Omri, rey de Israel, y al Dios de Israel por su nombre. Está hoy en el Museo del Louvre, en París. Es el dios que Rut dejó atrás cuando dijo «tu Dios mi Dios».</p>
+<p><strong>La ley de los pobres.</strong> Dejar los bordes del campo y las espigas caídas para los pobres, los extranjeros, las viudas y los huérfanos era una ley de Israel (Lv 19:9-10; Dt 24:19). No era una limosna opcional. Era un derecho del pobre.</p>
+<p><strong>La sandalia.</strong> El mismo libro de Rut explica que en aquel tiempo, para cerrar un trato de compra o de redención, uno se quitaba el zapato y se lo daba al otro delante de testigos (Rt 4:7). Era como firmar un contrato.</p>
+<p><strong>Un efa de cebada.</strong> Lo que Rut recogió en un solo día fue «como un efa de cebada» (Rt 2:17). El efa era una medida de unos veinte litros, aunque los cálculos varían. Para alguien que recogía sobras, era muchísimo. Booz no solo le dio permiso: le llenó las manos.</p></aside>
+<aside class="box lugar"><h3>El lugar hoy</h3><p><strong>Belén</strong> está unos 9 km al sur de Jerusalén, en lo alto de las colinas de Judea, a más de 700 m de altura. Hoy es una ciudad palestina de Cisjordania. Al este, en la localidad de Beit Sahur, se muestran los campos que una antigua tradición asocia con los pastores de la Navidad; algunos peregrinos los relacionan también con los campos de Booz. No se puede probar, pero el paisaje es ese: terrazas de piedra y campos de cultivo que bajan hacia el desierto.</p>
+<p><strong>Moab</strong> son las mesetas altas al este del mar Muerto, en la actual Jordania. Desde Belén, en los días claros, se ven sus montañas al otro lado del mar. Para llegar a pie de un lado al otro había que bajar al valle del Jordán, cerca del lugar más bajo de la tierra, cruzar el río, y volver a subir. Varios días de camino. Ese fue el camino de las tres viudas.</p></aside>
+<aside class="box escrito"><h3>Las mujeres en la familia de Jesús</h3><p>En el mundo antiguo, las listas de antepasados casi nunca nombraban mujeres. Pero cuando el evangelio de Mateo abre el Nuevo Testamento con la genealogía de Jesús, nombra a cuatro mujeres antes de María. Y no son las que uno esperaría.</p>
+<p><strong>Tamar.</strong> «Judá engendró de Tamar a Fares y a Zara» (Mt 1:3). Una viuda cananea a la que su suegro Judá, el mismo que vendió a José, le negó lo que le correspondía. Ella se disfrazó y lo enfrentó, y Judá terminó reconociendo que ella era más justa que él (Gn 38).</p>
+<p><strong>Rahab.</strong> La prostituta de Jericó, «una ramera que se llamaba Rahab» (Jos 2:1), que escondió a los espías y fue salvada con su familia.</p>
+<p><strong>Rut.</strong> «Salmón engendró de Rahab a Booz, Booz engendró de Rut a Obed, y Obed a Isaí» (Mt 1:5). Lee otra vez: la madre de Booz fue Rahab. El hombre que recibió con tanta ternura a una extranjera había sido criado por otra extranjera.</p>
+<p><strong>La mujer de Urías.</strong> «Isaí engendró al rey David, y el rey David engendró a Salomón de la que fue mujer de Urías» (Mt 1:6). Mateo ni siquiera dice su nombre, Betsabé. La nombra por su marido, el hombre al que David hizo matar. Esa historia la vamos a contar en el próximo capítulo.</p>
+<p>Extranjeras. Viudas. Una prostituta. Una mujer de la que un rey abusó con su poder. Mateo las pone a propósito en la familia del Mesías, como diciendo desde la primera página: para esto vino Jesús. Pablo lo diría después así: «no hay varón ni mujer; porque todos vosotros sois uno en Cristo Jesús» (Gá 3:28).</p></aside>
+<section class="box sombra"><h2>La sombra de Jesús</h2><p><strong>El pariente redentor.</strong> Rut no podía salvarse sola. Necesitaba a alguien que fuera de su familia, que tuviera con qué pagar y que quisiera hacerlo. Así estamos nosotros. Y para poder ser nuestro redentor, Dios tuvo que hacerse pariente nuestro: se hizo hombre, de carne y hueso como nosotros. La carta a los Hebreos dice que por eso Jesús «no se avergüenza de llamarlos hermanos» (He 2:11).</p>
+<p><strong>El que pagó el precio.</strong> Booz pagó con su dinero. Jesús pagó con su vida. Pablo escribe: «en quien tenemos redención por su sangre, el perdón de pecados según las riquezas de su gracia» (Ef 1:7). Redención es la misma idea del <em>goel</em>: alguien paga para rescatar lo que estaba perdido.</p>
+<p><strong>El que quiso.</strong> El otro pariente podía, pero no quiso arriesgar lo suyo. Jesús podía, y quiso. Lo dio todo.</p>
+<p><strong>Las alas extendidas.</strong> Rut le pidió a Booz: extiende tus alas sobre mí. Jesús, mirando a Jerusalén, dijo que había querido juntar a sus hijos como la gallina junta a sus pollitos debajo de las alas (Mt 23:37). Es la misma imagen. El refugio que Rut buscó lo encontramos en Él.</p>
+<p><strong>La casa del pan.</strong> Booz era de Belén. Y en Belén, unos mil cien años después, en la familia de Booz y de Rut, nació un niño que diría de sí mismo que era el pan de vida (Jn 6:35). La casa del pan, que al principio de esta historia no tenía pan, un día recibiría al Pan.</p></section>
+<section class="box nota"><h2>Nota del autor</h2><p>Las mujeres también son vistas con amor por Dios. Al final, hombres y mujeres somos iguales ante Dios, y Él nos ha perdonado a todos.</p>
+<p>Siento que trata con total igualdad, sobre todo el Nuevo Testamento, tanto a los hombres como a las mujeres.</p></section>
+<section class="texto"><h2>Para seguir leyendo</h2>
+<ul>
+<li><strong>Josué 2 y 6:</strong> Rahab y la caída de Jericó.</li>
+<li><strong>Jueces 2:</strong> el ciclo de los jueces.</li>
+<li><strong>Rut 1 a 4:</strong> el libro completo; se lee en menos de media hora.</li>
+<li><strong>Levítico 25:</strong> la ley del pariente redentor.</li>
+<li><strong>Mateo 1:1-17:</strong> la genealogía de Jesús, con sus cuatro mujeres.</li>
+</ul></section>
+<footer class="derechos"><p><em>Las citas bíblicas son de la Reina-Valera © 1960 Sociedades Bíblicas en América Latina; © renovado 1988 Sociedades Bíblicas Unidas. Utilizado con permiso.</em></p></footer>
+</main>
+<nav class="libro"><a href="cap04.html">‹ Capítulo 4</a><a href="index.html">Índice</a><a href="cap06.html">Capítulo 6 ›</a></nav></body>
+</html>
