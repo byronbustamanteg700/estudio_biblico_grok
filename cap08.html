@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Capítulo 8 — ¿Quién es este?</title>
+<style>
+:root{--paper:#fbf7ef;--ink:#2b2622;--muted:#7a6f63;--accent:#8a5a2b;--rule:#e3d8c6;
+--hist:#f3ece0;--hist-b:#b08a5a;--lugar:#eaf1ee;--lugar-b:#4f7f72;--sombra:#f7efdc;--sombra-b:#b8892d;
+--escr:#f1ede6;--escr-b:#6d5c4a;--nota:#fffdf8;--nota-b:#8a5a2b}
+@media (prefers-color-scheme:dark){:root{--paper:#1d1a17;--ink:#e9e1d4;--muted:#a89c8c;--accent:#d7a76b;--rule:#3a332c;
+--hist:#2a241d;--lugar:#1f2a27;--sombra:#2d2618;--escr:#27231f;--nota:#221e1a}}
+*{box-sizing:border-box}
+html{font-size:18px;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--paper);color:var(--ink);
+font-family:"Iowan Old Style","Palatino Linotype",Palatino,"Book Antiqua",Georgia,"Times New Roman",serif;
+line-height:1.65;text-rendering:optimizeLegibility;hyphens:auto}
+main{max-width:36rem;margin:0 auto;padding:2.5rem 1.2rem 4rem}
+header.cap{text-align:center;margin:1rem 0 2.5rem;padding-bottom:1.5rem;border-bottom:1px solid var(--rule)}
+.kicker{font-variant:small-caps;letter-spacing:.18em;color:var(--accent);margin:0}
+h1{font-weight:normal;font-size:2rem;line-height:1.2;margin:.4rem 0 .6rem}
+.sub{font-style:italic;color:var(--muted);font-size:.9rem;margin:0}
+h2{font-weight:normal;font-size:1.45rem;color:var(--accent);margin:2.6rem 0 1rem;text-align:center;font-variant:small-caps;letter-spacing:.05em}
+h3{font-size:1.1rem;font-style:italic;font-weight:normal;margin:2rem 0 .8rem}
+p{margin:0 0 1em}
+.texto>p:first-of-type em:only-child{color:var(--muted);font-size:.92rem}
+p.lucha{border-left:3px solid var(--accent);padding-left:.9rem}
+blockquote.verso{margin:1rem 0 1.4rem;padding:.2rem 0 .2rem 1rem;border-left:2px solid var(--rule);font-style:italic}
+blockquote.verso p{margin:0}
+table{width:100%;border-collapse:collapse;font-size:.85rem;margin:1rem 0 1.5rem;line-height:1.45}
+th,td{border-bottom:1px solid var(--rule);padding:.5rem .4rem;vertical-align:top;text-align:left}
+th{font-variant:small-caps;letter-spacing:.04em;color:var(--accent);font-weight:normal}
+.box{border-radius:6px;padding:1.1rem 1.2rem .4rem;margin:2rem 0;font-size:.93rem;border-left:4px solid}
+.box h3,.box h2{margin-top:0;font-style:normal;font-variant:small-caps;letter-spacing:.06em;font-size:1.05rem;text-align:left}
+.historia{background:var(--hist);border-color:var(--hist-b)} .historia h3{color:var(--hist-b)}
+.lugar{background:var(--lugar);border-color:var(--lugar-b)} .lugar h3{color:var(--lugar-b)}
+.escrito{background:var(--escr);border-color:var(--escr-b)} .escrito h3{color:var(--escr-b)}
+.sombra{background:var(--sombra);border-color:var(--sombra-b)} .sombra h2{color:var(--sombra-b);font-size:1.25rem}
+.nota{background:var(--nota);border:1px solid var(--rule);border-left:4px solid var(--nota-b);font-style:italic;font-size:1rem}
+.nota h2{color:var(--nota-b);font-size:1.25rem}
+figure.ph{margin:2rem auto}
+figure.ilus{max-width:24rem} figure.video{max-width:17rem}
+.ph-box{width:100%;border:2px dashed var(--accent);border-radius:8px;display:flex;flex-direction:column;align-items:center;justify-content:center;
+text-align:center;padding:1rem;background:repeating-linear-gradient(45deg,transparent,transparent 10px,rgba(138,90,43,.05) 10px,rgba(138,90,43,.05) 20px)}
+.ph-tag{font-family:system-ui,sans-serif;font-weight:700;color:var(--accent);font-size:1rem;margin-bottom:.6rem}
+.ph-desc{font-size:.8rem;color:var(--muted);font-style:italic}
+footer.derechos{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--rule);font-size:.75rem;color:var(--muted);text-align:center}
+ul{padding-left:1.2rem} li{margin-bottom:.4rem}
+@media (max-width:480px){html{font-size:17px} main{padding:1.5rem 1rem 3rem} h1{font-size:1.6rem} table{font-size:.8rem} .box{padding:.9rem .9rem .3rem}}
+@media print{body{background:#fff} .ph-box{background:none}}
+
+figure.media{margin:2rem auto}
+figure.media img,figure.media video{width:100%;height:auto;display:block;border-radius:8px;background:#1a1612}
+figure.media figcaption{font-size:.8rem;color:var(--muted);font-style:italic;text-align:center;margin-top:.6rem;line-height:1.4}
+@media print{figure.media video{display:none} figure.media img{-webkit-print-color-adjust:exact;print-color-adjust:exact}}
+.pregunta{background:var(--escr);border-color:var(--accent)} .pregunta h3{color:var(--accent)}
+</style>
+<style>nav.libro{max-width:36rem;margin:0 auto;padding:.8rem 1.2rem;display:flex;justify-content:space-between;font-size:.85rem;font-variant:small-caps;letter-spacing:.08em;border-bottom:1px solid var(--rule,#e3d8c6)}nav.libro a{color:var(--accent,#8a5a2b);text-decoration:none}nav.libro span{color:transparent}</style></head>
+<body><nav class="libro"><a href="cap07.html">‹ Capítulo 7</a><a href="index.html">Índice</a><a href="cap09.html">Capítulo 9 ›</a></nav>
+<main>
+<header class="cap"><p class="kicker">Capítulo 8</p><h1>¿Quién es este?</h1><p class="sub">Parte II: el cumplimiento · Mateo 1–2; Lucas 1–2 y 4; Marcos 1, 4 y 10; Juan 1</p></header>
+<section class="texto"><h2>La escena</h2>
+<p><em>Recreación: así pudo haber sido. Los hechos están en los evangelios de Mateo, Marcos, Lucas y Juan. Lo que pensaban y sentían se imagina a partir del texto y de lo que se sabe de la época.</em></p>
+<h3>Una muchacha de Nazaret</h3>
+<p>Cuatrocientos años de silencio. Y cuando Dios vuelve a hablar, no lo hace en el templo de Jerusalén, ni en el palacio de Herodes, ni en Roma. Lo hace en Nazaret.</p>
+<p>Nazaret era un pueblito de Galilea, en el norte, colgado de una colina. Unas pocas decenas de familias, casas de piedra, cuevas usadas como bodega, terrazas con olivos. Tan poca cosa que ni siquiera aparece en el Antiguo Testamento. Cuando años después alguien oye que el Mesías viene de ahí, pregunta con burla: «¿De Nazaret puede salir algo de bueno?» (Jn 1:46).</p>
+<p>En ese pueblo vive una muchacha llamada María. Es joven, probablemente una adolescente, como se casaban entonces. Está comprometida con un hombre del pueblo, un artesano llamado José, de la familia de David. Ya están desposados, que en aquel tiempo era casi como estar casados, pero todavía no viven juntos.</p>
+<p>Y un día, en esa casa humilde, se le aparece el ángel Gabriel. Le dice que no tema. Que ha hallado gracia delante de Dios. Que va a concebir y dar a luz un hijo, y que le va a poner por nombre Jesús. Que será llamado Hijo del Altísimo, y que Dios le dará el trono de David su padre.</p>
+<p>María no entiende. Y lo pregunta, con una honestidad muy concreta:</p>
+<p>«¿Cómo será esto? pues no conozco varón» (Lc 1:34).</p>
+<p>Y el ángel le responde con palabras que suenan a Génesis, al Espíritu de Dios moviéndose sobre las aguas en el principio:</p>
+<p>«El Espíritu Santo vendrá sobre ti, y el poder del Altísimo te cubrirá con su sombra; por lo cual también el Santo Ser que nacerá, será llamado Hijo de Dios» (Lc 1:35).</p>
+<p>Piensa en lo que eso significaba para ella. Una muchacha soltera, embarazada, en un pueblo donde todos se conocen. ¿Quién le iba a creer? ¿Qué iba a decir José? ¿Qué iban a decir sus padres? La ley permitía apedrear a una mujer comprometida que aparecía embarazada de otro.</p>
+<p>Y María, con todo ese peso encima, responde:</p>
+<p>«He aquí la sierva del Señor; hágase conmigo conforme a tu palabra» (Lc 1:38).</p>
+<h3>José</h3>
+<p>Y entonces está José.</p>
+<p>Un hombre trabajador, de manos duras, que se entera de que su prometida está embarazada. Y él sabe que no es suyo.</p>
+<p>Imagina esas noches. La vergüenza. La rabia, quizás. La tristeza de un hombre que amaba a esa muchacha y que siente que lo traicionaron. Podía denunciarla públicamente. Tenía todo el derecho.</p>
+<p class="lucha"><strong>Su lucha.</strong> La lucha de José es la de un hombre bueno frente a algo que no entiende. La Biblia lo describe en una línea que dice mucho de él: «José su marido, como era justo, y no quería infamarla, quiso dejarla secretamente» (Mt 1:19). Justo, y aun así sin querer avergonzarla. Herido, y aun así sin querer herir. Decide romper el compromiso en silencio, sin escándalo, para protegerla. Y cuando ya lo tenía decidido, en sueños se le aparece un ángel. Le dice que no tema recibir a María, que lo que ella lleva es obra del Espíritu Santo. Y le encarga ponerle el nombre al niño, con una explicación que es el centro de todo este libro: «Y dará a luz un hijo, y llamarás su nombre JESÚS, porque él salvará a su pueblo de sus pecados» (Mt 1:21). José se despierta. Y hace lo que le dijeron. Recibe a María. Carga con las miradas, con los chismes, con las preguntas, y cría como propio a un niño que no es suyo. No dice una sola palabra en todos los evangelios. Pero obedece cada vez.</p>
+<p>Jesús, en hebreo Yeshúa, quiere decir «el Señor salva». Ese niño iba a llevar en su nombre la razón por la que vino.</p>
+<h3>No había lugar</h3>
+<p>Unos meses después, el emperador Augusto, desde Roma, ordena un censo de todo el imperio. Y cada uno tiene que ir a registrarse a la ciudad de su familia. José es de la familia de David. Tiene que ir a Belén.</p>
+<p>De Nazaret a Belén hay unos ciento cincuenta kilómetros, por caminos de tierra, bajando por el valle del Jordán y subiendo después hacia las colinas de Judea. Varios días de camino. Y María está a punto de dar a luz.</p>
+<p>Llegan a Belén. El pueblo está lleno de gente que vino por el censo. Y no encuentran dónde quedarse.</p>
+<p>«Y dio a luz a su hijo primogénito, y lo envolvió en pañales, y lo acostó en un pesebre, porque no había lugar para ellos en el mesón» (Lc 2:7).</p>
+<p>Un pesebre es el comedero de los animales. En las casas de Belén, muchas veces los animales dormían en la parte baja de la casa o en una cueva al fondo, y ahí había un pesebre tallado en la piedra o hecho de barro. Ahí, entre el olor de los animales y la paja, en la casa del pan, el Hijo de Dios fue acostado donde comen las ovejas.</p>
+<p>Esa misma noche, en los campos de alrededor, hay unos pastores cuidando sus rebaños. Los pastores no eran gente importante. Pasaban la noche al aire libre, olían a oveja, y su palabra no valía mucho. Y a ellos, antes que a nadie, se les aparece un ángel, y la gloria de Dios los rodea de luz, y se mueren de miedo.</p>
+<p>«No temáis; porque he aquí os doy nuevas de gran gozo, que será para todo el pueblo: que os ha nacido hoy, en la ciudad de David, un Salvador, que es CRISTO el Señor» (Lc 2:10-11).</p>
+<p>Y les da una señal: van a encontrar a un niño envuelto en pañales, acostado en un pesebre.</p>
+<p>Los pastores corren. Lo encuentran. Y se arrodillan delante de un bebé recién nacido, en un comedero de animales, mientras una muchacha cansada y un carpintero los miran sin saber qué decir.</p>
+<figure class="ph ilus" id="cap08_pesebre"><div class="ph-box" style="aspect-ratio:3/4"><span class="ph-tag">[ilustración en preparación]</span><span class="ph-desc">En una cueva-establo de Belén, de noche, los pastores se arrodillan ante el pesebre; María, cansada, y José los miran; el bebé envuelto en pañales, con el rostro oculto por la luz.</span></div></figure>
+<p>Hay un detalle que muchos han pensado. Los campos alrededor de Belén abastecían de corderos a Jerusalén, a menos de diez kilómetros, donde se ofrecían en el templo. Es posible que algunos de esos pastores cuidaran corderos destinados al sacrificio. No se puede probar. Pero si fue así, los primeros en ver al Cordero de Dios fueron hombres que criaban corderos para morir.</p>
+<h3>Un rey celoso</h3>
+<p>Tiempo después llegan a Jerusalén unos sabios del oriente, magos, estudiosos de las estrellas, preguntando dónde está el rey de los judíos que ha nacido, porque vieron su estrella y vienen a adorarlo.</p>
+<p>En Jerusalén reina Herodes el Grande. Un hombre brillante para construir y terrible para gobernar, tan celoso de su trono que mandó matar a una de sus esposas y a varios de sus propios hijos. Escucha la pregunta de los magos y se le hiela la sangre. Junta a los sacerdotes y a los maestros de la ley y les pregunta dónde tenía que nacer el Cristo. Y ellos no dudan. Le citan a Miqueas:</p>
+<p>«Y tú, Belén, de la tierra de Judá, no eres la más pequeña entre los príncipes de Judá; porque de ti saldrá un guiador, que apacentará a mi pueblo Israel» (Mt 2:6).</p>
+<p>Los magos encuentran al niño, se postran, lo adoran, y le ofrecen oro, incienso y mirra. Y se vuelven por otro camino. Herodes, furioso, manda matar a todos los niños menores de dos años de Belén y sus alrededores. Otra vez, como en tiempos del faraón, un rey que tiene miedo mata a los niños. Y otra vez, un niño escapa. José, avisado en sueños, se lleva a María y a Jesús a Egipto, de noche. El niño que iba a ser el nuevo Moisés también tuvo que huir a Egipto y salir de allí.</p>
+<h3>El hijo del carpintero</h3>
+<p>Muerto Herodes, vuelven a Nazaret. Y de los siguientes treinta años, la Biblia cuenta casi nada.</p>
+<p>Solo una escena. Jesús tiene doce años, y la familia sube a Jerusalén para la Pascua, como cada año. Al volver, José y María se dan cuenta de que el niño no está en la caravana. Lo buscan tres días, angustiados. Y lo encuentran en el templo, sentado entre los maestros de la ley, escuchándolos y haciéndoles preguntas, y todos están asombrados de lo que entiende. Su madre le reclama, como cualquier madre. Y él le responde algo que ellos no entienden:</p>
+<p>«¿Por qué me buscabais? ¿No sabíais que en los negocios de mi Padre me es necesario estar?» (Lc 2:49).</p>
+<p>Mi Padre. A los doce años. En el templo.</p>
+<p>Y después vuelve a Nazaret y obedece a sus padres. Aprende el oficio de José: trabajar la madera y la piedra. Hace mesas, arados, yugos para los bueyes, puertas. Durante años. Las manos que habían hecho las estrellas, cortando madera en un taller de pueblo.</p>
+<p>«Y Jesús crecía en sabiduría y en estatura, y en gracia para con Dios y los hombres» (Lc 2:52).</p>
+<h3>Una voz en el desierto</h3>
+<p>Cuando Jesús tiene unos treinta años, en el desierto de Judea aparece un hombre que hace temblar a todo Israel. Se llama Juan. Viste con pelo de camello y un cinto de cuero, come langostas y miel silvestre. Parece un profeta de los antiguos. Después de cuatrocientos años de silencio, alguien vuelve a hablar como Elías.</p>
+<p>Juan grita a orillas del río Jordán que se arrepientan, que el Reino de Dios se acerca. Y la gente baja de Jerusalén y de todos los pueblos para confesar sus pecados y ser bautizada por él en el río. Isaías lo había anunciado: una voz que clama en el desierto, preparando el camino del Señor.</p>
+<p>Un día, entre la multitud que se acerca al agua, viene Jesús. Juan lo bautiza. Y cuando Jesús sale del agua, se abren los cielos, el Espíritu desciende sobre Él como una paloma, y se oye una voz:</p>
+<p>«Tú eres mi Hijo amado; en ti tengo complacencia» (Mc 1:11).</p>
+<p>Y al día siguiente, Juan ve venir a Jesús, y dice la frase que este libro viene esperando desde el capítulo 1. Desde las pieles con que Dios vistió a Adán y Eva. Desde el carnero en el monte Moriah. Desde la sangre en las puertas de Egipto. Desde el macho cabrío que se perdía en el desierto. Desde el Siervo de Isaías que fue llevado como cordero al matadero:</p>
+<p>«He aquí el Cordero de Dios, que quita el pecado del mundo» (Jn 1:29).</p>
+<p>Isaac preguntó dónde estaba el cordero. Dos mil años después, alguien lo señaló con el dedo.</p>
+<h3>Hoy se ha cumplido</h3>
+<p>Jesús empieza a predicar en Galilea. Y un sábado vuelve a Nazaret, a la sinagoga donde se crió, donde todos lo conocen desde chico. Se pone de pie para leer. Le dan el rollo del profeta Isaías. Lo desenrolla, busca el lugar, y lee:</p>
+<p>«El Espíritu del Señor está sobre mí, por cuanto me ha ungido para dar buenas nuevas a los pobres; me ha enviado a sanar a los quebrantados de corazón; a pregonar libertad a los cautivos, y vista a los ciegos; a poner en libertad a los oprimidos» (Lc 4:18).</p>
+<p>Enrolla el libro. Se lo devuelve al encargado. Se sienta. Y todos los ojos de la sinagoga están clavados en Él. Silencio. Y entonces dice:</p>
+<p>«Hoy se ha cumplido esta Escritura delante de vosotros» (Lc 4:21).</p>
+<p>Hoy. No algún día. Hoy, aquí, delante de ustedes.</p>
+<p>Al principio se maravillan. ¿No es este el hijo de José? Pero cuando entienden lo que está diciendo, se llenan de ira, lo sacan del pueblo y lo llevan al borde de un barranco para tirarlo. Y Él pasa por en medio de ellos y se va.</p>
+<h3>La tormenta</h3>
+<p>Jesús se va a vivir a Capernaum, a la orilla del mar de Galilea, un lago de agua dulce rodeado de colinas. Ahí llama a sus primeros discípulos: pescadores como Pedro y Andrés, Santiago y Juan. Hombres que conocían ese lago como la palma de su mano.</p>
+<p>Una tarde, después de enseñar todo el día a la multitud desde una barca, Jesús les dice que pasen al otro lado. Está agotado. Se acuesta en la parte de atrás de la barca, con la cabeza sobre un cojín, y se queda dormido.</p>
+<p>Y en el mar de Galilea pasa lo que todavía pasa hoy: el viento baja de golpe por los valles que rodean el lago y levanta una tormenta en minutos. Olas que entran en la barca. Agua por todas partes. Y estos pescadores, que habían pasado la vida en ese lago, están convencidos de que se van a morir.</p>
+<p>Lo despiertan gritando: «Maestro, ¿no tienes cuidado que perecemos?» (Mc 4:38).</p>
+<p>No te importa. Es lo que le dicen. Y es lo que muchas veces le decimos nosotros cuando la tormenta es nuestra.</p>
+<p>Jesús se levanta. Y le habla al viento y al mar como se le habla a alguien:</p>
+<p>«Calla, enmudece. Y cesó el viento, y se hizo grande bonanza» (Mc 4:39).</p>
+<figure class="ph ilus" id="cap08_tormenta"><div class="ph-box" style="aspect-ratio:3/4"><span class="ph-tag">[ilustración en preparación]</span><span class="ph-desc">En la barca de pesca, en medio del mar de Galilea, Jesús de pie, de espaldas, con el brazo extendido hacia las olas que se calman; los discípulos empapados, agarrados de la borda, aterrados.</span></div></figure>
+<p>De golpe. Ni una ola. Silencio. Y los discípulos, que antes tenían miedo de la tormenta, ahora tienen un miedo distinto, más hondo. Porque todo judío sabía, por los Salmos, quién es el único que manda sobre el mar. El salmo lo dice: Dios «cambia la tempestad en sosiego, y se apaciguan sus ondas» (Sal 107:29).</p>
+<p>Y se miran unos a otros, empapados, temblando, en medio de un lago en calma, y se hacen la pregunta que da nombre a este capítulo y a toda la segunda parte de este libro:</p>
+<p>«¿Quién es este, que aun el viento y el mar le obedecen?» (Mc 4:41).</p>
+<h3>Dejad a los niños</h3>
+<p>En aquella época, los niños no contaban mucho. No tenían derechos, no tenían voz, y nadie esperaba que un maestro importante perdiera su tiempo con ellos.</p>
+<p>Un día, unas madres le traen sus niños a Jesús para que los toque y los bendiga. Y los discípulos, que se creen sus guardaespaldas, las reprenden y las echan. Que no molesten al Maestro.</p>
+<p>Y Jesús se indigna. Es una de las pocas veces que los evangelios dicen que Jesús se enojó. Y se enoja por esto:</p>
+<p>«Dejad a los niños venir a mí, y no se lo impidáis; porque de los tales es el reino de Dios» (Mc 10:14).</p>
+<p>Y después hace algo que ningún rabino importante hubiera hecho en público:</p>
+<p>«Y tomándolos en los brazos, poniendo las manos sobre ellos, los bendecía» (Mc 10:16).</p>
+<figure class="ph ilus" id="cap08_ninos"><div class="ph-box" style="aspect-ratio:3/4"><span class="ph-tag">[ilustración en preparación]</span><span class="ph-desc">Jesús, sentado, de espaldas o de perfil cubierto, con niños en brazos y alrededor; madres que se acercan; un par de discípulos atrás, desconcertados.</span></div></figure>
+<p>El que calma tormentas con una palabra se sienta en el suelo a abrazar niños. El mismo. Esa es la respuesta, o una parte de la respuesta, a la pregunta de los discípulos en la barca.</p></section>
+<section class="texto"><h2>La historia según la Biblia</h2>
+<p><em>Reina-Valera 1960</em></p>
+<p><strong>El nacimiento</strong></p>
+<blockquote class="verso">
+<p>«Que os ha nacido hoy, en la ciudad de David, un Salvador, que es CRISTO el Señor.» — Lucas 2:11</p>
+</blockquote>
+<p><strong>El Cordero</strong></p>
+<blockquote class="verso">
+<p>«El siguiente día vio Juan a Jesús que venía a él, y dijo: He aquí el Cordero de Dios, que quita el pecado del mundo.» — Juan 1:29</p>
+</blockquote>
+<p><strong>La pregunta</strong></p>
+<blockquote class="verso">
+<p>«Entonces temieron con gran temor, y se decían el uno al otro: ¿Quién es este, que aun el viento y el mar le obedecen?» — Marcos 4:41</p>
+</blockquote>
+<p><strong>Los niños</strong></p>
+<blockquote class="verso">
+<p>«Viéndolo Jesús, se indignó, y les dijo: Dejad a los niños venir a mí, y no se lo impidáis; porque de los tales es el reino de Dios.» — Marcos 10:14</p>
+</blockquote>
+</section>
+<aside class="box escrito"><h3>Lo que estaba escrito</h3><table>
+<thead>
+<tr>
+<th>Lo que pasó</th>
+<th>Lo que estaba escrito</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Nace de una virgen (Mt 1:22-23)</td>
+<td>Isaías 7:14, unos 700 años antes</td>
+</tr>
+<tr>
+<td>Nace en Belén (Mt 2:5-6)</td>
+<td>Miqueas 5:2</td>
+</tr>
+<tr>
+<td>Del linaje de David, con un trono eterno (Lc 1:32-33)</td>
+<td>2 Samuel 7:12-16</td>
+</tr>
+<tr>
+<td>Sale de Egipto (Mt 2:15)</td>
+<td>Oseas 11:1</td>
+</tr>
+<tr>
+<td>El llanto por los niños de Belén (Mt 2:17-18)</td>
+<td>Jeremías 31:15</td>
+</tr>
+<tr>
+<td>Juan prepara el camino (Mc 1:2-3)</td>
+<td>Isaías 40:3; Malaquías 3:1</td>
+</tr>
+<tr>
+<td>«Hoy se ha cumplido» en Nazaret (Lc 4:18-21)</td>
+<td>Isaías 61:1-2</td>
+</tr>
+<tr>
+<td>Los ciegos ven y los cojos andan (Mt 11:4-5)</td>
+<td>Isaías 35:5-6</td>
+</tr>
+<tr>
+<td>Calma la tormenta (Mc 4:39-41)</td>
+<td>Salmo 107:29: solo Dios calma el mar</td>
+</tr>
+</tbody>
+</table></aside>
+<aside class="box escrito"><h3>Los nombres que dicen quién es</h3><p>Los evangelios no solo cuentan lo que Jesús hizo. Le dan nombres, y Él mismo se da nombres, que solo le corresponden a Dios.</p>
+<p><strong>Emanuel.</strong> Isaías anunció a un niño nacido de una virgen, y Mateo explica el nombre: «Y llamarás su nombre Emanuel, que traducido es: Dios con nosotros» (Mt 1:23). No un mensajero de Dios. Dios con nosotros. Isaías agrega otros nombres para ese mismo niño: «y se llamará su nombre Admirable, Consejero, Dios Fuerte, Padre Eterno, Príncipe de Paz» (Is 9:6).</p>
+<p><strong>El Verbo.</strong> Juan empieza su evangelio igual que empieza la Biblia, «en el principio», y dice: «En el principio era el Verbo, y el Verbo era con Dios, y el Verbo era Dios» (Jn 1:1). «Verbo» traduce la palabra griega <em>logos</em>: la Palabra. Y después dice lo más asombroso que se puede decir: «Y aquel Verbo fue hecho carne, y habitó entre nosotros» (Jn 1:14). El Dios que creó todo con su palabra se hizo un bebé en un pesebre.</p>
+<p><strong>Yo soy.</strong> En la zarza ardiente, Dios le dijo a Moisés su nombre: YO SOY (capítulo 4). Un día, discutiendo con los líderes del templo, Jesús les dijo: «De cierto, de cierto os digo: Antes que Abraham fuese, yo soy» (Jn 8:58). No dijo «yo era». Dijo «yo soy». Y ellos entendieron perfectamente: tomaron piedras para apedrearlo, porque eso era lo que la ley mandaba hacer con quien se hacía igual a Dios. La noche en que fueron a arrestarlo, cuando los soldados dijeron que buscaban a Jesús nazareno, Él respondió con esas mismas palabras, y pasó algo extraño: «Cuando les dijo: Yo soy, retrocedieron, y cayeron a tierra» (Jn 18:6).</p>
+<p>En el evangelio de Juan, Jesús usa siete veces ese «Yo soy» para decir quién es: el pan de vida (Jn 6:35), la luz del mundo (Jn 8:12), la puerta (Jn 10:9), el buen pastor (Jn 10:11), la resurrección y la vida (Jn 11:25), el camino, la verdad y la vida (Jn 14:6), y la vid verdadera (Jn 15:1).</p>
+<p><strong>«¡Señor mío, y Dios mío!»</strong> Al final del mismo evangelio, un discípulo que había dudado, Tomás, ve a Jesús resucitado y le dice lo que ningún judío le diría a un hombre: «¡Señor mío, y Dios mío!» (Jn 20:28). Y Jesús no lo corrige.</p></aside>
+<aside class="box escrito"><h3>¿Por qué hay cuatro evangelios?</h3><p>Si cuatro personas ven el mismo accidente desde cuatro esquinas, sus relatos no van a ser idénticos. Uno se fija en los autos, otro en la gente, otro en la hora. Eso no los hace falsos. Los hace testigos. Los cuatro evangelios son eso: cuatro retratos de la misma persona.</p>
+<p><strong>Marcos</strong> es el más corto y probablemente el primero. Un autor del siglo II, Papías, citado por el historiador Eusebio, dice que Marcos escribió lo que le había oído predicar a Pedro. Es rápido, directo, lleno de acción.</p>
+<p><strong>Mateo</strong> escribe pensando en lectores judíos. Por eso repite una y otra vez «para que se cumpliese lo dicho por el Señor por medio del profeta» (Mt 1:22), y empieza con la genealogía que va de Abraham a David y de David a Jesús.</p>
+<p><strong>Lucas</strong>, que era médico y compañero de Pablo, investigó como un historiador. Él mismo lo dice al principio: «me ha parecido también a mí, después de haber investigado con diligencia todas las cosas desde su origen, escribírtelas por orden» (Lc 1:3). Por eso tiene más detalles sobre el nacimiento, sobre las mujeres y sobre los pobres.</p>
+<p><strong>Juan</strong>, el discípulo más cercano, escribe el último, y deja claro para qué: «Pero estas se han escrito para que creáis que Jesús es el Cristo, el Hijo de Dios, y para que creyendo, tengáis vida en su nombre» (Jn 20:31).</p>
+<p>En este libro los contamos como una sola historia, tomando de cada uno lo que cuenta mejor.</p></aside>
+<aside class="box historia"><h3>Lo que dice la historia</h3><p><strong>La fecha del nacimiento.</strong> Herodes el Grande murió, según los cálculos a partir del historiador judío Flavio Josefo, hacia el año 4 a. C. Como Jesús nació cuando Herodes todavía vivía, la mayoría de los estudiosos ubican su nacimiento entre los años 6 y 4 a. C. El error viene de un monje del siglo VI, Dionisio el Exiguo, que calculó mal el año cero de nuestro calendario.</p>
+<p><strong>Juan el Bautista en Josefo.</strong> Flavio Josefo, que no era cristiano, escribió a fines del siglo I sobre Juan, «llamado el Bautista», un hombre bueno que exhortaba a los judíos a practicar la justicia y a bautizarse, y cuenta que Herodes Antipas lo mandó encarcelar y matar en la fortaleza de Maqueronte, al este del mar Muerto (<em>Antigüedades judías</em> 18.5.2).</p>
+<p><strong>Una barca del tiempo de Jesús.</strong> En 1986, durante una sequía que bajó el nivel del mar de Galilea, dos hermanos pescadores de un kibutz encontraron en el barro de la orilla los restos de una barca de madera. Mide algo más de 8 m de largo, y los estudios la fechan en el siglo I. Es del tipo de barca que usaban los pescadores de Galilea, y en ella cabía más de una docena de personas. Se exhibe en un museo de Ginosar, junto al lago.</p></aside>
+<aside class="box lugar"><h3>El lugar hoy</h3><p><strong>Belén.</strong> Sobre la cueva que la tradición señala como el lugar del nacimiento, el emperador Constantino construyó en el siglo IV la basílica de la Natividad, reconstruida por Justiniano en el siglo VI. Es una de las iglesias más antiguas del mundo que se siguen usando, y es Patrimonio de la Humanidad desde 2012. Para entrar hay que agacharse: la puerta principal fue reducida hace siglos a poco más de un metro de alto, y se la llama la Puerta de la Humildad.</p>
+<p><strong>Nazaret</strong> es hoy la ciudad árabe más grande de Israel. En el lugar donde la tradición ubica la casa de María se levanta la basílica de la Anunciación, sobre restos de iglesias más antiguas y de casas excavadas en la roca.</p>
+<p><strong>El mar de Galilea</strong> mide unos 21 km de largo por 13 de ancho y está a más de 200 m bajo el nivel del mar, rodeado de colinas. Por eso el aire frío que baja de las alturas puede levantar tormentas de golpe, como la de Marcos 4.</p>
+<p><strong>El lugar del bautismo.</strong> La tradición lo ubica en el río Jordán, frente a Jericó. El lado jordano, Al-Maghtas («Betania al otro lado del Jordán»), es Patrimonio de la Humanidad desde 2015.</p></aside>
+<section class="box sombra"><h2>La sombra de Jesús</h2><p><strong>El primogénito.</strong> Lucas dice que María dio a luz a «su hijo primogénito». En la noche de la Pascua, en Egipto, murieron los primogénitos de las casas sin sangre en la puerta. Este primogénito vino para que su sangre estuviera en la puerta de todos.</p>
+<p><strong>En la casa del pan, en un comedero.</strong> Nació en Belén, la casa del pan, y lo acostaron donde comen los animales. Años después diría: yo soy el pan de vida.</p>
+<p><strong>El nombre.</strong> «Él salvará a su pueblo de sus pecados.» Desde el primer día, su nombre ya decía para qué venía: no para ser un maestro más, ni un rey más, sino para perdonar. El capítulo que sigue lo muestra haciendo justo eso, y escandalizando a todos.</p>
+<p><strong>¿Quién es este?</strong> La pregunta de los discípulos en la barca recorre todos los evangelios. La hacen los que lo ven perdonar pecados. La hace toda Jerusalén cuando entra montado en un burro. Este libro intenta contestarla de la misma manera en que lo hicieron los apóstoles: con lo que estaba escrito, y con lo que vieron sus ojos.</p></section>
+<section class="box nota"><h2>Nota del autor</h2><p>A los niños, igual: mucho respeto y amor. Amor verdadero, es decir, conlleva disciplina.</p></section>
+<section class="texto"><h2>Para seguir leyendo</h2>
+<ul>
+<li><strong>Lucas 1 y 2:</strong> el anuncio a María, el nacimiento, los pastores y el niño en el templo.</li>
+<li><strong>Mateo 1 y 2:</strong> José, los magos, Herodes y la huida a Egipto.</li>
+<li><strong>Juan 1:</strong> el Verbo hecho carne y el Cordero de Dios.</li>
+<li><strong>Lucas 4:</strong> «Hoy se ha cumplido».</li>
+<li><strong>Marcos 4 y 10:</strong> la tormenta y los niños.</li>
+<li><strong>Juan 8:</strong> «Antes que Abraham fuese, yo soy».</li>
+</ul></section>
+<footer class="derechos"><p><em>Las citas bíblicas son de la Reina-Valera © 1960 Sociedades Bíblicas en América Latina; © renovado 1988 Sociedades Bíblicas Unidas. Utilizado con permiso.</em></p></footer>
+</main>
+<nav class="libro"><a href="cap07.html">‹ Capítulo 7</a><a href="index.html">Índice</a><a href="cap09.html">Capítulo 9 ›</a></nav></body>
+</html>

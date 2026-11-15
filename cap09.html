@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Capítulo 9 — El que perdona</title>
+<style>
+:root{--paper:#fbf7ef;--ink:#2b2622;--muted:#7a6f63;--accent:#8a5a2b;--rule:#e3d8c6;
+--hist:#f3ece0;--hist-b:#b08a5a;--lugar:#eaf1ee;--lugar-b:#4f7f72;--sombra:#f7efdc;--sombra-b:#b8892d;
+--escr:#f1ede6;--escr-b:#6d5c4a;--nota:#fffdf8;--nota-b:#8a5a2b}
+@media (prefers-color-scheme:dark){:root{--paper:#1d1a17;--ink:#e9e1d4;--muted:#a89c8c;--accent:#d7a76b;--rule:#3a332c;
+--hist:#2a241d;--lugar:#1f2a27;--sombra:#2d2618;--escr:#27231f;--nota:#221e1a}}
+*{box-sizing:border-box}
+html{font-size:18px;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--paper);color:var(--ink);
+font-family:"Iowan Old Style","Palatino Linotype",Palatino,"Book Antiqua",Georgia,"Times New Roman",serif;
+line-height:1.65;text-rendering:optimizeLegibility;hyphens:auto}
+main{max-width:36rem;margin:0 auto;padding:2.5rem 1.2rem 4rem}
+header.cap{text-align:center;margin:1rem 0 2.5rem;padding-bottom:1.5rem;border-bottom:1px solid var(--rule)}
+.kicker{font-variant:small-caps;letter-spacing:.18em;color:var(--accent);margin:0}
+h1{font-weight:normal;font-size:2rem;line-height:1.2;margin:.4rem 0 .6rem}
+.sub{font-style:italic;color:var(--muted);font-size:.9rem;margin:0}
+h2{font-weight:normal;font-size:1.45rem;color:var(--accent);margin:2.6rem 0 1rem;text-align:center;font-variant:small-caps;letter-spacing:.05em}
+h3{font-size:1.1rem;font-style:italic;font-weight:normal;margin:2rem 0 .8rem}
+p{margin:0 0 1em}
+.texto>p:first-of-type em:only-child{color:var(--muted);font-size:.92rem}
+p.lucha{border-left:3px solid var(--accent);padding-left:.9rem}
+blockquote.verso{margin:1rem 0 1.4rem;padding:.2rem 0 .2rem 1rem;border-left:2px solid var(--rule);font-style:italic}
+blockquote.verso p{margin:0}
+table{width:100%;border-collapse:collapse;font-size:.85rem;margin:1rem 0 1.5rem;line-height:1.45}
+th,td{border-bottom:1px solid var(--rule);padding:.5rem .4rem;vertical-align:top;text-align:left}
+th{font-variant:small-caps;letter-spacing:.04em;color:var(--accent);font-weight:normal}
+.box{border-radius:6px;padding:1.1rem 1.2rem .4rem;margin:2rem 0;font-size:.93rem;border-left:4px solid}
+.box h3,.box h2{margin-top:0;font-style:normal;font-variant:small-caps;letter-spacing:.06em;font-size:1.05rem;text-align:left}
+.historia{background:var(--hist);border-color:var(--hist-b)} .historia h3{color:var(--hist-b)}
+.lugar{background:var(--lugar);border-color:var(--lugar-b)} .lugar h3{color:var(--lugar-b)}
+.escrito{background:var(--escr);border-color:var(--escr-b)} .escrito h3{color:var(--escr-b)}
+.sombra{background:var(--sombra);border-color:var(--sombra-b)} .sombra h2{color:var(--sombra-b);font-size:1.25rem}
+.nota{background:var(--nota);border:1px solid var(--rule);border-left:4px solid var(--nota-b);font-style:italic;font-size:1rem}
+.nota h2{color:var(--nota-b);font-size:1.25rem}
+figure.ph{margin:2rem auto}
+figure.ilus{max-width:24rem} figure.video{max-width:17rem}
+.ph-box{width:100%;border:2px dashed var(--accent);border-radius:8px;display:flex;flex-direction:column;align-items:center;justify-content:center;
+text-align:center;padding:1rem;background:repeating-linear-gradient(45deg,transparent,transparent 10px,rgba(138,90,43,.05) 10px,rgba(138,90,43,.05) 20px)}
+.ph-tag{font-family:system-ui,sans-serif;font-weight:700;color:var(--accent);font-size:1rem;margin-bottom:.6rem}
+.ph-desc{font-size:.8rem;color:var(--muted);font-style:italic}
+footer.derechos{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--rule);font-size:.75rem;color:var(--muted);text-align:center}
+ul{padding-left:1.2rem} li{margin-bottom:.4rem}
+@media (max-width:480px){html{font-size:17px} main{padding:1.5rem 1rem 3rem} h1{font-size:1.6rem} table{font-size:.8rem} .box{padding:.9rem .9rem .3rem}}
+@media print{body{background:#fff} .ph-box{background:none}}
+
+figure.media{margin:2rem auto}
+figure.media img,figure.media video{width:100%;height:auto;display:block;border-radius:8px;background:#1a1612}
+figure.media figcaption{font-size:.8rem;color:var(--muted);font-style:italic;text-align:center;margin-top:.6rem;line-height:1.4}
+@media print{figure.media video{display:none} figure.media img{-webkit-print-color-adjust:exact;print-color-adjust:exact}}
+.pregunta{background:var(--escr);border-color:var(--accent)} .pregunta h3{color:var(--accent)}
+</style>
+<style>nav.libro{max-width:36rem;margin:0 auto;padding:.8rem 1.2rem;display:flex;justify-content:space-between;font-size:.85rem;font-variant:small-caps;letter-spacing:.08em;border-bottom:1px solid var(--rule,#e3d8c6)}nav.libro a{color:var(--accent,#8a5a2b);text-decoration:none}nav.libro span{color:transparent}</style></head>
+<body><nav class="libro"><a href="cap08.html">‹ Capítulo 8</a><a href="index.html">Índice</a><a href="cap11.html">Capítulo 11 ›</a></nav>
+<main>
+<header class="cap"><p class="kicker">Capítulo 9</p><h1>El que perdona</h1><p class="sub">Parte II: el cumplimiento · Marcos 2; Juan 4; Lucas 7</p></header>
+<section class="texto"><h2>La escena</h2>
+<p><em>Recreación: así pudo haber sido. Los hechos están en Marcos 2, Juan 4 y Lucas 7. Lo que pensaban y sentían se imagina a partir del texto y de lo que se sabe de la época.</em></p>
+<h3>Cuatro amigos y un techo</h3>
+<p>Capernaum es un pueblo de pescadores a la orilla del mar de Galilea. Casas bajas de piedra volcánica negra, con un patio en el medio, y techos planos hechos de vigas de madera, ramas y barro apisonado. Se sube a ellos por una escalera de afuera. En las noches de calor la gente duerme arriba.</p>
+<p>Jesús se queda ahí, probablemente en la casa de Pedro, que vivía en Capernaum. Y un día se corre la voz de que está en casa. En pocos minutos la casa se llena. Y el patio. Y la puerta. Gente apretada hasta la calle, estirando el cuello para escucharlo.</p>
+<p>Y por la calle vienen cuatro hombres cargando una camilla. En la camilla hay un amigo suyo que no puede moverse. Un paralítico. Un hombre que lleva quién sabe cuántos años acostado, dependiendo de otros para comer, para lavarse, para todo. Y en aquel tiempo mucha gente pensaba que una enfermedad así era un castigo de Dios por algún pecado. Así que además de no poder caminar, cargaba con la mirada de los demás.</p>
+<p>Llegan a la puerta. Imposible entrar. Nadie se mueve.</p>
+<p>Y entonces a uno de ellos se le ocurre una locura. Suben por la escalera de afuera, cargando la camilla, hasta el techo. Y empiezan a romperlo.</p>
+<p>«Y como no podían acercarse a él a causa de la multitud, descubrieron el techo de donde estaba, y haciendo una abertura, bajaron el lecho en que yacía el paralítico» (Mc 2:4).</p>
+<p>Imagina estar adentro. Jesús está enseñando, y de pronto empieza a caer tierra del techo. Pedazos de barro, ramas, polvo, sobre la cabeza de la gente. El dueño de casa mirando para arriba sin poder creerlo. Se abre un hueco, entra la luz del sol. Y por el hueco aparecen cuatro caras sudadas, y una camilla que empieza a bajar, con sogas, hasta quedar justo delante de Jesús.</p>
+<figure class="ph ilus" id="cap09_techo"><div class="ph-box" style="aspect-ratio:3/4"><span class="ph-tag">[ilustración en preparación]</span><span class="ph-desc">Dentro de la casa de Capernaum, llena de gente, una camilla baja con sogas por un agujero en el techo de vigas y barro; arriba asoman los cuatro amigos; cae polvo y luz; Jesús, de espaldas, mira hacia arriba.</span></div></figure>
+<p>Todos esperan que Jesús lo sane. A eso vinieron. Y Jesús mira hacia arriba, a los cuatro amigos asomados por el agujero, y dice la Biblia que vio la fe de ellos. Y después mira al hombre acostado. Y le dice algo que nadie esperaba:</p>
+<p>«Hijo, tus pecados te son perdonados» (Mc 2:5).</p>
+<p>Hijo. Y tus pecados te son perdonados. Ni siquiera le habló de sus piernas.</p>
+<h3>¿Quién puede perdonar pecados?</h3>
+<p>Sentados ahí, en primera fila, hay unos escribas, maestros de la ley. Hombres que se sabían las Escrituras de memoria. Y no dicen nada en voz alta, pero en su corazón se escandalizan:</p>
+<p>«¿Por qué habla este así? Blasfemias dice. ¿Quién puede perdonar pecados, sino solo Dios?» (Mc 2:7).</p>
+<p>Y tenían razón. En eso tenían toda la razón. En el Antiguo Testamento, el perdón de los pecados era cosa de Dios. Él mismo lo había dicho por Isaías: «Yo, yo soy el que borro tus rebeliones por amor de mí mismo, y no me acordaré de tus pecados» (Is 43:25). Un ser humano podía perdonar lo que le hicieron a él. Pero perdonar los pecados de alguien contra Dios, eso solo lo podía hacer Dios. Y el camino para ese perdón pasaba por el templo de Jerusalén, por el sacerdote, por la sangre del sacrificio en el altar, por el Día de la Expiación.</p>
+<p>Y este hombre de Nazaret, en una casa de pescadores, sin templo, sin altar, sin sacerdote, sin cordero, le dice a un paralítico: tus pecados te son perdonados.</p>
+<p>O es un blasfemo, o es Dios.</p>
+<p>Jesús sabe lo que están pensando. Y les hace una pregunta:</p>
+<p>«¿Qué es más fácil, decir al paralítico: Tus pecados te son perdonados, o decirle: Levántate, toma tu lecho y anda?» (Mc 2:9).</p>
+<p>Decir «tus pecados te son perdonados» es fácil, porque nadie puede comprobarlo. Decir «levántate» es otra cosa: ahí se ve enseguida si funciona o no. Y entonces Jesús usa el título que había visto Daniel en su visión, el de aquel «hijo de hombre» al que Dios le entregaba todo el dominio:</p>
+<p>«Pues para que sepáis que el Hijo del Hombre tiene potestad en la tierra para perdonar pecados (dijo al paralítico): A ti te digo: Levántate, toma tu lecho, y vete a tu casa» (Mc 2:10-11).</p>
+<p>Silencio.</p>
+<p>Y el hombre que llevaba años sin moverse siente algo en las piernas. Las mueve. Se apoya. Se pone de pie. Se agacha, enrolla su camilla, se la pone al hombro, y sale caminando por en medio de la gente, que ahora sí se aparta.</p>
+<p>«De manera que todos se asombraron, y glorificaron a Dios, diciendo: Nunca hemos visto tal cosa» (Mc 2:12).</p>
+<p>Y arriba, en el techo, cuatro hombres con las manos llenas de barro, llorando y riéndose a la vez.</p>
+<h3>Amigo de pecadores</h3>
+<p>Poco después, Jesús pasa junto a la mesa de un cobrador de impuestos llamado Leví. Los cobradores de impuestos trabajaban para Roma, cobraban de más, y todos los odiaban: eran traidores y ladrones a los ojos del pueblo. Jesús lo mira y le dice: sígueme. Y Leví se levanta, deja todo y lo sigue.</p>
+<p>Esa noche, Leví hace una cena en su casa, e invita a sus amigos. Cobradores de impuestos, gente de mala fama, pecadores conocidos. Y Jesús se sienta a comer con ellos. Los fariseos, escandalizados, les preguntan a los discípulos cómo es posible que su maestro coma con esa gente.</p>
+<p>Y Jesús les contesta:</p>
+<p>«Los sanos no tienen necesidad de médico, sino los enfermos. No he venido a llamar a justos, sino a pecadores» (Mc 2:17).</p>
+<h3>Mediodía en el pozo</h3>
+<p>Un tiempo después, Jesús va de Judea a Galilea. Y el camino corto pasa por Samaria.</p>
+<p>La mayoría de los judíos evitaban ese camino. Daban una vuelta larga por el valle del Jordán con tal de no pisar Samaria. Judíos y samaritanos se odiaban desde hacía siglos. Para los judíos, los samaritanos eran mestizos, descendientes de los pueblos que trajeron los asirios, con una religión mezclada y un templo propio en el monte Gerizim. Para los samaritanos, los judíos eran unos soberbios que se creían los únicos dueños de Dios.</p>
+<p>Jesús no da la vuelta. Va derecho.</p>
+<p>«Y estaba allí el pozo de Jacob. Entonces Jesús, cansado del camino, se sentó así junto al pozo. Era como la hora sexta» (Jn 4:6).</p>
+<p>La hora sexta es el mediodía. El sol cae a plomo. Los discípulos se fueron al pueblo a comprar comida. Y Jesús, cansado, con sed, está solo, sentado en el borde del pozo que cavó Jacob, el del capítulo 3, cerca del terreno que Jacob le dejó a su hijo José.</p>
+<p>Y viene una mujer con su cántaro a sacar agua.</p>
+<p>Al mediodía. Las mujeres iban al pozo temprano en la mañana o al caer la tarde, cuando no hacía calor, y en grupo, conversando. Esta viene sola, a la hora en que no hay nadie. Muchos han pensado que quizás no quería encontrarse con las otras.</p>
+<p>Y Jesús le dice: «Dame de beber» (Jn 4:7).</p>
+<p>Ella se queda helada. Un hombre judío hablándole a ella. Y pidiéndole agua, a ella, en su cántaro, que para un judío estaba impuro.</p>
+<p>«¿Cómo tú, siendo judío, me pides a mí de beber, que soy mujer samaritana? Porque judíos y samaritanos no se tratan entre sí» (Jn 4:9).</p>
+<figure class="ph ilus" id="cap09_pozo"><div class="ph-box" style="aspect-ratio:3/4"><span class="ph-tag">[ilustración en preparación]</span><span class="ph-desc">Mediodía junto al pozo de Jacob: una mujer samaritana con su cántaro mira, desconfiada, a Jesús sentado en el borde del pozo, de espaldas; al fondo el monte Gerizim.</span></div></figure>
+<p>Y Jesús le responde con un misterio:</p>
+<p>«Si conocieras el don de Dios, y quién es el que te dice: Dame de beber; tú le pedirías, y él te daría agua viva» (Jn 4:10).</p>
+<p>Ella mira el pozo, profundo, y lo mira a Él, que ni siquiera tiene un balde. ¿De dónde va a sacar agua viva? ¿Acaso es más grande que Jacob, que les dio este pozo? Y Jesús le dice que el que bebe de esa agua vuelve a tener sed, pero:</p>
+<p>«Mas el que bebiere del agua que yo le daré, no tendrá sed jamás; sino que el agua que yo le daré será en él una fuente de agua que salte para vida eterna» (Jn 4:14).</p>
+<p>Y ella, medio en serio, medio cansada de cargar ese cántaro todos los días al mediodía, le dice que le dé de esa agua, para no tener que volver más al pozo.</p>
+<p>Entonces Jesús le dice algo que la toca en la herida: que vaya a llamar a su marido. Y ella, bajando la mirada, le contesta que no tiene marido.</p>
+<p>«Jesús le dijo: Bien has dicho: No tengo marido; porque cinco maridos has tenido, y el que ahora tienes no es tu marido; esto has dicho con verdad» (Jn 4:17-18).</p>
+<p class="lucha"><strong>Su lucha.</strong> La lucha de esta mujer está en esa frase. Cinco maridos. La Biblia no dice por qué. En aquel tiempo una mujer no podía divorciarse de su marido; era el hombre el que la despedía, a veces por cualquier motivo. Quizás enviudó. Quizás la despidieron uno tras otro. Quizás también ella se equivocó muchas veces. Lo cierto es que vivía con un hombre que no era su marido, en un pueblo donde todos lo sabían. Era samaritana, despreciada por los judíos. Era mujer, en un mundo donde un maestro no hablaba en público con mujeres. Y era, para su propio pueblo, una mujer con una historia que se contaba en voz baja. Por eso, quizás, iba al pozo al mediodía. Para no ver a nadie. Y Jesús fue a esperarla justamente ahí, a esa hora, y le habló de su vida sin una palabra de desprecio. No le dijo «eres una pecadora». Le dijo «has dicho con verdad». Y después le dijo a ella, antes que a casi nadie, quién era Él.</p>
+<p>Ella cambia de tema, como hacemos todos cuando nos tocan donde duele. Le habla del templo, de dónde hay que adorar, si en este monte o en Jerusalén. Y le dice que cuando venga el Mesías, Él les va a explicar todo.</p>
+<p>Y Jesús le responde:</p>
+<p>«Yo soy, el que habla contigo» (Jn 4:26).</p>
+<p>Yo soy. Las palabras de la zarza. A una samaritana, al mediodía, junto a un pozo.</p>
+<p>Y la mujer deja su cántaro ahí mismo, olvidado en el borde del pozo, y corre al pueblo. La mujer que se escondía de la gente ahora va a buscar a la gente. Y les grita en la plaza:</p>
+<p>«Venid, ved a un hombre que me ha dicho todo cuanto he hecho. ¿No será este el Cristo?» (Jn 4:29).</p>
+<p>Me dijo todo lo que he hecho. Y no me rechazó. Eso era lo que no podía creer.</p>
+<p>Salen todos del pueblo a verlo. Jesús se queda dos días con ellos, con los samaritanos, los despreciados. Y al final le dicen a la mujer:</p>
+<p>«Ya no creemos solamente por tu dicho, porque nosotros mismos hemos oído, y sabemos que verdaderamente este es el Salvador del mundo, el Cristo» (Jn 4:42).</p>
+<h3>Una mujer en casa de Simón</h3>
+<p>Otro día, en Galilea, un fariseo llamado Simón invita a Jesús a comer a su casa. Quizás por curiosidad. Quizás para examinarlo de cerca.</p>
+<p>En las cenas importantes de aquella época se comía recostado en divanes bajos, alrededor de la mesa, apoyado en el codo izquierdo, con los pies descalzos hacia atrás. Y las casas quedaban abiertas: la gente del pueblo podía entrar a mirar, a escuchar la conversación, de pie junto a las paredes.</p>
+<p>Y entra una mujer.</p>
+<p>«Entonces una mujer de la ciudad, que era pecadora, al saber que Jesús estaba a la mesa en casa del fariseo, trajo un frasco de alabastro con perfume» (Lc 7:37).</p>
+<p>Una mujer de la ciudad, que era pecadora. Todos saben quién es. Se le nota en la cara a cada invitado. Los murmullos. Las miradas. Ella no tendría que estar ahí. Lo sabe. Y entra igual.</p>
+<p>Se para detrás de Jesús, a sus pies. Y antes de poder hacer nada, se le quiebra la voz. Y se pone a llorar.</p>
+<p>«Y estando detrás de él a sus pies, llorando, comenzó a regar con lágrimas sus pies, y los enjugaba con sus cabellos; y besaba sus pies, y los ungía con el perfume» (Lc 7:38).</p>
+<figure class="ph ilus" id="cap09_perfume"><div class="ph-box" style="aspect-ratio:3/4"><span class="ph-tag">[ilustración en preparación]</span><span class="ph-desc">En la casa de Simón, durante la cena, la mujer arrodillada detrás de Jesús, llorando, le seca los pies con el cabello suelto; el frasco de alabastro roto a su lado; Simón y los invitados la miran con desprecio.</span></div></figure>
+<p>Lágrimas que caen sobre los pies polvorientos de Jesús. Y ella, sin nada con qué secarlos, se suelta el cabello, algo que una mujer decente nunca hacía en público, y le seca los pies con el pelo. Y los besa. Y rompe el frasco y derrama el perfume, y la casa se llena del olor.</p>
+<p>Nadie dice nada. Pero Simón piensa:</p>
+<p>«Este, si fuera profeta, conocería quién y qué clase de mujer es la que le toca, que es pecadora» (Lc 7:39).</p>
+<p>Y Jesús, que sabe lo que piensa, le cuenta una historia corta. Un prestamista tenía dos deudores. Uno le debía quinientas monedas, y el otro, cincuenta. Ninguno de los dos podía pagar, y les perdonó la deuda a los dos. ¿Cuál de los dos lo va a amar más? Simón contesta lo obvio: el que debía más.</p>
+<p>Y entonces Jesús se da vuelta hacia la mujer. Pero le habla a Simón:</p>
+<p>«¿Ves esta mujer? Entré en tu casa, y no me diste agua para mis pies; mas esta ha regado mis pies con lágrimas, y los ha enjugado con sus cabellos» (Lc 7:44).</p>
+<p>¿Ves esta mujer? Simón la había visto toda la noche. Pero no la veía. Veía su fama. Jesús le pide que la mire de verdad. Y le enumera, una por una, las cortesías que Simón no tuvo con Él al recibirlo, el agua para los pies, el beso de saludo, el aceite para la cabeza, y que esa mujer le dio de sobra. Y después dice:</p>
+<p>«Por lo cual te digo que sus muchos pecados le son perdonados, porque amó mucho; mas aquel a quien se le perdona poco, poco ama» (Lc 7:47).</p>
+<p>Fíjate en el orden. Jesús no dice que ella se ganó el perdón llorando. La historia del prestamista lo explica: primero se perdona la deuda, y después viene el amor. Ella ama mucho porque ya sabe, o ya intuye, que se le perdonó mucho. Quizás lo escuchó a Él hablar en otro lugar, de lejos, entre la gente, y algo se le abrió por dentro. Por eso vino. No a negociar. A agradecer. Y Simón ama poco, no porque tenga menos pecados, sino porque cree que no le deben perdonar casi nada. Esa es la trampa del que se cree bueno: no siente que necesita al médico.</p>
+<p>Y a ella, que seguía llorando a sus pies, le dice lo que había venido a escuchar sin atreverse a pedirlo:</p>
+<p>«Tus pecados te son perdonados» (Lc 7:48).</p>
+<p>Y alrededor de la mesa vuelve la misma pregunta de Capernaum, la misma pregunta de la barca en la tormenta:</p>
+<p>«¿Quién es este, que también perdona pecados?» (Lc 7:49).</p>
+<p>Jesús no les contesta. Le habla a ella:</p>
+<p>«Tu fe te ha salvado, ve en paz» (Lc 7:50).</p>
+<p>Ve en paz. Probablemente la primera vez en años que alguien le decía algo así.</p></section>
+<section class="texto"><h2>La historia según la Biblia</h2>
+<p><em>Reina-Valera 1960</em></p>
+<p><strong>El paralítico</strong></p>
+<blockquote class="verso">
+<p>«Al ver Jesús la fe de ellos, dijo al paralítico: Hijo, tus pecados te son perdonados.» — Marcos 2:5</p>
+</blockquote>
+<p><strong>El escándalo</strong></p>
+<blockquote class="verso">
+<p>«¿Por qué habla este así? Blasfemias dice. ¿Quién puede perdonar pecados, sino solo Dios?» — Marcos 2:7</p>
+</blockquote>
+<p><strong>El agua viva</strong></p>
+<blockquote class="verso">
+<p>«Mas el que bebiere del agua que yo le daré, no tendrá sed jamás; sino que el agua que yo le daré será en él una fuente de agua que salte para vida eterna.» — Juan 4:14</p>
+</blockquote>
+<p><strong>La mujer del perfume</strong></p>
+<blockquote class="verso">
+<p>«Y a ella le dijo: Tus pecados te son perdonados.» — Lucas 7:48</p>
+</blockquote>
+</section>
+<aside class="box escrito"><h3>Lo que estaba escrito</h3><table>
+<thead>
+<tr>
+<th>Lo que pasó</th>
+<th>Lo que estaba escrito</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>«¿Quién puede perdonar pecados, sino solo Dios?» (Mc 2:7)</td>
+<td>Solo Dios borra las rebeliones (Is 43:25); Él perdona todas tus iniquidades (Sal 103:3)</td>
+</tr>
+<tr>
+<td>«El Hijo del Hombre tiene potestad en la tierra para perdonar pecados» (Mc 2:10)</td>
+<td>El hijo de hombre que recibe dominio eterno (Dn 7:13-14, capítulo 7)</td>
+</tr>
+<tr>
+<td>Jesús junto al pozo de Jacob, en Sicar (Jn 4:5-6)</td>
+<td>El terreno que Jacob compró en Siquem (Gn 33:19)</td>
+</tr>
+<tr>
+<td>La samaritana y su pueblo</td>
+<td>El origen de los samaritanos (2 R 17:24)</td>
+</tr>
+<tr>
+<td>«Yo soy, el que habla contigo» (Jn 4:26)</td>
+<td>YO SOY, el nombre de la zarza (Éx 3:14)</td>
+</tr>
+<tr>
+<td>Come con pecadores y busca a los perdidos (Mc 2:17)</td>
+<td>Dios promete buscar a la oveja perdida (Ez 34:16)</td>
+</tr>
+<tr>
+<td>Las lágrimas de la mujer (Lc 7:38)</td>
+<td>«Al corazón contrito y humillado no despreciarás tú, oh Dios» (Sal 51:17, capítulo 6)</td>
+</tr>
+</tbody>
+</table>
+<p>Jesús mismo lo resumió así: «Porque el Hijo del Hombre vino a buscar y a salvar lo que se había perdido» (Lc 19:10).</p></aside>
+<aside class="box escrito"><h3>La mujer del perfume no era María Magdalena</h3><p>Durante siglos, en las pinturas, en las películas y en los sermones, a la mujer que lloró a los pies de Jesús en casa de Simón se le puso un nombre: María Magdalena. Y María Magdalena se convirtió en la imagen de la prostituta arrepentida. Pero la Biblia no dice eso.</p>
+<p><strong>Lucas no le pone nombre.</strong> La llama solo «una mujer de la ciudad, que era pecadora» (Lc 7:37). No dice cuál era su pecado.</p>
+<p><strong>Lucas presenta a María Magdalena justo después, como otra persona.</strong> En el capítulo siguiente cuenta que con Jesús andaban algunas mujeres que habían sido sanadas, entre ellas «María, que se llamaba Magdalena, de la que habían salido siete demonios» (Lc 8:2). Si fuera la misma mujer de la escena anterior, lo lógico es que lo dijera. La presenta como alguien nuevo, y lo que dice de ella es que fue liberada de una opresión terrible, no que fuera prostituta. Era de Magdala, un pueblo de pescadores a orillas del mar de Galilea, y ayudaba con sus bienes a Jesús y a sus discípulos.</p>
+<p><strong>Hubo otra unción, con otra María.</strong> Juan cuenta que en Betania, poco antes de la cruz, María, la hermana de Lázaro y de Marta, ungió los pies de Jesús con perfume de nardo y los secó con sus cabellos (Jn 12:3). Es otra escena, en otro lugar, con otra mujer.</p>
+<p><strong>¿De dónde salió la confusión?</strong> De un sermón. El papa Gregorio Magno, en una homilía predicada en Roma, probablemente en el año 591 (la homilía 33 sobre los evangelios), dijo: «Esta, a quien Lucas llama mujer pecadora, a quien Juan llama María, creemos que es aquella María de la que Marcos dice que fueron expulsados siete demonios». Juntó en una sola a tres mujeres distintas, y esa idea se quedó en la tradición de la Iglesia occidental durante casi catorce siglos. Las iglesias de Oriente nunca hicieron esa identificación.</p>
+<p><strong>La corrección.</strong> En 1969, la Iglesia católica revisó su calendario y dejó de leer el pasaje de Lucas 7 en la fiesta de María Magdalena, separando a las tres mujeres. Y en 2016 elevó su memoria a fiesta, llamándola con un título antiguo: «apóstol de los apóstoles».</p>
+<p><strong>Lo que sí dice la Biblia de ella</strong> es mucho más grande que la leyenda: estuvo al pie de la cruz cuando casi todos huyeron, y fue la primera persona a la que Jesús se apareció resucitado (Mc 16:9). Esa historia la contamos en el capítulo 11.</p></aside>
+<aside class="box historia"><h3>Lo que dice la historia</h3><p><strong>Techos de barro.</strong> Las excavaciones en Capernaum muestran casas de piedra volcánica (basalto) agrupadas alrededor de patios, con muros que no podían sostener techos pesados de piedra. Los techos eran de vigas, ramas y barro, y se podían abrir con las manos y alguna herramienta. Lucas, que escribía para lectores griegos, dice que lo bajaron «por el tejado» (Lc 5:19), usando la palabra que sus lectores entendían.</p>
+<p><strong>Judíos y samaritanos.</strong> Los samaritanos tenían su propio templo en el monte Gerizim. A fines del siglo II a. C., el gobernante judío Juan Hircano lo destruyó. En tiempos de Jesús el odio entre los dos pueblos era profundo, y el historiador Flavio Josefo cuenta incidentes violentos entre ellos en el camino de los peregrinos de Galilea a Jerusalén.</p>
+<p><strong>Cenas recostados.</strong> En los banquetes de estilo griego y romano, que en tiempos de Jesús se habían vuelto comunes entre los judíos ricos, los invitados comían recostados en divanes, con los pies hacia afuera. Por eso la mujer pudo estar «detrás de él a sus pies». Y era costumbre que la casa quedara abierta para que otros entraran a mirar. Recibir a un invitado con agua para los pies, un beso de saludo y aceite para la cabeza era la cortesía esperada; Simón no le dio ninguna de las tres (Lc 7:44-46).</p>
+<p><strong>Frascos de alabastro.</strong> El alabastro es una piedra blanda y translúcida. En los frascos de alabastro de cuello largo se guardaban perfumes caros, y muchas veces se rompía el cuello para usarlos.</p></aside>
+<aside class="box lugar"><h3>El lugar hoy</h3><p><strong>Capernaum.</strong> Hoy es un sitio arqueológico a orillas del lago. Se ven las casas de basalto y una sinagoga de piedra caliza blanca de los siglos IV y V, construida sobre los cimientos de basalto de una sinagoga más antigua. Al lado, bajo los restos de una iglesia octogonal del siglo V, los arqueólogos encontraron una casa que fue venerada desde muy temprano como la casa de Pedro. Encima se construyó en 1990 una iglesia moderna con piso de vidrio para verla desde arriba.</p>
+<p><strong>El pozo de Jacob</strong> está en las afueras de la ciudad de Nablus, en Cisjordania, dentro de una iglesia ortodoxa griega. Es un pozo muy profundo, de unos 40 m según las mediciones modernas, y todavía se puede sacar agua. Desde ahí se ve el monte Gerizim, el monte del que habló la samaritana.</p>
+<p><strong>Magdala</strong>, el pueblo de María Magdalena, está en la orilla oeste del mar de Galilea. Desde 2009 se excavan allí los restos de una ciudad del siglo I, con una sinagoga del tiempo de Jesús.</p></aside>
+<section class="box sombra"><h2>La sombra de Jesús</h2><p><strong>El perdón sin templo.</strong> El paralítico no fue al templo. No llevó un cordero. No pasó por el sacerdote. Jesús lo perdonó en una casa de pescadores. Y no es que Jesús se saltara el sacrificio: Él mismo iba a ser el sacrificio. El perdón que repartió en Capernaum, en Samaria y en la casa de Simón, lo iba a pagar unos meses después en Jerusalén, en la Pascua.</p>
+<p><strong>El agua viva.</strong> En el desierto, Moisés golpeó la roca y salió agua para un pueblo sediento. Jesús, sentado junto a un pozo, le ofrece a una mujer sedienta un agua que no se acaba. Y en la cruz, el que le pidió agua a la samaritana diría: tengo sed.</p>
+<p><strong>El perfume.</strong> La mujer derramó perfume sobre los pies de Jesús, como se hacía con los cuerpos de los muertos. Ella no lo sabía, pero estaba ungiendo a alguien que iba a morir por ella.</p>
+<p><strong>¿Quién es este?</strong> El paralítico, la samaritana, la mujer del perfume: los tres eran personas que otros habían juzgado. Y los tres escucharon de Jesús algo que solo Dios puede decir. En el capítulo siguiente vamos a ver cuánto le costó decirlo.</p></section>
+<section class="box nota"><h2>Nota del autor</h2><p>Las mujeres también son vistas con amor por Dios. El caso de la que derramaba el perfume, o la samaritana… miles de errores.</p>
+<p>Jesús perdona los pecados, y la gente está asombrada, cuestionando quién es este que perdona los pecados.</p></section>
+<section class="texto"><h2>Para seguir leyendo</h2>
+<ul>
+<li><strong>Marcos 2:</strong> el paralítico y la cena con los pecadores.</li>
+<li><strong>Juan 4:</strong> la samaritana junto al pozo.</li>
+<li><strong>Lucas 7:36-50 y Lucas 8:1-3:</strong> la mujer del perfume y las mujeres que seguían a Jesús, entre ellas María Magdalena.</li>
+<li><strong>Isaías 43 y Salmo 103:</strong> el Dios que perdona y no se acuerda.</li>
+<li><strong>Lucas 15:</strong> las tres parábolas de lo perdido: la oveja, la moneda y el hijo.</li>
+</ul></section>
+<footer class="derechos"><p><em>Las citas bíblicas son de la Reina-Valera © 1960 Sociedades Bíblicas en América Latina; © renovado 1988 Sociedades Bíblicas Unidas. Utilizado con permiso.</em></p></footer>
+</main>
+<nav class="libro"><a href="cap08.html">‹ Capítulo 8</a><a href="index.html">Índice</a><a href="cap11.html">Capítulo 11 ›</a></nav></body>
+</html>

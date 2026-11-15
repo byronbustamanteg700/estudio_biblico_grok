@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Capítulo 7 — Daniel: fiel en Babilonia</title>
+<style>
+:root{--paper:#fbf7ef;--ink:#2b2622;--muted:#7a6f63;--accent:#8a5a2b;--rule:#e3d8c6;
+--hist:#f3ece0;--hist-b:#b08a5a;--lugar:#eaf1ee;--lugar-b:#4f7f72;--sombra:#f7efdc;--sombra-b:#b8892d;
+--escr:#f1ede6;--escr-b:#6d5c4a;--nota:#fffdf8;--nota-b:#8a5a2b}
+@media (prefers-color-scheme:dark){:root{--paper:#1d1a17;--ink:#e9e1d4;--muted:#a89c8c;--accent:#d7a76b;--rule:#3a332c;
+--hist:#2a241d;--lugar:#1f2a27;--sombra:#2d2618;--escr:#27231f;--nota:#221e1a}}
+*{box-sizing:border-box}
+html{font-size:18px;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--paper);color:var(--ink);
+font-family:"Iowan Old Style","Palatino Linotype",Palatino,"Book Antiqua",Georgia,"Times New Roman",serif;
+line-height:1.65;text-rendering:optimizeLegibility;hyphens:auto}
+main{max-width:36rem;margin:0 auto;padding:2.5rem 1.2rem 4rem}
+header.cap{text-align:center;margin:1rem 0 2.5rem;padding-bottom:1.5rem;border-bottom:1px solid var(--rule)}
+.kicker{font-variant:small-caps;letter-spacing:.18em;color:var(--accent);margin:0}
+h1{font-weight:normal;font-size:2rem;line-height:1.2;margin:.4rem 0 .6rem}
+.sub{font-style:italic;color:var(--muted);font-size:.9rem;margin:0}
+h2{font-weight:normal;font-size:1.45rem;color:var(--accent);margin:2.6rem 0 1rem;text-align:center;font-variant:small-caps;letter-spacing:.05em}
+h3{font-size:1.1rem;font-style:italic;font-weight:normal;margin:2rem 0 .8rem}
+p{margin:0 0 1em}
+.texto>p:first-of-type em:only-child{color:var(--muted);font-size:.92rem}
+p.lucha{border-left:3px solid var(--accent);padding-left:.9rem}
+blockquote.verso{margin:1rem 0 1.4rem;padding:.2rem 0 .2rem 1rem;border-left:2px solid var(--rule);font-style:italic}
+blockquote.verso p{margin:0}
+table{width:100%;border-collapse:collapse;font-size:.85rem;margin:1rem 0 1.5rem;line-height:1.45}
+th,td{border-bottom:1px solid var(--rule);padding:.5rem .4rem;vertical-align:top;text-align:left}
+th{font-variant:small-caps;letter-spacing:.04em;color:var(--accent);font-weight:normal}
+.box{border-radius:6px;padding:1.1rem 1.2rem .4rem;margin:2rem 0;font-size:.93rem;border-left:4px solid}
+.box h3,.box h2{margin-top:0;font-style:normal;font-variant:small-caps;letter-spacing:.06em;font-size:1.05rem;text-align:left}
+.historia{background:var(--hist);border-color:var(--hist-b)} .historia h3{color:var(--hist-b)}
+.lugar{background:var(--lugar);border-color:var(--lugar-b)} .lugar h3{color:var(--lugar-b)}
+.escrito{background:var(--escr);border-color:var(--escr-b)} .escrito h3{color:var(--escr-b)}
+.sombra{background:var(--sombra);border-color:var(--sombra-b)} .sombra h2{color:var(--sombra-b);font-size:1.25rem}
+.nota{background:var(--nota);border:1px solid var(--rule);border-left:4px solid var(--nota-b);font-style:italic;font-size:1rem}
+.nota h2{color:var(--nota-b);font-size:1.25rem}
+figure.ph{margin:2rem auto}
+figure.ilus{max-width:24rem} figure.video{max-width:17rem}
+.ph-box{width:100%;border:2px dashed var(--accent);border-radius:8px;display:flex;flex-direction:column;align-items:center;justify-content:center;
+text-align:center;padding:1rem;background:repeating-linear-gradient(45deg,transparent,transparent 10px,rgba(138,90,43,.05) 10px,rgba(138,90,43,.05) 20px)}
+.ph-tag{font-family:system-ui,sans-serif;font-weight:700;color:var(--accent);font-size:1rem;margin-bottom:.6rem}
+.ph-desc{font-size:.8rem;color:var(--muted);font-style:italic}
+footer.derechos{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--rule);font-size:.75rem;color:var(--muted);text-align:center}
+ul{padding-left:1.2rem} li{margin-bottom:.4rem}
+@media (max-width:480px){html{font-size:17px} main{padding:1.5rem 1rem 3rem} h1{font-size:1.6rem} table{font-size:.8rem} .box{padding:.9rem .9rem .3rem}}
+@media print{body{background:#fff} .ph-box{background:none}}
+
+figure.media{margin:2rem auto}
+figure.media img,figure.media video{width:100%;height:auto;display:block;border-radius:8px;background:#1a1612}
+figure.media figcaption{font-size:.8rem;color:var(--muted);font-style:italic;text-align:center;margin-top:.6rem;line-height:1.4}
+@media print{figure.media video{display:none} figure.media img{-webkit-print-color-adjust:exact;print-color-adjust:exact}}
+.pregunta{background:var(--escr);border-color:var(--accent)} .pregunta h3{color:var(--accent)}
+</style>
+<style>nav.libro{max-width:36rem;margin:0 auto;padding:.8rem 1.2rem;display:flex;justify-content:space-between;font-size:.85rem;font-variant:small-caps;letter-spacing:.08em;border-bottom:1px solid var(--rule,#e3d8c6)}nav.libro a{color:var(--accent,#8a5a2b);text-decoration:none}nav.libro span{color:transparent}</style></head>
+<body><nav class="libro"><a href="cap06.html">‹ Capítulo 6</a><a href="index.html">Índice</a><a href="cap08.html">Capítulo 8 ›</a></nav>
+<main>
+<header class="cap"><p class="kicker">Capítulo 7</p><h1>Daniel: fiel en Babilonia</h1><p class="sub">Parte I: la promesa · Reyes y Crónicas (resumen); Daniel; Jeremías; Isaías; Habacuc</p></header>
+<section class="texto"><h2>La escena</h2>
+<p><em>Recreación: así pudo haber sido. Los hechos están en 2 Reyes, 2 Crónicas, Daniel, Jeremías y Habacuc. Lo que pensaban y sentían se imagina a partir del texto y de lo que se sabe de la época.</em></p>
+<h3>Un reino partido</h3>
+<p>Después de David reina su hijo Salomón. Es el tiempo de oro de Israel. Salomón construye en Jerusalén, en el monte Moriah, el mismo monte donde Abraham subió con Isaac, un templo para Dios. Piedra labrada, cedro del Líbano, oro. Durante siglos ese templo va a ser el corazón del pueblo: el lugar de los sacrificios, de las fiestas, del Día de la Expiación.</p>
+<p>Pero Salomón, el sabio, termina su vida lejos de Dios. Y cuando muere, el reino se parte en dos. Al norte, diez tribus forman el reino de Israel, con su capital en Samaria. Al sur, Judá, con Jerusalén y los descendientes de David.</p>
+<p>Vienen siglos de reyes. Algunos buenos. La mayoría, no. Le levantan altares a otros dioses, a Baal, a Moloc, y llegan a quemar a sus propios hijos en el fuego como sacrificio. Y Dios no se queda callado. Les manda profetas, uno detrás de otro: Elías, Eliseo, Isaías, Jeremías. Hombres que gritan en las plazas, que lloran, que avisan. La Biblia lo resume así:</p>
+<p>«Mas ellos hacían escarnio de los mensajeros de Dios, y menospreciaban sus palabras, burlándose de sus profetas, hasta que subió la ira de Jehová contra su pueblo, y no hubo ya remedio» (2 Cr 36:16).</p>
+<p>En el año 722 antes de Cristo, el imperio de Asiria arrasa el reino del norte y se lleva a su gente. Las diez tribus se pierden en la historia. En su lugar, los asirios traen a vivir a Samaria a gente de otros pueblos, que se mezclan con los pocos israelitas que quedaron. De ahí van a salir los samaritanos. Vamos a encontrarnos con una de ellas, junto a un pozo, dentro de dos capítulos.</p>
+<p>Judá aguanta un siglo más. Pero no aprende.</p>
+<h3>Un muchacho en el camino a Babilonia</h3>
+<p>Año 605 antes de Cristo. Un nuevo imperio domina el mundo: Babilonia. Su rey se llama Nabucodonosor. Y llega a las puertas de Jerusalén.</p>
+<p>Esta vez no destruye la ciudad. Hace algo más inteligente: se lleva lo mejor que tiene. Algunos objetos sagrados del templo, para ponerlos en el templo de su dios. Y a los muchachos más brillantes de la nobleza de Judá: jóvenes sin defecto, de buena presencia, inteligentes, que puedan aprender la lengua y las letras de los caldeos y servir en el palacio del rey.</p>
+<p>Entre ellos hay un adolescente llamado Daniel. Y tres amigos suyos: Ananías, Misael y Azarías.</p>
+<p>Imagina ese camino. Más de mil kilómetros a pie, siguiendo el gran arco del río Éufrates, porque en medio está el desierto. Semanas de marcha. Atrás queda Jerusalén, el templo, la casa de sus padres, que quizás no vuelva a ver nunca. Adelante, la ciudad más grande del mundo.</p>
+<p>Y un día la ven aparecer en el horizonte. Murallas enormes. Torres. Y una puerta revestida de ladrillos esmaltados de azul intenso, con toros y dragones de colores en relieve: la puerta de Ishtar. Por ahí entran los muchachos de Judá, polvorientos, cansados, mirando hacia arriba con la boca abierta.</p>
+<figure class="ph ilus" id="cap07_puerta_ishtar"><div class="ph-box" style="aspect-ratio:3/4"><span class="ph-tag">[ilustración en preparación]</span><span class="ph-desc">Los jóvenes cautivos de Judá, polvorientos, entran a Babilonia por la puerta de Ishtar, de ladrillo azul esmaltado con toros y dragones; soldados babilonios los escoltan.</span></div></figure>
+<p>Lo primero que hace Babilonia con ellos es quitarles el nombre. Daniel quiere decir «Dios es mi juez». Ahora lo van a llamar Beltsasar, un nombre que invoca a un dios babilonio. Ananías, «Dios ha tenido misericordia», pasa a ser Sadrac. Misael, Mesac. Azarías, «Dios ayuda», pasa a ser Abed-nego, «siervo de Nebo». Les cambian el nombre, la lengua, la comida, la ropa, los libros. Babilonia no quiere matarlos. Quiere convertirlos en babilonios.</p>
+<p>Y les sirven la comida del rey. La mejor del imperio. Carne que quizás fue ofrecida a los ídolos, vino de la mesa real.</p>
+<p>Y un muchacho de quince o dieciséis años, lejos de su casa, sin nadie que lo vigile, toma una decisión.</p>
+<p>«Y Daniel propuso en su corazón no contaminarse con la porción de la comida del rey, ni con el vino que él bebía» (Dn 1:8).</p>
+<p>Propuso en su corazón. No es una rebeldía de adolescente. No grita, no hace escándalo. Le pide con respeto al encargado que los ponga a prueba: diez días comiendo solo legumbres y tomando agua, y que después los compare con los demás. Pasan los diez días, y Daniel y sus amigos se ven más sanos que todos. Y Dios les da sabiduría e inteligencia por encima de todos los sabios de Babilonia.</p>
+<p>Les quitaron el nombre. No pudieron quitarles el corazón.</p>
+<h3>Junto a los ríos de Babilonia</h3>
+<p>Mientras Daniel crece en el palacio, en Jerusalén las cosas se ponen peor. Los reyes de Judá se rebelan contra Babilonia, una y otra vez, sin escuchar al profeta Jeremías, que les ruega que se rindan. Y en el año 586 antes de Cristo, Nabucodonosor vuelve. Sitia Jerusalén hasta que la gente se muere de hambre. Rompe los muros. Y su general hace lo impensable:</p>
+<p>«Y quemó la casa de Jehová, y la casa del rey, y todas las casas de Jerusalén» (2 R 25:9).</p>
+<p>El templo de Salomón, el lugar donde Dios había dicho que pondría su nombre, convertido en ceniza. El altar de los sacrificios, destruido. El monte de Abraham, en ruinas. Miles de personas encadenadas, caminando hacia Babilonia.</p>
+<p>Allá, en el exilio, alguien escribió una canción que todavía duele:</p>
+<p>«Junto a los ríos de Babilonia, allí nos sentábamos, y aun llorábamos, acordándonos de Sion» (Sal 137:1).</p>
+<p>Y Jeremías, que se quedó entre las ruinas, escribió un libro entero de lamentos. Lamentaciones. Cinco poemas de dolor sobre una ciudad destruida. Y justo en el medio de ese libro, en el centro mismo del dolor, aparece esto:</p>
+<p>«Por la misericordia de Jehová no hemos sido consumidos, porque nunca decayeron sus misericordias. Nuevas son cada mañana; grande es tu fidelidad» (Lm 3:22-23).</p>
+<p>Entre las cenizas del templo. Nuevas cada mañana.</p></section>
+<aside class="box escrito"><h3>Habacuc: el profeta que le reclamó a Dios</h3><p>Unos años antes de la invasión, cuando Judá estaba llena de violencia y de injusticia, un profeta llamado Habacuc hizo algo que muchos no se atreven a hacer: le reclamó a Dios. Su libro empieza con una queja directa:</p>
+<p>«¿Hasta cuándo, oh Jehová, clamaré, y no oirás; y daré voces a ti a causa de la violencia, y no salvarás?» (Hab 1:2).</p>
+<p>Y Dios le responde con algo peor: que va a levantar a los caldeos, los babilonios, para castigar a Judá. Habacuc no lo entiende. ¿Cómo puede un Dios santo usar a un pueblo más malvado que el suyo? Y vuelve a reclamar. Y después se sube a su lugar de guardia a esperar la respuesta, como un centinela en la muralla.</p>
+<p>La respuesta de Dios es una frase corta que va a cambiar la historia, porque siglos después Pablo la va a poner en el centro del evangelio (Ro 1:17): «mas el justo por su fe vivirá» (Hab 2:4).</p>
+<p>Y el libro termina con una de las oraciones más valientes de la Biblia. Habacuc no recibe todas las explicaciones que pidió. Sabe que viene la invasión. Pero decide confiar:</p>
+<p>«Aunque la higuera no florezca, ni en las vides haya frutos, aunque falte el producto del olivo, y los labrados no den mantenimiento, y las ovejas sean quitadas de la majada, y no haya vacas en los corrales; con todo, yo me alegraré en Jehová, y me gozaré en el Dios de mi salvación» (Hab 3:17-18).</p>
+<p>Habacuc empezó gritando «¿hasta cuándo?» y terminó cantando «con todo». La Biblia no esconde las preguntas difíciles. Les da un lugar. Y enseña que se le puede hablar a Dios con toda la verdad, incluso para reclamarle.</p></aside>
+<section class="texto"><h3>El horno</h3>
+<p>En Babilonia, Nabucodonosor levanta una estatua de oro enorme en la llanura de Dura. Unos treinta metros de alto. Y manda que, cuando suene la música, todos se postren a adorarla. El que no lo haga, al horno de fuego.</p>
+<p>Suena la música. Miles de personas caen de rodillas. Y tres hombres se quedan de pie: Sadrac, Mesac y Abed-nego, los amigos de Daniel.</p>
+<p>Los llevan ante el rey. Nabucodonosor, furioso, les da una última oportunidad. Y ellos le contestan con una calma que asusta:</p>
+<p>«He aquí nuestro Dios a quien servimos puede librarnos del horno de fuego ardiendo; y de tu mano, oh rey, nos librará. Y si no, sepas, oh rey, que no serviremos a tus dioses, ni tampoco adoraremos la estatua que has levantado» (Dn 3:17-18).</p>
+<p>Y si no. Esas tres palabras son toda la fe de este capítulo. Dios puede librarnos. Y si no nos libra, igual no vamos a doblar la rodilla. No es una fe que pone condiciones. Es una fe que confía aunque no sepa cómo termina la historia.</p>
+<p>El rey manda calentar el horno siete veces más. Tanto, que las llamas matan a los soldados que los echan adentro. Y de pronto Nabucodonosor se levanta asustado. Ve a cuatro hombres sueltos, caminando en medio del fuego sin quemarse. Y el cuarto, dice, parece un hijo de los dioses.</p>
+<p>No estaban solos en el horno. Nunca lo estuvieron.</p>
+<h3>La escritura en la pared</h3>
+<p>Pasan los años. Muere Nabucodonosor. Y una noche del año 539 antes de Cristo, el que gobierna en Babilonia, Belsasar, hace un banquete para mil invitados. Y en medio de la borrachera manda traer las copas de oro que se robaron del templo de Jerusalén, y beben en ellas brindando por sus dioses de oro y de piedra.</p>
+<p>Y en ese momento aparecen los dedos de una mano que escriben en la pared del palacio, a la luz de las lámparas. Al rey se le cambia el color de la cara, le tiemblan las rodillas. Nadie puede leer lo que dice. Hasta que traen a un anciano que los babilonios ya casi habían olvidado: Daniel.</p>
+<p>Daniel lee. Y le dice al rey lo que significa una de esas palabras:</p>
+<p>«TEKEL: Pesado has sido en balanza, y fuiste hallado falto» (Dn 5:27).</p>
+<p>Esa misma noche, los ejércitos de los medos y los persas, bajo el rey Ciro, entran en Babilonia.</p>
+<p>«La misma noche fue muerto Belsasar rey de los caldeos» (Dn 5:30).</p>
+<p>El imperio que quemó el templo de Dios cayó en una sola noche.</p>
+<h3>La ventana abierta</h3>
+<p>Ahora gobierna Persia. Y Daniel, que ya tiene más de ochenta años, sigue en el palacio. Ha servido a reyes babilonios y ahora sirve a reyes persas, y siempre con la misma fama: era tan honesto que sus enemigos no le encontraban ninguna falta. Así que buscan atraparlo por el único lado posible: su fe.</p>
+<p>Convencen al rey Darío de firmar una ley: durante treinta días, nadie puede pedirle nada a ningún dios ni a ningún hombre, sino solo al rey. El que lo haga, al foso de los leones.</p>
+<p>Daniel se entera de que el edicto ya está firmado. Y hace lo de siempre.</p>
+<p>«Cuando Daniel supo que el edicto había sido firmado, entró en su casa, y abiertas las ventanas de su cámara que daban hacia Jerusalén, se arrodillaba tres veces al día, y oraba y daba gracias delante de su Dios, como lo solía hacer antes» (Dn 6:10).</p>
+<figure class="ph ilus" id="cap07_ventana"><div class="ph-box" style="aspect-ratio:3/4"><span class="ph-tag">[ilustración en preparación]</span><span class="ph-desc">Daniel, anciano, arrodillado junto a la ventana abierta de su cuarto en Babilonia, orando hacia el oeste; abajo, en la calle, dos hombres lo espían.</span></div></figure>
+<p>Abiertas las ventanas. Hacia Jerusalén. Una ciudad en ruinas que dejó de ver cuando era un muchacho, y hacia donde sigue mirando cuando ya es un anciano. Como lo solía hacer antes. No cambia nada. No esconde nada. No cierra la ventana para que no lo vean.</p>
+<p>Lo ven. Lo denuncian. Y el rey, que lo aprecia, se da cuenta de que cayó en una trampa, y pasa el día entero buscando cómo salvarlo. No puede. La ley de los medos y los persas no se cambia. Y cuando echan a Daniel al foso, el rey le dice algo que es casi una oración:</p>
+<p>«El Dios tuyo, a quien tú continuamente sirves, él te libre» (Dn 6:16).</p>
+<p>Ponen una piedra sobre la boca del foso. El rey la sella con su anillo. Y se va a su palacio y no come, no duerme, no quiere música.</p>
+<p>Al amanecer corre al foso. Grita el nombre de Daniel con la voz rota. Y desde el fondo, entre los leones, le responde un anciano tranquilo:</p>
+<p>«Mi Dios envió su ángel, el cual cerró la boca de los leones, para que no me hiciesen daño» (Dn 6:22).</p>
+<figure class="ph ilus" id="cap07_foso"><div class="ph-box" style="aspect-ratio:3/4"><span class="ph-tag">[ilustración en preparación]</span><span class="ph-desc">Al amanecer, el rey Darío se asoma angustiado a la boca del foso; abajo, Daniel está de pie, tranquilo, entre leones echados.</span></div></figure>
+<p><strong>Su lucha.</strong> La lucha de Daniel no es contra los leones. Es contra algo más largo y más silencioso: setenta años lejos de casa. Lo sacaron de Jerusalén cuando era un muchacho y nunca volvió. Le cambiaron el nombre, el idioma, la comida, los maestros. Vivió toda su vida en una cultura que le exigía todo y que le ofrecía todo: poder, comida, honores, a cambio de dejar de ser quien era. Y además cargaba con el dolor de su pueblo. Ya viejo, Daniel lee en el libro de Jeremías que el exilio iba a durar setenta años, y se pone a orar con ayuno, vestido de luto. Y lo notable es cómo ora. Daniel, el hombre en quien sus enemigos no encontraban falta, no dice «ellos pecaron». Dice «nosotros»: «hemos pecado, hemos cometido iniquidad, hemos hecho impíamente, y hemos sido rebeldes» (Dn 9:5). Y se agarra de lo único que le queda: «De Jehová nuestro Dios es el tener misericordia y el perdonar, aunque contra él nos hemos rebelado» (Dn 9:9). Y termina rogando como un hombre que ya no tiene argumentos: «Oye, Señor; oh Señor, perdona» (Dn 9:19). El hombre más fiel de Babilonia sabía que no podía presentarse ante Dios por su fidelidad. Solo por su misericordia.</p>
+<h3>Uno como un hijo de hombre</h3>
+<p>Una noche, Daniel tiene una visión. Ve pasar a los imperios del mundo como bestias que salen del mar, una detrás de otra, cada una más terrible. Y después ve un trono, y en el trono al Anciano de días, Dios mismo, con su ropa blanca como la nieve. Y entonces ve llegar a alguien:</p>
+<p>«Miraba yo en la visión de la noche, y he aquí con las nubes del cielo venía uno como un hijo de hombre, que vino hasta el Anciano de días, y le hicieron acercarse delante de él» (Dn 7:13).</p>
+<p>Uno como un hijo de hombre. Alguien con forma humana, que viene con las nubes del cielo, como solo viene Dios. Y a ese, Dios le entrega todo:</p>
+<p>«Y le fue dado dominio, gloria y reino, para que todos los pueblos, naciones y lenguas le sirvieran; su dominio es dominio eterno, que nunca pasará, y su reino uno que no será destruido» (Dn 7:14).</p>
+<p>Las visiones de Daniel han sido interpretadas de muchas maneras, y en este libro no vamos a entrar en las interpretaciones sobre el fin de los tiempos. Pero quédate con este título: «hijo de hombre». Un día, un carpintero de Nazaret lo va a usar para hablar de sí mismo. Más que ningún otro. Y lo va a usar, justamente, para perdonar pecados.</p>
+<h3>El nuevo pacto</h3>
+<p>Mientras el pueblo lloraba en Babilonia, Dios les hizo llegar promesas. Jeremías les había escrito que el exilio iba a durar setenta años, y que después Dios los iba a traer de vuelta. Y les anunció algo más grande que volver a casa:</p>
+<p>«He aquí que vienen días, dice Jehová, en los cuales haré nuevo pacto con la casa de Israel y con la casa de Judá» (Jr 31:31).</p>
+<p>Un pacto nuevo. Ya no escrito en piedra, sino en el corazón. Y con una promesa que ningún sacrificio había podido cumplir del todo: «porque perdonaré la maldad de ellos, y no me acordaré más de su pecado» (Jr 31:34).</p>
+<p>No me acordaré más. Después de siglos de corderos y de machos cabríos, después de un templo quemado, Dios anuncia un perdón que borra hasta el recuerdo.</p>
+<p>Y en los mismos años, el profeta Isaías había dejado escrito un retrato extraño. El de un Siervo de Dios que no viene con ejércitos, sino herido. Un hombre despreciado, que carga con lo que otros hicieron:</p>
+<p>«Mas él herido fue por nuestras rebeliones, molido por nuestros pecados; el castigo de nuestra paz fue sobre él, y por su llaga fuimos nosotros curados» (Is 53:5).</p>
+<p>«Todos nosotros nos descarriamos como ovejas, cada cual se apartó por su camino; mas Jehová cargó en él el pecado de todos nosotros» (Is 53:6).</p>
+<p>Y para que no queden dudas de qué se trata, lo dice con la imagen que venimos siguiendo desde el principio de este libro:</p>
+<p>«Angustiado él, y afligido, no abrió su boca; como cordero fue llevado al matadero; y como oveja delante de sus trasquiladores, enmudeció, y no abrió su boca» (Is 53:7).</p>
+<p>El cordero otra vez. Pero esta vez el cordero no es un animal. Es una persona.</p>
+<p>Y otro profeta, Miqueas, había anunciado incluso el lugar donde iba a nacer el que gobernaría a Israel. No en Jerusalén, la capital. En un pueblito:</p>
+<p>«Pero tú, Belén Efrata, pequeña para estar entre las familias de Judá, de ti me saldrá el que será Señor en Israel; y sus salidas son desde el principio, desde los días de la eternidad» (Mi 5:2).</p>
+<p>Belén. La casa del pan. El pueblo de Rut y de David. Y alguien que va a salir de ahí, pero cuyo origen es desde la eternidad.</p>
+<h3>Cuatrocientos años de silencio</h3>
+<p>Se cumplen los setenta años. Ciro, rey de Persia, firma un decreto permitiendo a los judíos volver a su tierra y reconstruir el templo. Vuelven unos pocos, pobres, a una ciudad en ruinas. Reconstruyen el templo, más pequeño que el de Salomón; los ancianos que habían visto el primero lloran al ver el segundo. Levantan los muros. Vuelven los sacrificios.</p>
+<p>Y después de Malaquías, el último profeta, Dios se queda callado.</p>
+<p>Cuatrocientos años. Sin profetas. Sin visiones. Persas, griegos, y al final los romanos, que llegan con sus legiones y ponen en Jerusalén a un rey títere llamado Herodes. Generaciones enteras de judíos que nacen y mueren repitiendo las promesas: un descendiente de David, un hijo de hombre, un Siervo herido, uno que va a nacer en Belén.</p>
+<p>¿Se habrá olvidado Dios?</p>
+<p>No. Estaba esperando el momento exacto.</p></section>
+<section class="texto"><h2>La historia según la Biblia</h2>
+<p><em>Reina-Valera 1960</em></p>
+<p><strong>Fiel en tierra extraña</strong></p>
+<blockquote class="verso">
+<p>«Cuando Daniel supo que el edicto había sido firmado, entró en su casa, y abiertas las ventanas de su cámara que daban hacia Jerusalén, se arrodillaba tres veces al día, y oraba y daba gracias delante de su Dios, como lo solía hacer antes.» — Daniel 6:10</p>
+</blockquote>
+<p><strong>El hijo de hombre</strong></p>
+<blockquote class="verso">
+<p>«Miraba yo en la visión de la noche, y he aquí con las nubes del cielo venía uno como un hijo de hombre, que vino hasta el Anciano de días, y le hicieron acercarse delante de él.» — Daniel 7:13</p>
+</blockquote>
+<p><strong>El nuevo pacto</strong></p>
+<blockquote class="verso">
+<p>«Y no enseñará más ninguno a su prójimo, ni ninguno a su hermano, diciendo: Conoce a Jehová; porque todos me conocerán, desde el más pequeño de ellos hasta el más grande, dice Jehová; porque perdonaré la maldad de ellos, y no me acordaré más de su pecado.» — Jeremías 31:34</p>
+</blockquote>
+<p><strong>El Siervo herido</strong></p>
+<blockquote class="verso">
+<p>«Mas él herido fue por nuestras rebeliones, molido por nuestros pecados; el castigo de nuestra paz fue sobre él, y por su llaga fuimos nosotros curados.» — Isaías 53:5</p>
+</blockquote>
+</section>
+<aside class="box historia"><h3>Lo que dice la historia</h3><p><strong>La toma de Jerusalén en una tablilla.</strong> Las Crónicas babilónicas, unas tablillas de arcilla que hoy están en el Museo Británico, de Londres, registran año por año las campañas de los reyes de Babilonia. Una de ellas cuenta que Nabucodonosor sitió «la ciudad de Judá» y la tomó el segundo día del mes de adar, que corresponde al 16 de marzo del año 597 a. C., y que puso allí a un rey de su elección. Es la misma campaña que cuenta 2 Reyes 24.</p>
+<p><strong>Las raciones del rey de Judá.</strong> En las ruinas de Babilonia aparecieron tablillas con las listas de raciones de aceite que se daban a prisioneros y extranjeros en la corte, de hacia el año 592 a. C. Entre ellos aparece «Joaquín, rey de Judá», y sus hijos. Es el mismo rey Joaquín que, según la Biblia, fue llevado cautivo a Babilonia y comió en la mesa del rey (2 R 25:29-30).</p>
+<p><strong>Belsasar existió.</strong> Durante mucho tiempo los críticos dijeron que Belsasar era un invento, porque las listas antiguas decían que el último rey de Babilonia fue Nabonido. Después aparecieron inscripciones, como un cilindro de barro de Nabonido encontrado en Ur, que nombran a Belsasar como su hijo mayor. Nabonido pasó años fuera de la capital, y Belsasar gobernaba Babilonia en su lugar. Por eso, en Daniel 5, Belsasar le ofrece a Daniel ser «el tercer señor del reino» (Dn 5:29): el primero era su padre, el segundo él.</p>
+<p><strong>El cilindro de Ciro.</strong> En el Museo Británico se conserva también un cilindro de arcilla escrito por orden de Ciro después de conquistar Babilonia, en el 539 a. C. En él, Ciro cuenta que dejó volver a su tierra a los pueblos deportados y que les permitió reconstruir sus santuarios. No menciona a los judíos por nombre, pero muestra la misma política que describen Esdras 1 y 2 Crónicas 36.</p></aside>
+<aside class="box lugar"><h3>El lugar hoy</h3><p><strong>Babilonia</strong> está en Irak, unos 85 km al sur de Bagdad, junto a la ciudad de Hilla. Sus ruinas fueron declaradas Patrimonio de la Humanidad por la UNESCO en 2019. Quedan restos de murallas, del palacio y de la avenida de las procesiones.</p>
+<p><strong>La puerta de Ishtar</strong>, por donde entraban las procesiones a Babilonia, fue excavada por arqueólogos alemanes a comienzos del siglo XX y reconstruida en Berlín con sus ladrillos originales de esmalte azul. En el sitio de Babilonia hay una réplica.</p>
+<p><strong>De Jerusalén a Babilonia</strong> hay unos 900 km en línea recta, pero nadie cruzaba el desierto. El camino de los deportados seguía el arco del Creciente Fértil, subiendo hacia el norte por Siria y bajando por el Éufrates: más de 1.300 km a pie.</p>
+<p><strong>La tumba de Daniel.</strong> Una antigua tradición ubica la tumba de Daniel en Susa, la actual Shush, en Irán, donde hay un santuario visitado por judíos, cristianos y musulmanes. No se puede probar.</p></aside>
+<section class="box sombra"><h2>La sombra de Jesús</h2><p><strong>El Hijo del Hombre.</strong> El título que Daniel vio en su visión fue el que Jesús eligió para hablar de sí mismo. Y la noche en que lo juzgaron, cuando el sumo sacerdote le preguntó si era el Cristo, Jesús le respondió con las palabras de Daniel: «Yo soy; y veréis al Hijo del Hombre sentado a la diestra del poder de Dios, y viniendo en las nubes del cielo» (Mc 14:62). El sumo sacerdote entendió perfectamente lo que decía, y se rasgó la ropa.</p>
+<p><strong>El nuevo pacto en su sangre.</strong> La noche antes de morir, en la cena de Pascua, Jesús tomó una copa de vino y dijo: «Esta copa es el nuevo pacto en mi sangre, que por vosotros se derrama» (Lc 22:20). El pacto que Jeremías anunció, el perdón que ya no se acuerda del pecado, llegó en una cena de Pascua.</p>
+<p><strong>El cordero que no abrió su boca.</strong> Siglos después, un funcionario de Etiopía iba en su carro leyendo en voz alta Isaías 53, sin entender de quién hablaba. Un discípulo llamado Felipe se le acercó, «y comenzando desde esta escritura, le anunció el evangelio de Jesús» (Hch 8:35). Es lo mismo que hace este libro: empezar por lo que estaba escrito, y llegar a Jesús.</p>
+<p><strong>Fiel en Babilonia.</strong> Daniel se negó a doblar la rodilla ante el poder y la comodidad. Siglos después, en el desierto, Jesús también fue tentado con todos los reinos del mundo y su gloria, y tampoco se arrodilló.</p></section>
+<section class="texto"><h2>Para seguir leyendo</h2>
+<ul>
+<li><strong>2 Reyes 17 y 25:</strong> la caída de Samaria y la de Jerusalén.</li>
+<li><strong>Daniel 1, 3, 5 y 6:</strong> la comida del rey, el horno, la escritura en la pared y los leones.</li>
+<li><strong>Daniel 9:</strong> la oración de Daniel pidiendo perdón por su pueblo.</li>
+<li><strong>Salmo 137 y Lamentaciones 3:</strong> el llanto del exilio y las misericordias nuevas cada mañana.</li>
+<li><strong>Habacuc 1 a 3:</strong> el profeta que le reclamó a Dios.</li>
+<li><strong>Jeremías 31 e Isaías 53:</strong> el nuevo pacto y el Siervo herido.</li>
+</ul></section>
+<footer class="derechos"><p><em>Las citas bíblicas son de la Reina-Valera © 1960 Sociedades Bíblicas en América Latina; © renovado 1988 Sociedades Bíblicas Unidas. Utilizado con permiso.</em></p></footer>
+</main>
+<nav class="libro"><a href="cap06.html">‹ Capítulo 6</a><a href="index.html">Índice</a><a href="cap08.html">Capítulo 8 ›</a></nav></body>
+</html>
