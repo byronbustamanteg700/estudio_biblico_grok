@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Capítulo 1 — El jardín y la primera promesa</title>
+<style>
+:root{--paper:#fbf7ef;--ink:#2b2622;--muted:#7a6f63;--accent:#8a5a2b;--rule:#e3d8c6;
+--hist:#f3ece0;--hist-b:#b08a5a;--lugar:#eaf1ee;--lugar-b:#4f7f72;--sombra:#f7efdc;--sombra-b:#b8892d;
+--escr:#f1ede6;--escr-b:#6d5c4a;--nota:#fffdf8;--nota-b:#8a5a2b}
+@media (prefers-color-scheme:dark){:root{--paper:#1d1a17;--ink:#e9e1d4;--muted:#a89c8c;--accent:#d7a76b;--rule:#3a332c;
+--hist:#2a241d;--lugar:#1f2a27;--sombra:#2d2618;--escr:#27231f;--nota:#221e1a}}
+*{box-sizing:border-box}
+html{font-size:18px;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--paper);color:var(--ink);
+font-family:"Iowan Old Style","Palatino Linotype",Palatino,"Book Antiqua",Georgia,"Times New Roman",serif;
+line-height:1.65;text-rendering:optimizeLegibility;hyphens:auto}
+main{max-width:36rem;margin:0 auto;padding:2.5rem 1.2rem 4rem}
+header.cap{text-align:center;margin:1rem 0 2.5rem;padding-bottom:1.5rem;border-bottom:1px solid var(--rule)}
+.kicker{font-variant:small-caps;letter-spacing:.18em;color:var(--accent);margin:0}
+h1{font-weight:normal;font-size:2rem;line-height:1.2;margin:.4rem 0 .6rem}
+.sub{font-style:italic;color:var(--muted);font-size:.9rem;margin:0}
+h2{font-weight:normal;font-size:1.45rem;color:var(--accent);margin:2.6rem 0 1rem;text-align:center;font-variant:small-caps;letter-spacing:.05em}
+h3{font-size:1.1rem;font-style:italic;font-weight:normal;margin:2rem 0 .8rem}
+p{margin:0 0 1em}
+.texto>p:first-of-type em:only-child{color:var(--muted);font-size:.92rem}
+p.lucha{border-left:3px solid var(--accent);padding-left:.9rem}
+blockquote.verso{margin:1rem 0 1.4rem;padding:.2rem 0 .2rem 1rem;border-left:2px solid var(--rule);font-style:italic}
+blockquote.verso p{margin:0}
+table{width:100%;border-collapse:collapse;font-size:.85rem;margin:1rem 0 1.5rem;line-height:1.45}
+th,td{border-bottom:1px solid var(--rule);padding:.5rem .4rem;vertical-align:top;text-align:left}
+th{font-variant:small-caps;letter-spacing:.04em;color:var(--accent);font-weight:normal}
+.box{border-radius:6px;padding:1.1rem 1.2rem .4rem;margin:2rem 0;font-size:.93rem;border-left:4px solid}
+.box h3,.box h2{margin-top:0;font-style:normal;font-variant:small-caps;letter-spacing:.06em;font-size:1.05rem;text-align:left}
+.historia{background:var(--hist);border-color:var(--hist-b)} .historia h3{color:var(--hist-b)}
+.lugar{background:var(--lugar);border-color:var(--lugar-b)} .lugar h3{color:var(--lugar-b)}
+.escrito{background:var(--escr);border-color:var(--escr-b)} .escrito h3{color:var(--escr-b)}
+.sombra{background:var(--sombra);border-color:var(--sombra-b)} .sombra h2{color:var(--sombra-b);font-size:1.25rem}
+.nota{background:var(--nota);border:1px solid var(--rule);border-left:4px solid var(--nota-b);font-style:italic;font-size:1rem}
+.nota h2{color:var(--nota-b);font-size:1.25rem}
+figure.ph{margin:2rem auto}
+figure.ilus{max-width:24rem} figure.video{max-width:17rem}
+.ph-box{width:100%;border:2px dashed var(--accent);border-radius:8px;display:flex;flex-direction:column;align-items:center;justify-content:center;
+text-align:center;padding:1rem;background:repeating-linear-gradient(45deg,transparent,transparent 10px,rgba(138,90,43,.05) 10px,rgba(138,90,43,.05) 20px)}
+.ph-tag{font-family:system-ui,sans-serif;font-weight:700;color:var(--accent);font-size:1rem;margin-bottom:.6rem}
+.ph-desc{font-size:.8rem;color:var(--muted);font-style:italic}
+footer.derechos{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--rule);font-size:.75rem;color:var(--muted);text-align:center}
+ul{padding-left:1.2rem} li{margin-bottom:.4rem}
+@media (max-width:480px){html{font-size:17px} main{padding:1.5rem 1rem 3rem} h1{font-size:1.6rem} table{font-size:.8rem} .box{padding:.9rem .9rem .3rem}}
+@media print{body{background:#fff} .ph-box{background:none}}
+
+figure.media{margin:2rem auto}
+figure.media img,figure.media video{width:100%;height:auto;display:block;border-radius:8px;background:#1a1612}
+figure.media figcaption{font-size:.8rem;color:var(--muted);font-style:italic;text-align:center;margin-top:.6rem;line-height:1.4}
+@media print{figure.media video{display:none} figure.media img{-webkit-print-color-adjust:exact;print-color-adjust:exact}}
+.pregunta{background:var(--escr);border-color:var(--accent)} .pregunta h3{color:var(--accent)}
+</style>
+<style>nav.libro{max-width:36rem;margin:0 auto;padding:.8rem 1.2rem;display:flex;justify-content:space-between;font-size:.85rem;font-variant:small-caps;letter-spacing:.08em;border-bottom:1px solid var(--rule,#e3d8c6)}nav.libro a{color:var(--accent,#8a5a2b);text-decoration:none}nav.libro span{color:transparent}</style></head>
+<body><nav class="libro"><span>.</span><a href="index.html">Índice</a><a href="cap02.html">Capítulo 2 ›</a></nav>
+<main>
+<header class="cap"><p class="kicker">Capítulo 1</p><h1>El jardín y la primera promesa</h1><p class="sub">Parte I: la promesa · Génesis 1–3</p></header>
+<section class="texto"><h2>La escena</h2>
+<p><em>Recreación: así pudo haber sido. Los hechos están en Génesis 1 a 3. Lo que pensaban y sentían se imagina a partir del texto.</em></p>
+<h3>Antes de todo</h3>
+<p>Antes de los imperios, antes de las ciudades, antes de que existiera una sola palabra escrita, no había nada. Ni luz, ni tiempo, ni nombres. La Biblia empieza ahí, en ese silencio, con una frase que no pide permiso ni da explicaciones: «En el principio creó Dios los cielos y la tierra» (Gn 1:1).</p>
+<p>Y punto. No dice «algunos creen». No arranca con un debate. Arranca con Dios.</p>
+<p>La tierra estaba desordenada y vacía, las tinieblas cubrían el abismo, y el Espíritu de Dios se movía sobre las aguas (Gn 1:2). Imagínate una oscuridad tan espesa que no se puede tocar, un agua sin orilla, sin un pájaro, sin un pez, sin el ruido de una sola ola rompiendo contra nada. Y sobre todo eso, Dios. No ausente. Atento. Como quien se inclina sobre una cuna antes de que el niño nazca.</p>
+<p>Entonces habla. «Sea la luz; y fue la luz» (Gn 1:3).</p>
+<p>Lo que sigue es un mundo que va naciendo por capas. La luz y la noche. El cielo y el mar. La tierra seca que asoma entre las aguas. La hierba, los árboles con su fruto, el sol, la luna y las estrellas. Los peces llenando el mar, las aves cruzando el cielo, los animales del campo. Día tras día, palabra tras palabra. Y al final de cada día, la misma frase, como un artesano que se aleja un paso de su obra para mirarla: y vio Dios que era bueno.</p>
+<p>Pero lo mejor lo deja para el final.</p>
+<h3>Polvo con aliento</h3>
+<p>Hasta ahí Dios ha creado con su palabra. Con el ser humano hace algo distinto. Se acerca. Toma polvo de la tierra, lo forma con sus manos como forma el alfarero el barro, «y sopló en su nariz aliento de vida, y fue el hombre un ser viviente» (Gn 2:7).</p>
+<p>Piénsalo un momento. El primer aliento del primer hombre no fue suyo. Fue el de Dios. Lo primero que sintió ese hombre al abrir los ojos fue el soplo de su Creador en la cara.</p>
+<p>Y no lo hizo como un animal más. Lo hizo a su imagen: «Y creó Dios al hombre a su imagen, a imagen de Dios lo creó; varón y hembra los creó» (Gn 1:27). Varón y hembra. Los dos. Desde la primera página de la Biblia, el hombre y la mujer llevan la misma imagen de Dios. Ninguno vale más que el otro. Eso, en un mundo antiguo donde la mujer valía casi como una posesión, era revolucionario. Y todavía lo es.</p>
+<p>Cuando terminó, Dios miró todo lo que había hecho, «y he aquí que era bueno en gran manera» (Gn 1:31). Ya no solo bueno. Bueno en gran manera.</p>
+<h3>Un huerto al oriente</h3>
+<p>El hombre se llama Adán. En hebreo, <em>adam</em> suena casi igual que <em>adamá</em>, la tierra. Su nombre le recuerda de dónde viene: es polvo. Polvo amado, pero polvo.</p>
+<p>Dios no lo deja en un desierto. Planta un huerto en Edén, al oriente, y lo pone allí (Gn 2:8). La Biblia da pistas de dónde: de Edén salía un río que se repartía en cuatro brazos, y dos de esos nombres todavía los conocemos. El Hidekel, que es el Tigris, y el Éufrates (Gn 2:14). Es decir, la historia de la humanidad empieza en la misma región donde siglos después nacerían las primeras ciudades del mundo, entre dos ríos, en la tierra que los griegos llamarían Mesopotamia. Hoy esa tierra se llama Irak.</p>
+<p>Pero no te imagines el Irak de hoy, seco y quemado por el sol. Imagínate verde. Árboles de toda clase, hermosos a la vista y buenos para comer (Gn 2:9), sombra fresca, agua corriendo entre las raíces, el olor de la tierra mojada en la madrugada. Animales que no huyen. Ni una espina. Ni una tumba.</p>
+<p>Y Dios le da trabajo. Lo pone en el huerto «para que lo labrara y lo guardase» (Gn 2:15). El trabajo no es un castigo. Es parte del regalo. Cultivar, cuidar, poner nombres a los animales. Adán es el jardinero de Dios.</p>
+<p>Solo hay una regla. Una sola. Dios le dice que puede comer de todos los árboles del huerto, de todos, menos de uno: el árbol de la ciencia del bien y del mal. «Porque el día que de él comieres, ciertamente morirás» (Gn 2:17). Fíjate en la proporción. Todo un huerto abierto, cientos de árboles, y un solo árbol cerrado. Dios no es un tacaño que mide lo que da. Es un Padre generoso que pone un solo límite, y lo pone por amor, para protegerlos de la muerte.</p>
+<p>Entonces Dios dice algo que nadie esperaría en un mundo perfecto: «No es bueno que el hombre esté solo» (Gn 2:18).</p>
+<p>Todo era bueno. Todo, menos eso. La soledad. Dios mismo la nombra antes que nadie. Sabe que el ser humano no fue hecho para estar solo, y no lo deja así.</p>
+<p>Hace caer sobre Adán un sueño profundo, toma de su costado, de su costilla, y forma a la mujer. Y se la trae, como un padre que lleva a la novia. Cuando Adán la ve, le sale lo que tal vez es el primer poema de la historia: «Esto es ahora hueso de mis huesos y carne de mi carne» (Gn 2:23). Ahora sí. Por fin. Alguien como yo.</p>
+<p>No la sacó de la cabeza para que lo mandara, ni de los pies para que la pisara. La sacó del costado, de junto al corazón. A su lado.</p>
+<p>Y la Biblia cierra esa escena con una frase sencilla que después se vuelve dolorosa: «Y estaban ambos desnudos, Adán y su mujer, y no se avergonzaban» (Gn 2:25).</p>
+<p>No tenían nada que esconder. Ni ante Dios, ni ante el otro. Se miraban a los ojos sin miedo. Eso es lo que estamos a punto de perder.</p>
+<h3>Una voz que siembra la duda</h3>
+<p>La serpiente aparece sin ruido. La Biblia dice que era astuta, más que todos los animales del campo. Y no empieza con una mentira. Empieza con una pregunta.</p>
+<p>«¿Conque Dios os ha dicho: No comáis de todo árbol del huerto?» (Gn 3:1).</p>
+<p>Fíjate qué hace. Dios había dicho: de todos pueden comer, menos de uno. La serpiente le da la vuelta: así que Dios no los deja comer de nada. Agranda la prohibición y esconde el regalo. Hace que todo el huerto parezca una cárcel por culpa de un solo árbol.</p>
+<p>La mujer le responde bien al principio: pueden comer de los árboles del huerto; solo de ese, el del medio, no. Ni tocarlo, para no morir.</p>
+<p>Y entonces sí llega la mentira, directa, sin rodeos: «No moriréis; sino que sabe Dios que el día que comáis de él, serán abiertos vuestros ojos, y seréis como Dios, sabiendo el bien y el mal» (Gn 3:4-5).</p>
+<p class="lucha"><strong>Su lucha.</strong> Aquí está la primera lucha del ser humano, y es la misma que tenemos hoy. No es una lucha contra una fruta. Es una lucha contra una sospecha: que Dios no es tan bueno como parece. Que si puso un límite, es porque esconde algo. Que nos está quitando lo mejor. La serpiente no le pide a la mujer que odie a Dios. Solo le pide que desconfíe de Él un poquito. Que lo vea como un rival y no como un Padre. Y ese poquito alcanza. Ella mira el árbol. Lo mira de verdad, por primera vez, con otros ojos: bueno para comer, agradable a la vista, codiciable para alcanzar la sabiduría (Gn 3:6). Lo que antes era un árbol más ahora parece la llave de todo. Ser como Dios. No necesitar a nadie. Decidir sola qué es bueno y qué es malo. Toma el fruto. Come. Y se lo da a su marido, que estaba con ella. Y él también come. No hubo truenos. No se abrió el cielo. Fue un gesto pequeño, casi en silencio. Así empiezan casi siempre las peores caídas.</p>
+<h3>Hojas de higuera</h3>
+<p>Lo primero que pasa no es que se vuelvan sabios. Lo primero que pasa es la vergüenza.</p>
+<p>«Entonces fueron abiertos los ojos de ambos, y conocieron que estaban desnudos; entonces cosieron hojas de higuera, y se hicieron delantales» (Gn 3:7).</p>
+<p>La serpiente tenía razón en una cosa: se les abrieron los ojos. Pero no para ver a Dios. Para verse a sí mismos, y no les gustó lo que vieron. Hace un momento se miraban sin miedo. Ahora se tapan. Ahora hay algo entre los dos. Una distancia. Una sospecha. El otro ya no es solo «hueso de mis huesos»: ahora también es alguien que me puede ver por dentro.</p>
+<p>Imagínalos con las manos temblando, buscando las hojas más grandes de la higuera, cosiéndolas como pueden. Hojas que se secan en pocos días. Así es todo lo que hacemos los seres humanos para tapar lo que hicimos: funciona un rato, y después se seca.</p>
+<p>Cae la tarde. Sopla la brisa fresca del día, esa hora en que el calor afloja y las hojas se mueven solas. Y en el huerto se oye algo que antes era la mejor parte del día: los pasos de Dios. La Biblia dice que «oyeron la voz de Jehová Dios que se paseaba en el huerto, al aire del día» (Gn 3:8). Dios venía, como siempre, a caminar con ellos.</p>
+<p>Y por primera vez, ellos se esconden.</p>
+<figure class="ph ilus" id="cap01_escondidos"><div class="ph-box" style="aspect-ratio:3/4"><span class="ph-tag">[ilustración en preparación]</span><span class="ph-desc">El hombre y la mujer escondidos entre los árboles del huerto al atardecer, con delantales de hojas de higuera.</span></div></figure>
+<p>Entre los árboles, detrás de los troncos, agachados, conteniendo la respiración. Dos personas hechas a imagen de Dios, escondiéndose de Dios detrás de los mismos árboles que Él plantó para ellos. Honestamente hablando, si lo pensamos, es casi ridículo. Pero es lo que hacemos todos. Desde ese día, el ser humano aprendió a esconderse.</p>
+<h3>¿Dónde estás tú?</h3>
+<p>Dios podía haber llegado gritando. Podía haber llegado con fuego. No lo hace. Hace una pregunta.</p>
+<p>«¿Dónde estás tú?» (Gn 3:9).</p>
+<p>Es la primera pregunta que Dios le hace al ser humano en toda la Biblia. Y no es porque no supiera dónde estaba. Dios lo sabía todo. Es la pregunta de un padre que entra a la casa y no ve a su hijo en la puerta, como siempre. Es una pregunta que no busca un lugar. Busca a una persona. Dios no pregunta qué hiciste. Pregunta dónde estás. Te está dando la oportunidad de salir.</p>
+<p>Y Adán sale. Despacio. Con su delantal de hojas. Y dice la frase más honesta de todo el capítulo: «Oí tu voz en el huerto, y tuve miedo, porque estaba desnudo; y me escondí» (Gn 3:10).</p>
+<p>Tuve miedo. Es la primera vez que esa palabra aparece en la boca de un ser humano. Antes no existía el miedo a Dios. Ahora sí.</p>
+<p>Dios le pregunta quién le dijo que estaba desnudo, si comió del árbol que le dijo que no comiera. Y aquí viene lo más humano, lo más triste y lo más nuestro. Adán no dice «sí, fui yo». Dice: «La mujer que me diste por compañera me dio del árbol, y yo comí» (Gn 3:12).</p>
+<p>La mujer que me diste. En una sola frase le echa la culpa a ella y, de paso, a Dios. Hace un rato era «hueso de mis huesos». Ahora es «la mujer que me diste».</p>
+<p>Dios se vuelve hacia ella y le pregunta qué es lo que ha hecho. Y ella hace lo mismo: «La serpiente me engañó, y comí» (Gn 3:13).</p>
+<p>Nadie dice «perdón». Nadie dice «fui yo». Ella culpa a la serpiente, él culpa a la mujer y a Dios. Y la serpiente ya no tiene a quién culpar. Es el primer juicio de la historia, y nadie se hace cargo de nada. Así de rápido se rompió todo: la confianza con Dios, la confianza entre ellos, la paz por dentro.</p>
+<h3>La primera promesa</h3>
+<p>Aquí cualquiera esperaría el final de la historia. El final de ellos, por lo menos. Dios les había dicho que el día que comieran, morirían.</p>
+<p>Pero antes de hablarles a ellos de las consecuencias, Dios se vuelve hacia la serpiente. Y le dice algo que es como una semilla enterrada en la tierra más dura del mundo:</p>
+<p>«Y pondré enemistad entre ti y la mujer, y entre tu simiente y la simiente suya; esta te herirá en la cabeza, y tú le herirás en el calcañar» (Gn 3:15).</p>
+<p>Léelo despacio. Esto no es solo una maldición para la serpiente. Es una promesa para nosotros. De la mujer, de la misma mujer que acaba de caer, va a venir un descendiente. Alguien. Y ese alguien le va a aplastar la cabeza a la serpiente. Va a salir herido, sí, en el talón. Pero va a ganar.</p>
+<p>Es la primera promesa de la Biblia, y Dios la dice en el peor momento. Con el fruto todavía en la boca de ellos. Con el delantal de hojas. Antes de cualquier arrepentimiento. Dios no esperó a que se portaran bien para prometerles un rescate. Ese es el Dios de la Biblia.</p>
+<p>Después vienen las consecuencias, y son duras. A la mujer, el dolor al dar a luz y una relación con el hombre que ya no será como antes. Al hombre, una tierra que queda maldita por su causa y que ya no le va a dar las cosas fácil (Gn 3:17): «Espinos y cardos te producirá» (Gn 3:18). El sudor, el cansancio, el pan que cuesta. Y al final, la frase que hemos oído en tantos funerales: «polvo eres, y al polvo volverás» (Gn 3:19).</p>
+<p>Guarda esas espinas en la memoria. Vamos a volver a verlas, muchos siglos después, sobre una cabeza.</p>
+<p>Entonces Adán hace algo que parece pequeño y es enorme. Le pone nombre a su mujer: Eva, «por cuanto ella era madre de todos los vivientes» (Gn 3:20). Acaban de escuchar la palabra muerte, y él le pone un nombre que habla de vida. Algo se le quedó en el corazón de esa promesa. Una esperanza.</p>
+<p>Y Dios hace lo que el capítulo cuenta casi al pasar, en un solo versículo, y que es de lo más tierno de toda la Biblia:</p>
+<p>«Y Jehová Dios hizo al hombre y a su mujer túnicas de pieles, y los vistió» (Gn 3:21).</p>
+<figure class="ph ilus" id="cap01_tunicas"><div class="ph-box" style="aspect-ratio:3/4"><span class="ph-tag">[ilustración en preparación]</span><span class="ph-desc">Dios, solo sus manos, pone una túnica de piel sobre los hombros de Adán y Eva; las hojas de higuera secas en el suelo.</span></div></figure>
+<p>Los vistió. Él mismo. No les tiró la ropa desde lejos. Imagínate al Creador del universo inclinado sobre dos personas que acaban de fallarle, cambiándoles las hojas secas por algo que sí abriga. Como una madre que le pone el abrigo a su hijo antes de que salga al frío.</p>
+<p>Y para que hubiera pieles, algo tuvo que morir. Por primera vez en la creación se derrama sangre, y no es la de ellos. El texto no lo explica. Solo lo deja ahí, como una pista para el que sigue leyendo. Desde la primera página, para cubrir la vergüenza del ser humano, alguien que no tenía la culpa dio la vida.</p>
+<h3>Al oriente del huerto</h3>
+<p>Lo último es lo más difícil. Tienen que salir.</p>
+<p>Dios no quiere que alarguen la mano y coman también del árbol de la vida, y vivan para siempre así, rotos, con la muerte ya metida adentro (Gn 3:22). No es un portazo de rabia. Es una puerta que se cierra para que el mal no se vuelva eterno.</p>
+<p>Y los saca. Afuera, al oriente del huerto, Dios pone querubines «y una espada encendida que se revolvía por todos lados, para guardar el camino del árbol de la vida» (Gn 3:24).</p>
+<figure class="ph ilus" id="cap01_salida"><div class="ph-box" style="aspect-ratio:3/4"><span class="ph-tag">[ilustración en preparación]</span><span class="ph-desc">Adán y Eva salen del huerto hacia el oriente con sus túnicas de piel; atrás, el verde y la espada encendida que gira.</span></div></figure>
+<p>Imagínalos caminando hacia afuera. La piel nueva sobre los hombros. Detrás, el verde, el agua, la sombra. Delante, una tierra más seca, más dura, con espinas que no conocían. Seguramente miraron atrás. Seguramente lloraron. Y a sus espaldas, el resplandor de esa espada girando en el aire, cuidando el camino al árbol de la vida.</p>
+<p>El camino queda guardado. No destruido. Guardado. Ese detalle es importante. El árbol sigue ahí. Lo vamos a volver a ver al final del libro.</p>
+<p>Lo que viene después, en el capítulo siguiente de la Biblia, confirma lo que se perdió. Uno de sus hijos, Caín, se levanta contra su hermano Abel en el campo, y lo mata (Gn 4:8). La primera familia, el primer funeral. Un mundo homicida desde sus inicios.</p>
+<p>Pero ellos se van con algo que nadie les puede quitar. Una promesa. Alguien va a venir. Un hijo de mujer. Y va a aplastarle la cabeza a la serpiente.</p>
+<p>Toda la Biblia, desde aquí hasta el final, es la historia de cómo Dios cumple esa promesa.</p></section>
+<section class="texto"><h2>La historia según la Biblia</h2>
+<p><em>Reina-Valera 1960</em></p>
+<p><strong>El ser humano, hecho a imagen de Dios</strong></p>
+<blockquote class="verso">
+<p>«Y creó Dios al hombre a su imagen, a imagen de Dios lo creó; varón y hembra los creó.» — Génesis 1:27</p>
+</blockquote>
+<p><strong>La primera pregunta de Dios</strong></p>
+<blockquote class="verso">
+<p>«Mas Jehová Dios llamó al hombre, y le dijo: ¿Dónde estás tú? Y él respondió: Oí tu voz en el huerto, y tuve miedo, porque estaba desnudo; y me escondí.» — Génesis 3:9-10</p>
+</blockquote>
+<p><strong>La primera promesa</strong></p>
+<blockquote class="verso">
+<p>«Y pondré enemistad entre ti y la mujer, y entre tu simiente y la simiente suya; esta te herirá en la cabeza, y tú le herirás en el calcañar.» — Génesis 3:15</p>
+</blockquote>
+<p><strong>Dios mismo los cubre</strong></p>
+<blockquote class="verso">
+<p>«Y Jehová Dios hizo al hombre y a su mujer túnicas de pieles, y los vistió.» — Génesis 3:21</p>
+</blockquote>
+</section>
+<aside class="box historia"><h3>Lo que dice la historia</h3><p><strong>Nombres que cuentan la historia.</strong> En hebreo, los nombres del jardín no son etiquetas: son pequeñas historias. <em>Adam</em> (hombre) suena casi igual que <em>adamá</em> (tierra): el hombre lleva en el nombre el polvo del que fue formado. La mujer se llama <em>Javá</em>, Eva, que suena a «vida», y la Biblia lo explica: porque «ella era madre de todos los vivientes» (Gn 3:20). Y cuando Adán la ve por primera vez, el juego de palabras es <em>ish</em> (varón) e <em>ishá</em> (varona). En la traducción española se conserva: «esta será llamada Varona, porque del varón fue tomada» (Gn 2:23).</p>
+<p><strong>La tierra entre dos ríos.</strong> Génesis ubica el huerto «al oriente» y nombra el Tigris (Hidekel) y el Éufrates. En esa misma región, entre los dos ríos, nacieron después las primeras ciudades conocidas, como Ur y Uruk, y también la escritura más antigua, en tablillas de barro. El mundo bíblico empieza en la cuna de la civilización.</p>
+<p><strong>Guardianes en la puerta.</strong> En el antiguo Oriente, las puertas importantes tenían guardianes. Siglos después, los palacios de Asiria pusieron en sus entradas enormes figuras de piedra con alas, cuerpo de toro o de león y rostro humano. Hoy se pueden ver en el Museo Británico de Londres y en el Louvre de París. Cuando el primer lector de Génesis leía que Dios puso querubines a la entrada del huerto, entendía de inmediato: ese lugar quedó custodiado.</p>
+<p><strong>Hojas de higuera.</strong> La higuera es uno de los árboles más comunes de esa tierra, y sus hojas son de las más grandes de la región: anchas, ásperas, con forma de mano abierta. Tiene sentido que fueran las primeras en servir para taparse. También tiene sentido que no duraran: una hoja arrancada se seca en pocos días.</p></aside>
+<aside class="box lugar"><h3>El lugar hoy</h3><p><strong>El Tigris y el Éufrates</strong> siguen corriendo. Los dos nacen en las montañas del este de Turquía, cruzan Siria e Irak, y se juntan en el sur de Irak para formar el Shatt al-Arab, que desemboca en el golfo Pérsico. El Éufrates mide unos 2.800 km, y el Tigris, unos 1.850 km.</p>
+<p><strong>Al-Qurna</strong>, el pueblo del sur de Irak donde se unen los dos ríos, conserva un árbol viejo que la gente del lugar llama «el árbol de Adán». Es una tradición, no un dato de la Biblia, pero muestra cómo esa tierra ha recordado su historia durante siglos.</p>
+<p><strong>Los pantanos del sur de Irak</strong>, cerca de esa unión de los ríos, son una de las zonas húmedas más grandes de Oriente Medio. Desde 2016 son Patrimonio de la Humanidad de la UNESCO. Juncos, agua, búfalos y casas de caña: lo más parecido que queda a la tierra verde que Génesis describe.</p>
+<p>Los otros dos ríos del Edén, el Pisón y el Gihón (Gn 2:11-13), no se han podido identificar con certeza. La ubicación exacta del huerto no se conoce. Lo que la Biblia sí deja claro es que el Edén fue un lugar real, en una tierra real, con ríos que todavía tienen nombre.</p></aside>
+<aside class="box pregunta"><h3>La pregunta difícil</h3><p><strong>¿Por qué puso Dios ese árbol, si sabía lo que iba a pasar?</strong> Es la pregunta honesta que casi todos nos hemos hecho alguna vez.</p>
+<p><strong>Lo que dice el texto:</strong> Dios dio todo el huerto y puso un solo límite (Gn 2:16-17). No escondió el peligro: lo advirtió con claridad. El ser humano no cayó por falta de información, sino por desconfianza.</p>
+<p><strong>Lo que se sabe:</strong> un amor que no puede decir que no, no es amor; es un programa. Dios no hizo robots, hizo personas a su imagen, capaces de elegir. Y la libertad de elegir siempre incluye la posibilidad de elegir mal.</p>
+<p><strong>Lo que queda como misterio:</strong> por qué Dios permitió que el mal entrara en su creación, y cómo encaja eso con que todo lo sabe. La Biblia no lo explica todo. Lo que sí hace es mostrar que, desde el primer minuto de la caída, Dios ya tenía preparada la salida.</p></aside>
+<section class="box sombra"><h2>La sombra de Jesús</h2><p><strong>El hijo de la mujer.</strong> La promesa de Génesis 3:15 habla de un descendiente de la mujer. Siglos después, Pablo escribe: «Pero cuando vino el cumplimiento del tiempo, Dios envió a su Hijo, nacido de mujer» (Gá 4:4). La serpiente le iba a herir el talón: la cruz. Él le iba a aplastar la cabeza: la tumba vacía.</p>
+<p><strong>Las espinas.</strong> Las espinas aparecen por primera vez en la Biblia como señal de la maldición: «Espinos y cardos te producirá». La próxima vez que las veamos de verdad será en Jerusalén, cuando los soldados «entretejieron una corona de espinas, y la pusieron sobre su cabeza» (Jn 19:2). Jesús llevó en la cabeza la señal de la maldición que empezó en el jardín. Lo veremos en el capítulo 10.</p>
+<p><strong>¿Dónde estás tú?</strong> En el jardín, Dios sale a buscar al que se esconde. Esa pregunta recorre toda la Biblia hasta que Jesús la convierte en su misión: «Porque el Hijo del Hombre vino a buscar y a salvar lo que se había perdido» (Lc 19:10).</p>
+<p><strong>Cubiertos por otro.</strong> Las hojas de higuera fueron el primer intento humano de tapar la culpa, y se secaron. Las túnicas de pieles fueron el primer regalo de Dios para cubrirla, y costaron una vida. Ese es el hilo del Cordero, que vamos a seguir en todo el libro: en el monte Moriah, en la noche de la Pascua, en el Jordán y en la cruz.</p>
+<p><strong>El perdón que llega antes.</strong> Dios prometió el rescate antes de que nadie pidiera perdón. Es lo mismo que Pablo dice de la cruz: «Mas Dios muestra su amor para con nosotros, en que siendo aún pecadores, Cristo murió por nosotros» (Ro 5:8).</p>
+<p><strong>El árbol que vuelve.</strong> El camino al árbol de la vida quedó guardado, no destruido. En la última página de la Biblia, el árbol de la vida aparece otra vez, en medio de la ciudad de Dios, «y las hojas del árbol eran para la sanidad de las naciones». Y una frase cierra el círculo que empezó aquí: «Y no habrá más maldición» (Ap 22:2-3). Lo que se perdió en el primer jardín, el Cordero lo devuelve al final.</p></section>
+<section class="box nota"><h2>Nota del autor</h2><p>Si hay un Dios en el universo, es el Dios de la Biblia. Es un gran libro, milenario, con historias comprobadas. Para mí fue importante eso: entender mi fe. Fue crucial.</p>
+<p>La Biblia no justifica a nadie. Nos excluye a todos… solo nos da la fe. Solo nos señala a un Dios que se hizo hombre.</p>
+<p>Un Dios que se hizo hombre, el ser humano más importante de la historia, y que siendo el más importante cargó con las culpas acumuladas de nuestra existencia, en un mundo homicida desde sus inicios.</p></section>
+<section class="texto"><h2>Para seguir leyendo</h2>
+<ul>
+<li><strong>Génesis 1 y 2:</strong> la creación y el huerto.</li>
+<li><strong>Génesis 3:</strong> la caída y la primera promesa.</li>
+<li><strong>Génesis 4:</strong> Caín y Abel, la primera familia fuera del jardín.</li>
+<li><strong>Apocalipsis 22:1-5:</strong> el árbol de la vida al final de la historia.</li>
+</ul></section>
+<footer class="derechos"><p><em>Las citas bíblicas son de la Reina-Valera © 1960 Sociedades Bíblicas en América Latina; © renovado 1988 Sociedades Bíblicas Unidas. Utilizado con permiso.</em></p></footer>
+</main>
+<nav class="libro"><span>.</span><a href="index.html">Índice</a><a href="cap02.html">Capítulo 2 ›</a></nav></body>
+</html>
