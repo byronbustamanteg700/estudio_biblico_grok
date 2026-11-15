@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Capítulo 0 — Antes del principio</title>
+<style>
+:root{--paper:#fbf7ef;--ink:#2b2622;--muted:#7a6f63;--accent:#8a5a2b;--rule:#e3d8c6;
+--hist:#f3ece0;--hist-b:#b08a5a;--lugar:#eaf1ee;--lugar-b:#4f7f72;--sombra:#f7efdc;--sombra-b:#b8892d;
+--escr:#f1ede6;--escr-b:#6d5c4a;--nota:#fffdf8;--nota-b:#8a5a2b}
+@media (prefers-color-scheme:dark){:root{--paper:#1d1a17;--ink:#e9e1d4;--muted:#a89c8c;--accent:#d7a76b;--rule:#3a332c;
+--hist:#2a241d;--lugar:#1f2a27;--sombra:#2d2618;--escr:#27231f;--nota:#221e1a}}
+*{box-sizing:border-box}
+html{font-size:18px;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--paper);color:var(--ink);
+font-family:"Iowan Old Style","Palatino Linotype",Palatino,"Book Antiqua",Georgia,"Times New Roman",serif;
+line-height:1.65;text-rendering:optimizeLegibility;hyphens:auto}
+main{max-width:36rem;margin:0 auto;padding:2.5rem 1.2rem 4rem}
+header.cap{text-align:center;margin:1rem 0 2.5rem;padding-bottom:1.5rem;border-bottom:1px solid var(--rule)}
+.kicker{font-variant:small-caps;letter-spacing:.18em;color:var(--accent);margin:0}
+h1{font-weight:normal;font-size:2rem;line-height:1.2;margin:.4rem 0 .6rem}
+.sub{font-style:italic;color:var(--muted);font-size:.9rem;margin:0}
+h2{font-weight:normal;font-size:1.45rem;color:var(--accent);margin:2.6rem 0 1rem;text-align:center;font-variant:small-caps;letter-spacing:.05em}
+h3{font-size:1.1rem;font-style:italic;font-weight:normal;margin:2rem 0 .8rem}
+p{margin:0 0 1em}
+.texto>p:first-of-type em:only-child{color:var(--muted);font-size:.92rem}
+p.lucha{border-left:3px solid var(--accent);padding-left:.9rem}
+blockquote.verso{margin:1rem 0 1.4rem;padding:.2rem 0 .2rem 1rem;border-left:2px solid var(--rule);font-style:italic}
+blockquote.verso p{margin:0}
+table{width:100%;border-collapse:collapse;font-size:.85rem;margin:1rem 0 1.5rem;line-height:1.45}
+th,td{border-bottom:1px solid var(--rule);padding:.5rem .4rem;vertical-align:top;text-align:left}
+th{font-variant:small-caps;letter-spacing:.04em;color:var(--accent);font-weight:normal}
+.box{border-radius:6px;padding:1.1rem 1.2rem .4rem;margin:2rem 0;font-size:.93rem;border-left:4px solid}
+.box h3,.box h2{margin-top:0;font-style:normal;font-variant:small-caps;letter-spacing:.06em;font-size:1.05rem;text-align:left}
+.historia{background:var(--hist);border-color:var(--hist-b)} .historia h3{color:var(--hist-b)}
+.lugar{background:var(--lugar);border-color:var(--lugar-b)} .lugar h3{color:var(--lugar-b)}
+.escrito{background:var(--escr);border-color:var(--escr-b)} .escrito h3{color:var(--escr-b)}
+.sombra{background:var(--sombra);border-color:var(--sombra-b)} .sombra h2{color:var(--sombra-b);font-size:1.25rem}
+.nota{background:var(--nota);border:1px solid var(--rule);border-left:4px solid var(--nota-b);font-style:italic;font-size:1rem}
+.nota h2{color:var(--nota-b);font-size:1.25rem}
+figure.ph{margin:2rem auto}
+figure.ilus{max-width:24rem} figure.video{max-width:17rem}
+.ph-box{width:100%;border:2px dashed var(--accent);border-radius:8px;display:flex;flex-direction:column;align-items:center;justify-content:center;
+text-align:center;padding:1rem;background:repeating-linear-gradient(45deg,transparent,transparent 10px,rgba(138,90,43,.05) 10px,rgba(138,90,43,.05) 20px)}
+.ph-tag{font-family:system-ui,sans-serif;font-weight:700;color:var(--accent);font-size:1rem;margin-bottom:.6rem}
+.ph-desc{font-size:.8rem;color:var(--muted);font-style:italic}
+footer.derechos{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--rule);font-size:.75rem;color:var(--muted);text-align:center}
+ul{padding-left:1.2rem} li{margin-bottom:.4rem}
+@media (max-width:480px){html{font-size:17px} main{padding:1.5rem 1rem 3rem} h1{font-size:1.6rem} table{font-size:.8rem} .box{padding:.9rem .9rem .3rem}}
+@media print{body{background:#fff} .ph-box{background:none}}
+
+figure.media{margin:2rem auto}
+figure.media img,figure.media video{width:100%;height:auto;display:block;border-radius:8px;background:#1a1612}
+figure.media figcaption{font-size:.8rem;color:var(--muted);font-style:italic;text-align:center;margin-top:.6rem;line-height:1.4}
+@media print{figure.media video{display:none} figure.media img{-webkit-print-color-adjust:exact;print-color-adjust:exact}}
+.pregunta{background:var(--escr);border-color:var(--accent)} .pregunta h3{color:var(--accent)}
+</style>
+<style>nav.libro{max-width:36rem;margin:0 auto;padding:.8rem 1.2rem;display:flex;justify-content:space-between;font-size:.85rem;font-variant:small-caps;letter-spacing:.08em;border-bottom:1px solid var(--rule,#e3d8c6)}nav.libro a{color:var(--accent,#8a5a2b);text-decoration:none}nav.libro span{color:transparent}</style></head>
+<body><nav class="libro"><a href="intro.html">‹ Introducción</a><a href="index.html">Índice</a><a href="cap01.html">Capítulo 1 ›</a></nav>
+<main>
+<header class="cap"><p class="kicker">Capítulo 0</p><h1>Antes del principio</h1><p class="sub">Antes de la Parte I · Génesis 1:1-3; Salmo 90; Juan 1 y 17; Colosenses 1</p></header>
+<section class="texto"><h2>La escena</h2>
+<p><em>Esta escena no es una recreación como las demás, porque nadie estuvo ahí para verla. Lo que sigue se apoya solamente en lo que la Biblia dice que había antes de que existiera el mundo.</em></p>
+<h3>Cuando no había nada</h3>
+<p>Antes del primer día, no había días.</p>
+<p>No había mañana ni noche. No había estrellas, ni tierra, ni mar. No había espacio donde poner algo, ni tiempo para que algo pasara. No había ángeles cantando, ni montes, ni ríos, ni un solo grano de arena.</p>
+<p>No había nada.</p>
+<p>Y sin embargo, no estaba vacío.</p>
+<p>Porque antes de todo, estaba Dios.</p>
+<p>No sentado esperando. No solo y aburrido, como a veces nos lo imaginamos. No necesitando un mundo para tener con quién hablar. La Biblia nos deja asomarnos a ese momento antes de los momentos por una rendija pequeña, y lo que se ve por esa rendija es esto: luz, gloria y amor.</p>
+<p>La noche antes de morir, en una oración que Juan escuchó y escribió, Jesús le habla a su Padre de ese tiempo antes del tiempo. Y dice dos cosas que nos dejan sin palabras. La primera:</p>
+<p>«Ahora pues, Padre, glorifícame tú al lado tuyo, con aquella gloria que tuve contigo antes que el mundo fuese» (Jn 17:5).</p>
+<p>Antes que el mundo fuese. Jesús no empezó a existir en un pesebre de Belén. Antes de que hubiera un Belén, antes de que hubiera un mundo, Él estaba con el Padre. Y compartía su gloria.</p>
+<p>Y la segunda, unas líneas más abajo, todavía más íntima:</p>
+<p>«porque me has amado desde antes de la fundación del mundo» (Jn 17:24).</p>
+<p>Me has amado. Antes de que existiera una sola cosa, ya había amor. El Padre amaba al Hijo. El Hijo amaba al Padre. Y el Espíritu, que la Biblia llama el Espíritu de Dios, estaba en ese amor.</p>
+<p>Por eso Juan, el mismo que escuchó esa oración, pudo escribir años después una frase de tres palabras que cambió para siempre la manera de pensar en Dios:</p>
+<p>«Dios es amor» (1 Jn 4:8).</p>
+<p>No dice que Dios ama, como quien hace algo de vez en cuando. Dice que Dios es amor. Que el amor es lo que Él es. Y el amor necesita a alguien a quien amar. Antes de crear a nadie, Dios no estaba solo: el Padre, el Hijo y el Espíritu vivían desde siempre en un amor perfecto, en una gloria que ningún ojo ha visto.</p>
+<p>Intenta imaginarlo, aunque sea imposible. Una luz que no viene de ningún sol. Una alegría que no tuvo comienzo. Una conversación de amor que no empezó nunca, porque siempre estuvo ahí.</p>
+<p>Esa es la gloria de la Trinidad antes de que existiera algo.</p>
+<figure class="ph ilus" id="cap00_gloria"><div class="ph-box" style="aspect-ratio:3/4"><span class="ph-tag">[ilustración en preparación]</span><span class="ph-desc">Una gloria indescriptible antes de la creación, totalmente abstracta: capas de papel dorado, blanco y marfil que se abren unas dentro de otras como un corazón de luz en medio de la nada; tres corrientes de luz entrelazadas en un solo centro, sin figuras ni rostros.</span></div></figure>
+<h3>Desde siempre y para siempre</h3>
+<p>Moisés lo entendió, a su manera, después de cuarenta años en el desierto.</p>
+<p class="lucha"><strong>Su lucha.</strong> Hay un salmo en la Biblia que tiene un título muy particular: «Oración de Moisés, varón de Dios». Es el Salmo 90, y es probablemente uno de los textos más antiguos de todo el libro de los Salmos. Imagina a Moisés, el que vamos a conocer en el capítulo 4, ya muy viejo. Lleva cuarenta años caminando por el desierto con un pueblo que no deja de quejarse. Ha visto morir, uno tras otro, a casi todos los que salieron con él de Egipto. Ha enterrado a su hermana Miriam. Ha enterrado a su hermano Aarón. Sabe que él mismo no va a entrar en la tierra prometida. Cada noche, junto al fuego del campamento, siente lo corta que es la vida: la compara con la hierba, que en la mañana florece y en la tarde se seca. Setenta años, dice, ochenta los más fuertes. Y se acaban como un pensamiento. Es la lucha de cualquier ser humano que se detiene a pensar: somos tan frágiles, tan pasajeros. Y en medio de esa lucha, Moisés levanta los ojos y escribe lo único que lo sostiene:</p>
+<p>«Antes que naciesen los montes Y formases la tierra y el mundo, Desde el siglo y hasta el siglo, tú eres Dios» (Sal 90:2).</p>
+<p>Desde el siglo y hasta el siglo. Desde siempre y para siempre. Nosotros pasamos. Dios no pasa. Los montes, que nos parecen eternos, tuvieron un día de nacimiento. Dios no.</p>
+<p>Y unos versículos después, Moisés agrega una frase que siglos más tarde Pedro repetiría: que para Dios mil años son como el día de ayer, que ya pasó.</p>
+<p>Esa es la primera cosa que la Biblia quiere que sepamos de Dios, antes de cualquier otra: que Él es eterno. No tuvo principio. No va a tener fin. No envejece, no se cansa, no cambia.</p>
+<p>Y lo dice de punta a punta, desde el Antiguo hasta el Nuevo Testamento.</p>
+<p>Por medio del profeta Isaías, Dios mismo se presenta así: «Yo soy el primero, y yo soy el postrero, y fuera de mí no hay Dios» (Is 44:6). El primero, antes de que hubiera nada. El postrero, cuando todo lo demás haya pasado.</p>
+<p>En otro salmo, el 102, el que lo escribe compara el universo entero con una ropa que se gasta. Los cielos y la tierra envejecen, dice, como un vestido viejo. Y entonces se vuelve hacia Dios: «Pero tú eres el mismo, Y tus años no se acabarán» (Sal 102:27).</p>
+<p>Y en el Nuevo Testamento, la carta a los Hebreos dice lo mismo, pero ahora con un nombre: «Jesucristo es el mismo ayer, y hoy, y por los siglos» (He 13:8).</p>
+<h3>El que estaba antes</h3>
+<p>Esa es la parte que más asombra. La Biblia no dice solamente que el Padre es eterno. Dice que Jesús también.</p>
+<p>El evangelio de Juan empieza con las mismas palabras que el Génesis, a propósito: «En el principio». Pero en vez de contar lo que Dios creó, cuenta quién estaba ahí antes de que se creara algo:</p>
+<p>«En el principio era el Verbo, y el Verbo era con Dios, y el Verbo era Dios» (Jn 1:1).</p>
+<p>El Verbo, que en griego es <em>Logos</em>, la Palabra. En el capítulo 8 lo vamos a ver otra vez: ese es uno de los nombres de Jesús. Fíjate en las tres partes de la frase. En el principio era: cuando todo comenzó, Él ya era. Era con Dios: estaba junto al Padre, en relación con Él. Y era Dios: no un ser menor, no un ángel, no una criatura. Dios.</p>
+<p>Y Juan sigue:</p>
+<p>«Todas las cosas por él fueron hechas, y sin él nada de lo que ha sido hecho, fue hecho» (Jn 1:3).</p>
+<p>Todo lo que existe pasó por sus manos. Las galaxias y las hormigas. El mar de Galilea que después iba a calmar con una palabra. Los árboles de los que un día cortarían la madera de su cruz.</p>
+<p>Pablo dice lo mismo en su carta a los colosenses, con palabras que parecen un himno:</p>
+<p>«Porque en él fueron creadas todas las cosas, las que hay en los cielos y las que hay en la tierra, visibles e invisibles; sean tronos, sean dominios, sean principados, sean potestades; todo fue creado por medio de él y para él. Y él es antes de todas las cosas, y todas las cosas en él subsisten» (Col 1:16-17).</p>
+<p>Él es antes de todas las cosas. Por medio de Él. Y para Él.</p>
+<p>Por eso, cuando Jesús discutía con un grupo de judíos en el templo de Jerusalén, y ellos se burlaban de que dijera conocer a Abraham, que había vivido dos mil años antes, Jesús les contestó con una frase que les heló la sangre:</p>
+<p>«De cierto, de cierto os digo: Antes que Abraham fuese, yo soy» (Jn 8:58).</p>
+<p>No dijo «yo era». Dijo «yo soy». El nombre con el que Dios se presentó a Moisés en la zarza que ardía. El que no tiene pasado ni futuro, porque siempre es.</p>
+<p>Y siete siglos antes de Belén, el profeta Miqueas, al anunciar el pueblo pequeño donde iba a nacer el Mesías, dijo algo que ningún judío esperaba de un niño: que sus salidas «son desde el principio, desde los días de la eternidad» (Mi 5:2). Un niño que iba a nacer en un día concreto, en un pueblo concreto, pero que venía desde la eternidad.</p>
+<h3>Un plan antes del mundo</h3>
+<p>Y aquí la Biblia nos deja ver algo todavía más hondo.</p>
+<p>Antes de que hubiera un jardín, antes de que hubiera una serpiente, antes de que Adán y Eva comieran del árbol y se escondieran, Dios ya sabía. Y ya había preparado la respuesta.</p>
+<p>Pedro, el pescador que lo negó y fue perdonado junto a las brasas, lo escribe en su primera carta. Les recuerda a los creyentes que fueron rescatados, no con oro ni con plata, sino con algo mucho más valioso:</p>
+<p>«sino con la sangre preciosa de Cristo, como de un cordero sin mancha y sin contaminación, ya destinado desde antes de la fundación del mundo» (1 P 1:19-20).</p>
+<p>Un cordero destinado desde antes de la fundación del mundo.</p>
+<p>Detente en eso. Antes de crear la luz, Dios ya había pensado en la cruz. Antes del Edén, ya estaba el Cordero. Lo que vamos a ver en los capítulos siguientes, el cordero que Abraham no tuvo que sacrificar, la sangre en las puertas de Egipto, el siervo que Isaías vio llevado al matadero, el hombre que Juan el Bautista señaló en el Jordán, no es un plan de emergencia que Dios inventó cuando las cosas salieron mal. Es un plan de amor que existía antes de que existiera el mundo.</p>
+<p>El libro del Apocalipsis, al final de la Biblia, habla del «libro de la vida del Cordero que fue inmolado desde el principio del mundo» (Ap 13:8). Hay traductores que leen esa frase un poco distinto, uniendo «desde el principio del mundo» con los nombres escritos en el libro y no con el Cordero. Pero las dos lecturas dicen, al final, lo mismo que Pedro: que el plan del Cordero no empezó en la historia. Empezó antes.</p>
+<p>Y Pablo agrega algo que nos toca a nosotros. Que en ese plan, antes de la creación, también estábamos nosotros:</p>
+<p>«según nos escogió en él antes de la fundación del mundo, para que fuésemos santos y sin mancha delante de él» (Ef 1:4).</p>
+<p>Antes de la fundación del mundo. Antes de que nacieras. Antes de que existiera la tierra que pisas. Ya eras pensado. Ya eras amado.</p>
+<p>Y ese plan tenía un propósito: la gracia. Pablo le escribe a Timoteo que Dios nos salvó «no conforme a nuestras obras, sino según el propósito suyo y la gracia que nos fue dada en Cristo Jesús antes de los tiempos de los siglos» (2 Ti 1:9). La gracia, el perdón que no se merece, que es el hilo de todo este libro, fue regalada antes de que hubiera tiempo.</p>
+<figure class="ph ilus" id="cap00_cordero"><div class="ph-box" style="aspect-ratio:3/4"><span class="ph-tag">[ilustración en preparación]</span><span class="ph-desc">Antes del mundo, en la primera claridad: la silueta pequeña de un cordero de papel blanco, de pie y sereno, en el centro de un círculo de luz que se abre en la oscuridad; ningún altar, ninguna herida; sensación de plan pensado desde siempre.</span></div></figure>
+<h3>Sea la luz</h3>
+<p>Y entonces, en un momento que fue el primer momento, Dios decide crear.</p>
+<p>No porque le faltara algo. No porque estuviera solo. Sino porque el amor que había entre el Padre, el Hijo y el Espíritu era tan grande que quiso compartirlo. Quiso que hubiera otros que pudieran conocerlo, y amarlo, y ser amados por Él.</p>
+<p>«En el principio creó Dios los cielos y la tierra» (Gn 1:1).</p>
+<p>En el principio. El tiempo empieza a correr. El espacio se abre. Existe algo donde antes no había nada.</p>
+<p>Pero todavía no tiene forma. Es oscuridad. Es un océano sin orillas, un abismo de aguas negras, sin un solo rayo de luz. Y sobre esas aguas, en silencio, hay alguien:</p>
+<p>«Y la tierra estaba desordenada y vacía, y las tinieblas estaban sobre la faz del abismo, y el Espíritu de Dios se movía sobre la faz de las aguas» (Gn 1:2).</p>
+<p>El Espíritu de Dios se movía. La palabra hebrea que se usa ahí aparece otra vez en el libro del Deuteronomio, para describir a un águila que revolotea sobre su nido, protegiendo a sus polluelos. Así está el Espíritu sobre las aguas oscuras: como un ave sobre su nido. Cuidando. Esperando. Listo para dar vida.</p>
+<figure class="ph ilus" id="cap00_espiritu"><div class="ph-box" style="aspect-ratio:3/4"><span class="ph-tag">[ilustración en preparación]</span><span class="ph-desc">El abismo antes de la luz: un océano oscuro sin orillas, olas de papel negro y azul muy profundo bajo un vacío sin estrellas; sobre la superficie, una corriente suave de aire, como un aleteo o un ave que revolotea sobre su nido, apenas sugerida con papel translúcido; sin figura humana.</span></div></figure>
+<p>Y en medio de esa oscuridad total, Dios habla.</p>
+<p>No hace un gesto. No trabaja con las manos. No lucha contra nadie, como contaban los mitos de Babilonia, donde los dioses se peleaban y el mundo nacía de un cadáver. El Dios de la Biblia simplemente habla. Un salmo lo resume así: «Porque él dijo, y fue hecho; Él mandó, y existió» (Sal 33:9).</p>
+<p>Y la primera palabra que se oye en la historia del universo es esta:</p>
+<p>«Y dijo Dios: Sea la luz; y fue la luz» (Gn 1:3).</p>
+<p>Sea la luz.</p>
+<p>Y la luz rompe la oscuridad. Se derrama sobre las aguas. Lo que era negro se vuelve brillo. Lo que era silencio se llena.</p>
+<p>Fíjate quiénes están en esa escena. Dios, que habla. El Espíritu, que se mueve sobre las aguas. Y la Palabra, el Verbo, por quien todas las cosas fueron hechas. Juan nos dice quién era esa Palabra que dijo «sea la luz»: el mismo que después caminó por Galilea.</p>
+<p>Y unos versículos más adelante, cuando llega el momento de crear al ser humano, Dios habla de una manera que llama la atención desde hace siglos:</p>
+<p>«Entonces dijo Dios: Hagamos al hombre a nuestra imagen, conforme a nuestra semejanza» (Gn 1:26).</p>
+<p>Hagamos. A nuestra imagen. En plural. Un solo Dios que habla como quien conversa. El texto no lo explica en ese momento. Pero los que leen la Biblia completa reconocen ahí, desde la primera página, el eco de esa comunión eterna del Padre, el Hijo y el Espíritu.</p>
+<p>Y a ese ser humano, hecho a imagen de un Dios que es amor, lo vamos a conocer en el capítulo 1. Ahí empieza la historia del jardín.</p>
+<figure class="ph ilus" id="cap00_sea_la_luz"><div class="ph-box" style="aspect-ratio:3/4"><span class="ph-tag">[ilustración en preparación]</span><span class="ph-desc">«Sea la luz»: la primera luz rompe la oscuridad y se derrama sobre las aguas; rayos de papel dorado que se abren desde lo alto, la superficie del océano encendida por primera vez; la oscuridad retrocede hacia los bordes.</span></div></figure>
+<h3>La misma luz</h3>
+<p>Siglos después, en una noche oscura de Belén, se encendió otra luz. Juan la describe con las palabras del Génesis: «En él estaba la vida, y la vida era la luz de los hombres. La luz en las tinieblas resplandece» (Jn 1:4-5).</p>
+<p>Y Pablo, el que cayó a tierra cegado por una luz en el camino a Damasco, une las dos escenas, la primera mañana del mundo y la mañana en que Dios entra en un corazón:</p>
+<p>«Porque Dios, que mandó que de las tinieblas resplandeciese la luz, es el que resplandeció en nuestros corazones, para iluminación del conocimiento de la gloria de Dios en la faz de Jesucristo» (2 Co 4:6).</p>
+<p>El mismo Dios que dijo «sea la luz» sobre las aguas oscuras del principio puede decirlo sobre la oscuridad de una vida. Sobre la tuya.</p></section>
+<section class="texto"><h2>La historia según la Biblia</h2>
+<p><em>Reina-Valera 1960</em></p>
+<p><strong>Antes del mundo</strong></p>
+<blockquote class="verso">
+<p>«Ahora pues, Padre, glorifícame tú al lado tuyo, con aquella gloria que tuve contigo antes que el mundo fuese.» — Juan 17:5</p>
+</blockquote>
+<p><strong>Desde siempre</strong></p>
+<blockquote class="verso">
+<p>«Antes que naciesen los montes Y formases la tierra y el mundo, Desde el siglo y hasta el siglo, tú eres Dios.» — Salmo 90:2</p>
+</blockquote>
+<p><strong>El Verbo</strong></p>
+<blockquote class="verso">
+<p>«En el principio era el Verbo, y el Verbo era con Dios, y el Verbo era Dios.» — Juan 1:1</p>
+</blockquote>
+<p><strong>El Cordero</strong></p>
+<blockquote class="verso">
+<p>«ya destinado desde antes de la fundación del mundo, pero manifestado en los postreros tiempos por amor de vosotros.» — 1 Pedro 1:20</p>
+</blockquote>
+<p><strong>La primera palabra</strong></p>
+<blockquote class="verso">
+<p>«Y dijo Dios: Sea la luz; y fue la luz.» — Génesis 1:3</p>
+</blockquote>
+</section>
+<aside class="box escrito"><h3>¿Tres y uno?</h3><p>La palabra «Trinidad» no aparece en la Biblia. Es la palabra que los cristianos usaron muy temprano para resumir algo que la Biblia sí enseña de principio a fin. Se puede decir en tres frases:</p>
+<p><strong>1. Hay un solo Dios.</strong> No tres dioses. La gran confesión de Israel, que los judíos repiten hasta hoy, dice: «Oye, Israel: Jehová nuestro Dios, Jehová uno es» (Dt 6:4). Jesús la llamó el primer mandamiento.</p>
+<p><strong>2. El Padre es Dios, el Hijo es Dios y el Espíritu Santo es Dios.</strong> No son tres partes de Dios, como si cada uno fuera un tercio. Cada uno es Dios por completo.</p>
+<p><strong>3. El Padre, el Hijo y el Espíritu no son el mismo.</strong> Se hablan, se aman, se envían. El Padre ama al Hijo «desde antes de la fundación del mundo» (Jn 17:24). El Hijo ora al Padre. El Espíritu procede del Padre y da testimonio del Hijo.</p>
+<p>Las tres cosas juntas, al mismo tiempo, en un solo Dios. Eso es la Trinidad.</p>
+<p>Donde mejor se ve es en el bautismo de Jesús en el Jordán. El Hijo sale del agua. El Espíritu desciende sobre Él como una paloma. Y desde el cielo se oye la voz del Padre: «Este es mi Hijo amado, en quien tengo complacencia» (Mt 3:17). Los tres, en una misma escena. Y al final del evangelio de Mateo, Jesús manda bautizar «en el nombre del Padre, y del Hijo, y del Espíritu Santo» (Mt 28:19). En el nombre, en singular. No en los nombres.</p>
+<p>¿Se puede entender del todo? No. Y está bien que no. Si pudiéramos meter a Dios entero en nuestra cabeza, no sería Dios. Muchos han intentado explicarlo con ejemplos de la naturaleza, pero casi todos se quedan cortos o lo deforman: hacen de Dios tres partes, o tres disfraces de una misma persona. Lo más honesto es quedarse con lo que la Biblia dice y dejar el resto como misterio, con reverencia. No es un misterio frío, como un problema de matemáticas sin resolver. Es un misterio de amor: un Dios que nunca estuvo solo.</p></aside>
+<aside class="box historia"><h3>Lo que dice la historia</h3><p><strong>Las primeras palabras.</strong> El primer escritor cristiano conocido que usa la palabra griega <em>trías</em>, «tríada», para hablar de Dios es Teófilo, obispo de Antioquía, hacia el año 180. A comienzos del siglo III, Tertuliano, en el norte de África, usa en latín la palabra <em>trinitas</em>, de donde viene nuestra «Trinidad».</p>
+<p><strong>El credo de Nicea.</strong> En el año 325, unos trescientos obispos se reunieron en Nicea, en lo que hoy es Turquía, para responder a un sacerdote de Alejandría llamado Arrio, que enseñaba que el Hijo había sido creado y que hubo un tiempo en que no existía. El concilio respondió con un credo que dice del Hijo que es «Dios de Dios, Luz de Luz, Dios verdadero de Dios verdadero», engendrado y no hecho. Ampliado en el año 381 en Constantinopla, ese credo se recita todavía en iglesias de todo el mundo. Lo que hicieron fue poner por escrito lo que ya decían Juan 1:1 y Colosenses 1: que el Hijo no tuvo comienzo.</p>
+<p><strong>Diferente a los mitos.</strong> Los pueblos vecinos de Israel tenían sus propias historias sobre el origen del mundo. En la más famosa de Babilonia, el <em>Enuma Elish</em>, el dios Marduk mata a la diosa Tiamat, el mar salvaje, y con las dos mitades de su cuerpo hace el cielo y la tierra. El Génesis cuenta algo completamente distinto: un solo Dios, sin rivales, que no pelea con nadie, y que crea con su palabra.</p></aside>
+<aside class="box escrito"><h3>El principio y el fin</h3><p>El título provisional de este libro es <em>El principio y el fin</em>. Y este capítulo explica por qué.</p>
+<p>La Biblia empieza con Dios antes del principio, y termina con Dios después del final. En el medio está toda la historia: un jardín perdido, un pueblo esclavo, un rey que cae, un profeta en Babilonia, un pesebre, una cruz, una tumba vacía. Pero la historia no empieza con nosotros ni termina con nosotros. Empieza y termina en Él.</p>
+<p>El mismo Jesús que estaba con el Padre antes de que el mundo fuese es el que, en la última página de la Biblia, se presenta como el que estaba al principio y el que estará al final.</p></aside>
+<section class="box sombra"><h2>La sombra de Jesús</h2><p>En este capítulo Jesús todavía no ha nacido en Belén, pero ya está en todas partes.</p>
+<p><strong>Está antes.</strong> Con el Padre, en la gloria, en el amor, antes de que el mundo fuese.</p>
+<p><strong>Está en la creación.</strong> Es el Verbo por quien todas las cosas fueron hechas. La Palabra que dijo «sea la luz».</p>
+<p><strong>Está en el plan.</strong> Es el Cordero destinado desde antes de la fundación del mundo. Antes del pecado ya estaba el perdón.</p>
+<p><strong>Y es la luz.</strong> La misma luz que rompió la oscuridad sobre las aguas del principio es la que después vino al mundo, en una noche de Belén, para alumbrar a todo ser humano.</p>
+<p>Todo lo que sigue en este libro, desde el jardín hasta el trono, es la historia de cómo ese plan, pensado antes de los siglos, se cumplió en el tiempo.</p>
+<p>Y al final, Él mismo lo resume en una sola frase:</p>
+<p>«Yo soy el Alfa y la Omega, el principio y el fin, el primero y el último» (Ap 22:13).</p></section>
+<section class="box nota"><h2>Nota del autor</h2><p>La gloria de la Trinidad antes de que exista algo… y dijo Dios: ¡Sea la luz!</p></section>
+<section class="texto"><h2>Para seguir leyendo</h2>
+<ul>
+<li><strong>Génesis 1:</strong> la creación, día por día.</li>
+<li><strong>Juan 1:1-18:</strong> el Verbo que estaba en el principio y se hizo carne.</li>
+<li><strong>Salmo 90:</strong> la oración de Moisés sobre la eternidad de Dios y la brevedad de la vida.</li>
+<li><strong>Juan 17:</strong> la oración de Jesús la noche antes de morir.</li>
+<li><strong>Colosenses 1:15-20:</strong> el himno de Pablo sobre Cristo, antes de todas las cosas.</li>
+</ul></section>
+<footer class="derechos"><p><em>Las citas bíblicas son de la Reina-Valera © 1960 Sociedades Bíblicas en América Latina; © renovado 1988 Sociedades Bíblicas Unidas. Utilizado con permiso.</em></p></footer>
+</main>
+<nav class="libro"><a href="intro.html">‹ Introducción</a><a href="index.html">Índice</a><a href="cap01.html">Capítulo 1 ›</a></nav></body>
+</html>
